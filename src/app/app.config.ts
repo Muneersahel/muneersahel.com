@@ -1,5 +1,10 @@
 import { ApplicationConfig, importProvidersFrom } from '@angular/core';
-import { ScreenTrackingService, UserTrackingService, getAnalytics, provideAnalytics } from '@angular/fire/analytics';
+import {
+	ScreenTrackingService,
+	UserTrackingService,
+	getAnalytics,
+	provideAnalytics,
+} from '@angular/fire/analytics';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
@@ -8,6 +13,7 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideRouter } from '@angular/router';
 
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
@@ -35,5 +41,6 @@ export const appConfig: ApplicationConfig = {
 		),
 		ScreenTrackingService,
 		UserTrackingService,
+		provideAnimationsAsync(),
 	],
 };
