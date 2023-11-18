@@ -11,14 +11,21 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getMessaging, provideMessaging } from '@angular/fire/messaging';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { provideClientHydration } from '@angular/platform-browser';
-import { provideRouter } from '@angular/router';
+import { provideRouter, withInMemoryScrolling } from '@angular/router';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
 	providers: [
-		provideRouter(routes),
+		provideRouter(
+			routes,
+			withInMemoryScrolling({
+				anchorScrolling: 'enabled',
+				scrollPositionRestoration: 'enabled',
+				// scrollOffset: [0, 64], // [x, y]
+			}),
+		),
 		provideClientHydration(),
 		importProvidersFrom(
 			provideFirebaseApp(() =>

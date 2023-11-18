@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
 	content: ['./src/**/*.{html,ts}'],
 	safelist: ['active'],
+  important: true,
 	theme: {
 		fontFamily: {
-			header: ['Raleway', 'sans-serif'],
-			body: ['Open Sans', 'sans-serif'],
+			header: ['Inter', 'sans-serif'],
+			body: ['Roboto', 'sans-serif'],
 		},
 
 		screens: {
