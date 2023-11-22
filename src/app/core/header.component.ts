@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { Router, RouterLink } from '@angular/router';
+import { UiService } from './services/ui.service';
 
 @Component({
 	selector: 'app-header',
@@ -15,7 +16,13 @@ import { Router, RouterLink } from '@angular/router';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	template: `
 		<!-- Large screeen menu -->
-		<div class="absolute top-0 z-50 w-full py-3  sm:py-5">
+		<div
+			class="z-50 w-full  py-3 sm:py-5"
+			[ngClass]="{
+				'absolute top-0': ui.isHomePage(),
+				'bg-primary': ui.isHomePage() === false
+			}"
+		>
 			<div class="container flex items-center justify-between">
 				<div>
 					<!-- (click)="navigateTo('top')" -->
@@ -75,7 +82,10 @@ import { Router, RouterLink } from '@angular/router';
 
 				<ul class="mt-8 flex flex-col">
 					@for (menu of menuList(); track $index) {
-						<li class="py-2">
+						<li
+							class="py-2"
+							(click)="navigateTo(menu.link); mobileMenu.set(false)"
+						>
 							<!-- @click="triggerMobileNavItem('#menu.link')" -->
 							<span
 								class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
@@ -91,13 +101,14 @@ import { Router, RouterLink } from '@angular/router';
 })
 export class HeaderComponent {
 	#router = inject(Router);
+	protected ui = inject(UiService);
 	protected mobileMenu = signal(false);
 
 	protected menuList = signal([
 		{ name: 'About', link: 'about' },
 		{ name: 'Services', link: 'services' },
 		{ name: 'Portfolio', link: 'portfolio' },
-		{ name: 'Clients', link: 'clients' },
+		// { name: 'Clients', link: 'clients' },
 		{ name: 'Work', link: 'work' },
 		{ name: 'Statistics', link: 'statistics' },
 		{ name: 'Blog', link: 'blog' },
@@ -105,6 +116,6 @@ export class HeaderComponent {
 	]);
 
 	navigateTo(link: string) {
-		this.#router.navigate([], { fragment: link });
+		this.#router.navigate(['/'], { fragment: link });
 	}
 }

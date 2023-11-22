@@ -27,7 +27,10 @@ import { HeaderComponent } from './core/header.component';
 				mat-mini-fab
 				color="primary"
 				class="fixed bottom-8 right-8 lg:bottom-10 lg:right-10"
-				(click)="viewport.scrollToPosition([0, 0])"
+				(click)="
+					viewport.scrollToPosition([0, 0]);
+					router.navigate([], { fragment: '' })
+				"
 			>
 				<mat-icon>arrow_upward</mat-icon>
 			</button>

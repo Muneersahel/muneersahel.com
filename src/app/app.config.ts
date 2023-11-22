@@ -1,3 +1,4 @@
+import { provideHttpClient, withFetch } from '@angular/common/http';
 import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import {
 	ScreenTrackingService,
@@ -11,9 +12,14 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getMessaging, provideMessaging } from '@angular/fire/messaging';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { provideClientHydration } from '@angular/platform-browser';
-import { provideRouter, withInMemoryScrolling } from '@angular/router';
-
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {
+	provideRouter,
+	withComponentInputBinding,
+	withInMemoryScrolling,
+} from '@angular/router';
+
+import { provideMarkdown } from 'ngx-markdown';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
@@ -25,8 +31,11 @@ export const appConfig: ApplicationConfig = {
 				scrollPositionRestoration: 'enabled',
 				// scrollOffset: [0, 64], // [x, y]
 			}),
+			withComponentInputBinding(),
 		),
+		provideHttpClient(withFetch()),
 		provideClientHydration(),
+		provideMarkdown(),
 		importProvidersFrom(
 			provideFirebaseApp(() =>
 				initializeApp({
@@ -49,5 +58,15 @@ export const appConfig: ApplicationConfig = {
 		ScreenTrackingService,
 		UserTrackingService,
 		provideAnimationsAsync(),
+		// {
+		// 	provide: APOLLO_OPTIONS,
+		// 	useFactory(httpLink: HttpLink) {
+		// 		return {
+		// 			cache: new InMemoryCache(),
+		// 			link: httpLink.create({ uri: 'https://api.hashnode.com/' }),
+		// 		};
+		// 	},
+		// 	deps: [HttpLink],
+		// },
 	],
 };

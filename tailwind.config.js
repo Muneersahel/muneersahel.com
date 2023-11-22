@@ -5,37 +5,28 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
 	content: ['./src/**/*.{html,ts}'],
 	safelist: ['active'],
-  important: true,
+	important: true,
 	theme: {
 		fontFamily: {
 			header: ['Inter', 'sans-serif'],
-			body: ['Roboto', 'sans-serif'],
+			body: [
+				'Inter',
+				'-apple-system',
+				'BlinkMacSystemFont',
+				'Segoe UI',
+				'Roboto',
+				'Helvetica',
+				'Arial',
+				'sans-serif',
+				'Apple Color Emoji',
+				'Segoe UI Emoji',
+				'Segoe UI Symbol',
+			],
 		},
 
 		screens: {
 			xs: '375px',
 			...defaultTheme.screens,
-		},
-
-		colors: {
-			transparent: 'transparent',
-			primary: '#5540af',
-			secondary: '#252426',
-			white: '#ffffff',
-			black: '#000000',
-			yellow: '#f9e71c',
-			lila: '#e6e5ec',
-			'grey-10': '#6c6b6d',
-			'grey-20': '#7c7c7c',
-			'grey-30': '#919091',
-			'grey-40': '#929293',
-			'grey-50': '#f4f3f8',
-			'grey-60': '#edebf6',
-			'grey-70': '#d8d8d8',
-			'hero-gradient-from': 'rgba(85, 64, 174, 0.95)',
-			'hero-gradient-to': 'rgba(65, 47, 144, 0.93)',
-			'blog-gradient-from': '#8f9098',
-			'blog-gradient-to': '#222222',
 		},
 
 		container: {
@@ -49,6 +40,20 @@ module.exports = {
 		},
 
 		extend: {
+			colors: {
+				transparent: 'transparent',
+				primary: '#007641',
+				secondary: '#252426',
+				white: '#ffffff',
+				black: '#000000',
+				yellow: '#f9e71c',
+				lila: '#e6e5ec',
+				'hero-gradient-from': 'rgba(46, 174, 85, 0.95)',
+				'hero-gradient-to': 'rgba(47, 144, 65, 0.93)',
+				'blog-gradient-from': '#8f9098',
+				'blog-gradient-to': '#222222',
+			},
+
 			spacing: {
 				13: '3.25rem',
 				15: '3.75rem',

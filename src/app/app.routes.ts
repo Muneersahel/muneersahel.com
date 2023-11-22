@@ -7,4 +7,13 @@ export const routes: Routes = [
 		title: 'Home | Muneersahel',
 		component: HomeComponent,
 	},
+	{
+		path: 'blogs',
+		children: [
+			{
+				path: ':slug',
+				loadComponent: () => import('./single-blog/single-blog.component'),
+			},
+		],
+	},
 ];

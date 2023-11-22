@@ -1,8 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { SocialMediaComponent } from './social-media.component';
 
 @Component({
 	selector: 'app-hero',
 	standalone: true,
+	imports: [SocialMediaComponent],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	template: `
 		<div
@@ -42,31 +44,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 								</div>
 							</div>
 
-							<div
-								class="flex items-center justify-center gap-4 sm:justify-start"
-							>
-								<a href="/" class="inline-flex">
-									<i
-										class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"
-									></i>
-								</a>
-
-								<a href="/" class="inline-flex">
-									<i
-										class="bx bxl-twitter text-2xl text-white hover:text-yellow"
-									></i>
-								</a>
-								<a href="/" class="inline-flex">
-									<i
-										class="bx bxl-linkedin text-2xl text-white hover:text-yellow"
-									></i>
-								</a>
-								<a href="/" class="inline-flex">
-									<i
-										class="bx bxl-instagram text-2xl text-white hover:text-yellow"
-									></i>
-								</a>
-							</div>
+							<app-social-media />
 						</div>
 					</div>
 				</div>
