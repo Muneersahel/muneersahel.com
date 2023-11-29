@@ -1,10 +1,11 @@
+import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { SocialMediaComponent } from './social-media.component';
 
 @Component({
 	selector: 'app-hero',
 	standalone: true,
-	imports: [SocialMediaComponent],
+	imports: [SocialMediaComponent, NgOptimizedImage],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	template: `
 		<div
@@ -19,11 +20,15 @@ import { SocialMediaComponent } from './social-media.component';
 				class="container relative z-30 pb-12 pt-20 sm:pb-48 sm:pt-56 lg:pb-48 lg:pt-64"
 			>
 				<div class="flex flex-col items-center justify-center lg:flex-row">
-					<div class="rounded-full border-8 border-primary shadow-xl">
+					<div
+						class="relative h-48 w-48 overflow-hidden rounded-full border-8 border-primary shadow-xl sm:h-56 sm:w-56"
+					>
 						<img
-							src="assets/images/munir-issa.jpg"
-							class="h-48 rounded-full sm:h-56"
+							ngSrc="assets/images/munir-issa.jpg"
+							class="object-cover"
 							alt="Munir I Said"
+							fill
+							priority
 						/>
 					</div>
 					<div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">

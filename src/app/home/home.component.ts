@@ -38,7 +38,9 @@ import { WorkExperienceComponent } from './ui/work-experience.component';
 		<!-- <app-clients /> -->
 		<app-work-experience />
 		<app-statistics />
-		<app-recent-blogs />
+		@defer {
+			<app-recent-blogs />
+		}
 		<app-contact />
 
 		<div

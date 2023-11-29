@@ -1,3 +1,4 @@
+import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Blog } from '../../core/services/blog.service';
@@ -5,7 +6,7 @@ import { Blog } from '../../core/services/blog.service';
 @Component({
 	selector: 'app-blog-card',
 	standalone: true,
-	imports: [RouterLink],
+	imports: [RouterLink, NgOptimizedImage],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	template: `
 		<a

@@ -1,4 +1,4 @@
-import { NgClass } from '@angular/common';
+import { NgClass, NgOptimizedImage } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
 	Component,
@@ -12,7 +12,7 @@ import { UiService } from './services/ui.service';
 @Component({
 	selector: 'app-header',
 	standalone: true,
-	imports: [NgClass, MatButtonModule, RouterLink],
+	imports: [NgClass, MatButtonModule, RouterLink, NgOptimizedImage],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	template: `
 		<!-- Large screeen menu -->
@@ -24,21 +24,20 @@ import { UiService } from './services/ui.service';
 			}"
 		>
 			<div class="container flex items-center justify-between">
-				<div>
-					<!-- (click)="navigateTo('top')" -->
-					<a routerLink="/">
+				<a routerLink="/">
+					<div class="relative h-12 w-24 lg:w-48">
 						<img
-							src="assets/img/logo.svg"
-							class="w-24 lg:w-48"
+							ngSrc="assets/img/logo.svg"
+							class="object-contain"
+							fill
 							alt="logo image"
 						/>
-					</a>
-				</div>
+					</div>
+				</a>
 				<div class="hidden lg:block">
 					<ul class="flex items-center">
 						@for (menu of menuList(); track $index) {
 							<li class="group pl-6" (click)="navigateTo(menu.link)">
-								<!-- @click="triggerNavItem('#menu.link')" -->
 								<span
 									class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
 								>
@@ -57,6 +56,7 @@ import { UiService } from './services/ui.service';
 						mat-icon-button
 						(click)="mobileMenu.set(true)"
 						class="flex items-center justify-center"
+						aria-label="Open menu button"
 					>
 						<i class="bx bx-menu text-4xl text-white"></i>
 					</button>
@@ -76,8 +76,15 @@ import { UiService } from './services/ui.service';
 					mat-icon-button
 					class="absolute right-0 top-0 mr-4 mt-4 flex items-center justify-center"
 					(click)="mobileMenu.set(false)"
+					aria-label="Close menu button"
 				>
-					<img src="assets/img/icon-close.svg" class="h-10 w-auto" alt="" />
+					<img
+						ngSrc="assets/img/icon-close.svg"
+						class="h-auto w-auto"
+						width="40"
+						height="40"
+						alt=""
+					/>
 				</button>
 
 				<ul class="mt-8 flex flex-col">
@@ -86,7 +93,6 @@ import { UiService } from './services/ui.service';
 							class="py-2"
 							(click)="navigateTo(menu.link); mobileMenu.set(false)"
 						>
-							<!-- @click="triggerMobileNavItem('#menu.link')" -->
 							<span
 								class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
 							>

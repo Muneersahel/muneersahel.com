@@ -26,11 +26,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 								/>
 							</div>
 							<div class="pt-5 md:pl-5 md:pt-0">
-								<h1
+								<h3
 									class="font-body text-2xl font-bold text-primary md:text-4xl"
 								>
 									12
-								</h1>
+								</h3>
 								<h4
 									class="font-header text-base font-medium leading-loose text-gray-700 md:text-xl"
 								>
@@ -50,11 +50,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 								/>
 							</div>
 							<div class="pt-5 md:pl-5 md:pt-0">
-								<h1
+								<h3
 									class="font-body text-2xl font-bold text-primary md:text-4xl"
 								>
 									3
-								</h1>
+								</h3>
 								<h4
 									class="font-header text-base font-medium leading-loose text-gray-700 md:text-xl"
 								>
@@ -74,11 +74,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 								/>
 							</div>
 							<div class="pt-5 md:pl-5 md:pt-0">
-								<h1
+								<h3
 									class="font-body text-2xl font-bold text-primary md:text-4xl"
 								>
 									8
-								</h1>
+								</h3>
 								<h4
 									class="font-header text-base font-medium leading-loose text-gray-700 md:text-xl"
 								>
@@ -98,11 +98,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 								/>
 							</div>
 							<div class="pt-5 md:pl-5 md:pt-0">
-								<h1
+								<h3
 									class="font-body text-2xl font-bold text-primary md:text-4xl"
 								>
 									99
-								</h1>
+								</h3>
 								<h4
 									class="font-header text-base font-medium leading-loose text-gray-700 md:text-xl"
 								>

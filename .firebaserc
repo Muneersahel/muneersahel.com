@@ -1,4 +1,7 @@
 {
+	"projects": {
+		"default": "muneersahel"
+	},
 	"targets": {
 		"muneersahel": {
 			"hosting": {
@@ -7,8 +10,5 @@
 				]
 			}
 		}
-	},
-	"projects": {
-		"default": "muneersahel"
 	}
 }

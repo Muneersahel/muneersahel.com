@@ -16,11 +16,11 @@ import { BlogCardComponent } from '../../shared/ui/blog-card.component';
 				>
 					I also like to write
 				</h2>
-				<h4
+				<h3
 					class="pt-6 text-center font-header text-xl font-medium text-black lg:text-2xl"
 				>
 					Check out my latest posts!
-				</h4>
+				</h3>
 
 				<div
 					class="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-3 xl:gap-10"

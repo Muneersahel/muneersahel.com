@@ -1,8 +1,10 @@
+import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
 	selector: 'app-work-experience',
 	standalone: true,
+	imports: [NgOptimizedImage],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	template: `
 		<div class="container py-16 md:py-20" id="work">
@@ -26,11 +28,12 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 					<div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
 						<div class="md:w-2/5">
 							<div class="flex justify-center md:justify-start">
-								<span class="shrink-0">
+								<span class="relative h-8 w-32 shrink-0">
 									<img
-										[src]="work.logo"
-										class="h-auto w-32"
+										[ngSrc]="work.logo"
+										class="object-contain"
 										[alt]="work.company"
+										fill
 									/>
 								</span>
 								<div class="relative ml-3 hidden w-full md:block">

@@ -8,9 +8,9 @@ import {
 } from '@angular/fire/analytics';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
-import { getFirestore, provideFirestore } from '@angular/fire/firestore';
-import { getMessaging, provideMessaging } from '@angular/fire/messaging';
-import { getStorage, provideStorage } from '@angular/fire/storage';
+// import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+// import { getMessaging, provideMessaging } from '@angular/fire/messaging';
+// import { getStorage, provideStorage } from '@angular/fire/storage';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {
@@ -51,9 +51,9 @@ export const appConfig: ApplicationConfig = {
 			),
 			provideAuth(() => getAuth()),
 			provideAnalytics(() => getAnalytics()),
-			provideFirestore(() => getFirestore()),
-			provideMessaging(() => getMessaging()),
-			provideStorage(() => getStorage()),
+			// provideFirestore(() => getFirestore()),
+			// provideMessaging(() => getMessaging()),
+			// provideStorage(() => getStorage()),
 		),
 		ScreenTrackingService,
 		UserTrackingService,

@@ -1,8 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
 	selector: 'app-cta',
 	standalone: true,
+	imports: [MatButtonModule],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	template: `
 		<div
@@ -22,11 +24,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 					<input
 						class="w-full rounded px-4 py-3 font-body text-black sm:w-2/5 sm:py-4 lg:w-1/3"
 						type="text"
-						id="email"
 						placeholder="Give me your Email"
 					/>
 					<button
-						class="mt-2 rounded bg-yellow px-8 py-3 font-body text-base font-bold uppercase text-primary transition-colors hover:bg-primary hover:text-white focus:border-transparent focus:outline-none focus:ring focus:ring-yellow sm:ml-2 sm:mt-0 sm:py-4 md:text-lg"
+						mat-raised-button
+						class="mt-2 rounded  px-8 py-3 font-body text-base font-bold uppercase sm:ml-2 sm:mt-0 sm:py-4 md:text-lg"
 					>
 						Join the club
 					</button>

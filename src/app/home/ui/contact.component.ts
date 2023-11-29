@@ -11,11 +11,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 			>
 				Here's a contact form
 			</h2>
-			<h4
+			<h3
 				class="pt-6 text-center font-header text-xl font-medium text-black lg:text-2xl"
 			>
 				Have Any Questions?
-			</h4>
+			</h3>
 			<div class="mx-auto w-full pt-5 text-center sm:w-2/3 lg:pt-6">
 				<p class="font-body text-gray-500">
 					Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit

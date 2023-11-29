@@ -17,7 +17,7 @@ import { SocialMediaComponent } from './social-media.component';
 					>
 						Who am I?
 					</h2>
-					<h4
+					<h3
 						class="pt-6 font-header text-xl font-medium text-black lg:text-2xl"
 					>
 						I'm Munir Issa, a Frontend engineer & CTO at
@@ -29,7 +29,7 @@ import { SocialMediaComponent } from './social-media.component';
 						>
 							Medikea
 						</a>
-					</h4>
+					</h3>
 					<p class="pt-6 font-body leading-relaxed text-gray-600">
 						Welcome! I'm Munir Issa, a dedicated Frontend Engineer and CTO at
 						Medikea. With a passion for crafting seamless user experiences, I

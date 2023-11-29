@@ -1,8 +1,10 @@
+import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
 	selector: 'app-services',
 	standalone: true,
+	imports: [NgOptimizedImage],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	template: `
 		<div class="container py-16 md:py-20" id="services">
@@ -24,13 +26,21 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 					<div
 						class="group rounded px-8 py-12 shadow hover:cursor-pointer hover:bg-primary"
 					>
-						<div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-							<div class="hidden group-hover:block">
-								<img [src]="service.iconHover" [alt]="service.title" />
-							</div>
-							<div class="block group-hover:hidden">
-								<img [src]="service.icon" [alt]="service.title" />
-							</div>
+						<div
+							class="relative mx-auto  h-24 w-24 text-center xl:h-28 xl:w-28"
+						>
+							<img
+								class=" hidden group-hover:block"
+								[ngSrc]="service.iconHover"
+								[alt]="service.title"
+								fill
+							/>
+							<img
+								class=" block group-hover:hidden"
+								[ngSrc]="service.icon"
+								[alt]="service.title"
+								fill
+							/>
 						</div>
 						<div class="text-center">
 							<h3

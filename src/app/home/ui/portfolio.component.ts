@@ -1,10 +1,11 @@
+import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
 	selector: 'app-portfolio',
 	standalone: true,
-	imports: [MatTooltipModule],
+	imports: [MatTooltipModule, NgOptimizedImage],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	template: `
 		<div class="container py-16 md:py-20" id="portfolio">
@@ -28,7 +29,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 						target="_blank"
 						rel="noopener noreferrer"
 						[matTooltip]="item.name"
-						class="mx-auto transform transition-all hover:scale-105 md:mx-0"
+						class="relative mx-auto transform transition-all hover:scale-105 md:mx-0"
 					>
 						<img
 							[src]="item.image"

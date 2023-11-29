@@ -17,6 +17,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 					target="_blank"
 					rel="noopener noreferrer"
 					class="inline-flex"
+					[attr.aria-label]="item.label"
 				>
 					<i
 						class="bx text-2xl hover:text-yellow"
@@ -34,9 +35,25 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 export class SocialMediaComponent {
 	@Input() textColor: 'white' | 'primary' = 'white';
 	socialMedia = [
-		{ icon: 'facebook-square', url: 'https://www.facebook.com/muneersaheel' },
-		{ icon: 'twitter', url: 'https://twitter.com/Muneersahel' },
-		{ icon: 'linkedin', url: 'https://www.linkedin.com/in/muneersahel/' },
-		{ icon: 'instagram', url: 'https://www.instagram.com/muneersahel' },
+		{
+			icon: 'facebook-square',
+			url: 'https://www.facebook.com/muneersaheel',
+			label: 'Facebook',
+		},
+		{
+			icon: 'twitter',
+			url: 'https://twitter.com/Muneersahel',
+			label: 'Twitter',
+		},
+		{
+			icon: 'linkedin',
+			url: 'https://www.linkedin.com/in/muneersahel/',
+			label: 'LinkedIn',
+		},
+		{
+			icon: 'instagram',
+			url: 'https://www.instagram.com/muneersahel',
+			label: 'Instagram',
+		},
 	];
 }
