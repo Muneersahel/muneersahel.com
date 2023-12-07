@@ -11,17 +11,23 @@ import { Blog } from '../../core/services/blog.service';
 	template: `
 		<a
 			[routerLink]="['blogs', blog.slug]"
-			class="block shadow transition-transform hover:scale-105"
+			class="group block shadow transition-transform hover:scale-105"
 		>
 			<div
-				[style]="'background-image: url(' + blog.coverImage + ')'"
 				class="relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
 			>
+				<!-- [style]="'background-image: url(' + blog.coverImage + ')'" -->
+				<img
+					[ngSrc]="blog.coverImage"
+					[alt]="blog.title"
+					[fill]="true"
+					class="h-full w-full object-cover"
+				/>
 				<span
 					class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
 				></span>
 				<span
-					class="absolute bottom-0 right-0 mb-4 mr-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
+					class="absolute bottom-0 right-0 mb-4 mr-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white  md:text-base"
 				>
 					Read More
 				</span>
