@@ -1,14 +1,14 @@
 {
-	"projects": {
-		"default": "muneersahel"
-	},
-	"targets": {
-		"muneersahel": {
-			"hosting": {
-				"app": [
-					"muneersahel"
-				]
-			}
-		}
-	}
+  "projects": {
+    "default": "muneersahel"
+  },
+  "targets": {
+    "muneersahel": {
+      "hosting": {
+        "app": [
+          "muneersahel"
+        ]
+      }
+    }
+  }
 }
