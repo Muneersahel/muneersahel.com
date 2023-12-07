@@ -118,7 +118,7 @@ export class HeaderComponent {
 		{ name: 'Work', link: 'work' },
 		{ name: 'Statistics', link: 'statistics' },
 		{ name: 'Blog', link: 'blog' },
-		{ name: 'Contact', link: 'contact' },
+		// { name: 'Contact', link: 'contact' },
 	]);
 
 	navigateTo(link: string) {

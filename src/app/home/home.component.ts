@@ -41,14 +41,14 @@ import { WorkExperienceComponent } from './ui/work-experience.component';
 		@defer {
 			<app-recent-blogs />
 		}
-		<app-contact />
+		<!-- <app-contact /> -->
 
-		<div
+		<!-- <div
 			class="h-72 bg-cover bg-center bg-no-repeat sm:h-64 md:h-72 lg:h-96"
 			style="background-image: url(assets/img/map.png)"
 		></div>
 
-		<app-cta />
+		<app-cta /> -->
 	`,
 })
 export default class HomeComponent {
