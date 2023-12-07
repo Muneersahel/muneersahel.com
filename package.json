@@ -1,13 +1,14 @@
 {
 	"name": "muneersahel.com",
 	"version": "0.0.0",
+	"author": "Munir I Said <saidmunir73@gmail.com>",
 	"scripts": {
 		"ng": "ng",
 		"start": "ng serve",
 		"build": "ng build",
 		"watch": "ng build --watch --configuration development",
 		"test": "ng test",
-		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.html\" \"src/**/*.scss\"",
+		"prettier": "prettier --write \"src/**/*.ts\" \"src/**/*.html\" \"src/**/*.scss\"",
 		"deploy": "firebase deploy --only hosting"
 	},
 	"private": true,
@@ -17,7 +18,7 @@
 		"@angular/common": "^17.0.4",
 		"@angular/compiler": "^17.0.4",
 		"@angular/core": "^17.0.4",
-		"@angular/fire": "^17.0.0-next.0",
+		"@angular/fire": "17.0.0",
 		"@angular/forms": "^17.0.4",
 		"@angular/material": "17.0.1",
 		"@angular/platform-browser": "^17.0.4",
@@ -27,7 +28,6 @@
 		"@angular/ssr": "^17.0.3",
 		"clipboard": "^2.0.11",
 		"express": "^4.18.2",
-		"firebase-tools": "firebase/firebase-tools#master",
 		"marked": "^9.0.0",
 		"ngx-markdown": "^17.1.1",
 		"prismjs": "^1.28",
