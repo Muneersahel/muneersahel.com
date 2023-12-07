@@ -1,9 +1,19 @@
 {
+	"firestore": {
+		"rules": "firestore.rules",
+		"indexes": "firestore.indexes.json"
+	},
 	"hosting": [
 		{
 			"target": "app",
 			"source": ".",
-			"frameworksBackend": {}
+			"ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+			"frameworksBackend": {
+				"region": "us-central1"
+			}
 		}
-	]
+	],
+	"storage": {
+		"rules": "storage.rules"
+	}
 }

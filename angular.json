@@ -25,10 +25,23 @@
 						"inlineStyleLanguage": "css",
 						"assets": ["src/favicon.ico", "src/assets"],
 						"styles": [
-              "src/custom-theme.scss",
-              "src/styles.css"
-            ],
-						"scripts": [],
+							"src/custom-theme.scss",
+							"node_modules/prismjs/themes/prism-okaidia.css",
+							"src/styles.css"
+						],
+						"scripts": [
+							"node_modules/prismjs/prism.js",
+							"node_modules/prismjs/components/prism-css.min.js",
+							"node_modules/prismjs/components/prism-scss.min.js",
+							"node_modules/prismjs/components/prism-typescript.min.js",
+							"node_modules/prismjs/components/prism-javascript.min.js",
+							"node_modules/prismjs/components/prism-json.min.js",
+							"node_modules/prismjs/components/prism-markdown.min.js",
+							"node_modules/prismjs/components/prism-bash.min.js",
+							"node_modules/prismjs/components/prism-yaml.min.js",
+							"node_modules/prismjs/components/prism-docker.min.js",
+							"node_modules/clipboard/dist/clipboard.min.js"
+						],
 						"server": "src/main.server.ts",
 						"prerender": true,
 						"ssr": {
@@ -91,9 +104,19 @@
 				"deploy": {
 					"builder": "@angular/fire:deploy",
 					"options": {
-						"version": 2,
-						"browserTarget": "app:build:production"
-					}
+						"version": 2
+					},
+					"configurations": {
+						"production": {
+							"buildTarget": "app:build:production",
+							"serveTarget": "app:serve:production"
+						},
+						"development": {
+							"buildTarget": "app:build:development",
+							"serveTarget": "app:serve:development"
+						}
+					},
+					"defaultConfiguration": "production"
 				}
 			}
 		}
