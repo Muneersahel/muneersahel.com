@@ -85,7 +85,7 @@ export class WorkExperienceComponent {
 			date: 'Sep 2023 - Present',
 			description:
 				"Spearheaded Medikea's technology vision as Chief Technology Officer while crafting seamless user experiences as a Frontend Engineer.",
-			logo: 'assets/images/logos/medikea.png',
+			logo: 'assets/images/logos/medikea.webp',
 		},
 		{
 			title: 'Frontend Engineer',
@@ -93,7 +93,7 @@ export class WorkExperienceComponent {
 			date: 'Mar 2022 - Present',
 			description:
 				"Contributed expertise to Medikea's frontend, ensuring user-friendly interfaces and advancing digital solutions in healthcare technology.",
-			logo: 'assets/images/logos/medikea.png',
+			logo: 'assets/images/logos/medikea.webp',
 		},
 		{
 			title: 'Developer & Telecom Engineer',
@@ -101,7 +101,7 @@ export class WorkExperienceComponent {
 			date: 'Jul 2021 - Oct 2021',
 			description:
 				'Engaged in multifaceted roles at Zanzibar Multiplex, combining software development skills with telecom engineering expertise.',
-			logo: 'assets/images/logos/zmux.png',
+			logo: 'assets/images/logos/zmux.webp',
 		},
 		{
 			title: 'Student Coordinator',
@@ -109,7 +109,7 @@ export class WorkExperienceComponent {
 			date: 'Nov 2020 - Apr 2021',
 			description:
 				'Facilitated student coordination at IET during my time at the University of Dar es Salaam, fostering engagement and collaboration within the engineering community.',
-			logo: 'assets/images/logos/iet-logo.png',
+			logo: 'assets/images/logos/iet-logo.webp',
 		},
 	];
 }

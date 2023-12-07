@@ -46,22 +46,22 @@ export class PortfolioComponent {
 	portfolio = [
 		{
 			name: 'Medikea',
-			image: 'assets/images/medikea.png',
+			image: 'assets/images/medikea.webp',
 			link: 'https://medikea.co.tz',
 		},
 		{
 			name: 'Aflafood',
-			image: 'assets/images/aflafood.png',
+			image: 'assets/images/aflafood.webp',
 			link: 'https://aflafood.co.tz',
 		},
 		{
 			name: 'Pharmacy Management System',
-			image: 'assets/images/pharmacy-ms.png',
+			image: 'assets/images/pharmacy-ms.webp',
 			link: 'https://stockmanager.co.tz',
 		},
 		{
 			name: 'Zaimu Travel & Tours',
-			image: 'assets/images/zaimutraveltours.png',
+			image: 'assets/images/zaimutraveltours.webp',
 			link: 'https://zaimutraveltours.com',
 		},
 	];
