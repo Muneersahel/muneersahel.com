@@ -8,10 +8,10 @@ import { HeaderComponent } from './components';
   standalone: true,
   imports: [HeaderComponent, RouterOutlet],
   template: `
-    <app-header />
-    <main class="relative">
-      <router-outlet #outlet="outlet" />
-    </main>
+    <section>
+      <app-header />
+      <router-outlet />
+    </section>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
