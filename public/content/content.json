@@ -1,0 +1,31 @@
+{
+  "blogs": [
+    {
+      "num": "01",
+      "slug": "manage-authentication-state-with-angular-signal",
+      "title": "Manage Authentication State with Angular Signal",
+      "coverImage": "/images/blogs/angular-authentication.avif",
+      "date": "2024-06-08",
+      "content": "cotent/blogs/manage-authentication-state-with-angular-signal.md",
+      "brief": "Learn how to manage authentication state with Angular Signal. In this blog post, we will create a simple Angular application that uses Angular Signal to manage authentication state."
+    },
+    {
+      "num": "02",
+      "slug": "manage-authentication-state-with-ngrx-in-angular",
+      "title": "Manage Authentication State with NgRx in Angular",
+      "coverImage": "/images/blogs/angular-authentication.avif",
+      "date": "2024-06-08",
+      "content": "/cotent/blogs/manage-authentication-state-with-ngrx-in-angular.md",
+      "brief": "Learn how to manage authentication state with NgRx in Angular. In this blog post, we will create a simple Angular application that uses NgRx to manage authentication state."
+    },
+    {
+      "num": "03",
+      "slug": "why-i-shifted-to-angular-ionic",
+      "title": "Why I shifted to Angular Ionic",
+      "coverImage": "/images/blogs/angular-ionic.avif",
+      "date": "2024-06-13",
+      "content": "/cotent/blogs/why-i-shifted-to-angular-ionic.md",
+      "brief": "Why I shifted to Angular Ionic. I shared my experience of shifting to Angular Ionic and how it has helped me build better cross-platform applications. Learn more..."
+    }
+  ]
+}

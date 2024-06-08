@@ -8,26 +8,38 @@ export const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      { path: '', title: 'Home | Muneersahel', component: HomeComponent },
+      { path: '', component: HomeComponent },
       {
         path: 'services',
-        title: 'Services | Muneersahel',
         loadComponent: () => import('@/pages/services/services.component'),
       },
       {
         path: 'resume',
-        title: 'Resume | Muneersahel',
         loadComponent: () => import('@/pages/resume/resume.component'),
       },
       {
         path: 'works',
-        title: 'Works | Muneersahel',
         loadComponent: () => import('@/pages/works/works.component'),
       },
       {
         path: 'contact',
-        title: 'Contact | Muneersahel',
         loadComponent: () => import('./pages/contact/contact.component'),
+      },
+      {
+        path: 'blogs',
+        children: [
+          {
+            path: '',
+            loadComponent: () => import('./pages/blogs/blogs.component'),
+          },
+          {
+            path: ':slug',
+            loadComponent: () =>
+              import(
+                './pages/blogs/components/single-blog/single-blog.component'
+              ),
+          },
+        ],
       },
     ],
   },

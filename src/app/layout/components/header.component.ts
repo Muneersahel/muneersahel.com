@@ -15,6 +15,11 @@ import { NavComponent } from './nav.component';
     NavComponent,
     MobileNavComponent,
   ],
+  styles: `
+    :host {
+      @apply sticky top-0 z-10;
+    }
+  `,
   template: `
     <header class="py-8 xl:py-12 text-white">
       <!-- logo -->

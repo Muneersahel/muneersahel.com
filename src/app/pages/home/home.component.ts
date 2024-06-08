@@ -1,6 +1,7 @@
 import { SocialsComponent } from '@/shared/components';
+import { MetaTagsService } from '@/shared/services';
 import { NgOptimizedImage } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { lucideDownload } from '@ng-icons/lucide';
 import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
 import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
@@ -25,11 +26,12 @@ import { StatsComponent } from './components';
         >
           <div class="text-center xl:text-left order-2 xl:order-none">
             <span>Software Delever</span>
-            <h1 class="mb-6">
+            <h1 class="mb-6 h1">
               Hello I'm <br /><span class="text-accent">Munir Issa</span>
             </h1>
             <p class="max-w-lg mb-9 text-white/80">
-              I'm a software developer based in Nigeria, I build web and mobile
+              I'm a Telecom Engineer and a Full Stack Developer. I have a
+              passion for building beautiful and functional websites and
               applications.
             </p>
 
@@ -74,4 +76,10 @@ import { StatsComponent } from './components';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeComponent {}
+export class HomeComponent {
+  private metaTags = inject(MetaTagsService);
+
+  constructor() {
+    this.metaTags.updateMetaTags();
+  }
+}
