@@ -6,7 +6,7 @@ export type Blog = {
   num: string;
   slug: string;
   title: string;
-  coverImage: string;
+  coverImage?: string;
   date: string;
   brief: string;
   content: string;
@@ -34,5 +34,9 @@ export class BlogService {
         return response.blogs.find((blog) => blog.slug === slug);
       }),
     );
+  }
+
+  getMarkdown(slug: string) {
+    return this._http.get(`content/blogs/${slug}.md`, { responseType: 'text' });
   }
 }

@@ -12,7 +12,7 @@ import { BlogService } from './data';
   providers: [provideIcons({ lucideArrowDownRight })],
   template: `
     <section class="min-h-[80dvh] flex flex-col justify-center py-12 xl:pt-0">
-      <div class="container blog">
+      <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-[60px]">
           @for (blog of blogs$ | async; track blog.title) {
             <div class="flex-1 flex flex-col justify-center gap-6 group">
