@@ -10,8 +10,11 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {
+  PreloadAllModules,
   provideRouter,
   withComponentInputBinding,
+  withInMemoryScrolling,
+  withPreloading,
   withViewTransitions,
 } from '@angular/router';
 import { provideMarkdown } from 'ngx-markdown';
@@ -20,7 +23,16 @@ import { routes } from './app.routes';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes, withViewTransitions(), withComponentInputBinding()),
+    provideRouter(
+      routes,
+      withViewTransitions(),
+      withComponentInputBinding(),
+      withPreloading(PreloadAllModules),
+      withInMemoryScrolling({
+        anchorScrolling: 'enabled',
+        scrollPositionRestoration: 'enabled',
+      }),
+    ),
     provideClientHydration(),
     provideAnimationsAsync(),
     provideHttpClient(withFetch()),
