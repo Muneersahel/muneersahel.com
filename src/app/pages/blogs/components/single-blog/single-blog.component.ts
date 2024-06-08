@@ -76,10 +76,12 @@ export default class SingleBlogComponent {
       const slug = this.slug();
 
       untracked(() => {
-        this._blogService.getMarkdown(this.slug()).subscribe((value) => {
-          console.log(value);
-          this.markdown.set(value);
-        });
+        this._blogService
+          .getMarkdown(this.slug())
+          .pipe(takeUntilDestroyed(this._destroyRef))
+          .subscribe((value) => {
+            this.markdown.set(value);
+          });
 
         this._blogService
           .getBlog(slug)
