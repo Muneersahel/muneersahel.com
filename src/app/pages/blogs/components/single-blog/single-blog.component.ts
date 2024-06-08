@@ -1,4 +1,5 @@
 import { Blog, BlogService } from '@/pages/blogs/data';
+import { MetaTagsService } from '@/shared/services';
 import { NgOptimizedImage } from '@angular/common';
 import {
   ChangeDetectionStrategy,
@@ -49,6 +50,7 @@ import { MarkdownComponent } from 'ngx-markdown';
 export default class SingleBlogComponent {
   private _blogService = inject(BlogService);
   private _destroyRef = inject(DestroyRef);
+  private _metaTags = inject(MetaTagsService);
 
   slug = input.required<string>();
   file = computed(() => {
@@ -68,6 +70,13 @@ export default class SingleBlogComponent {
           .subscribe((blog) => {
             if (blog) {
               this.blog.set(blog);
+              this._metaTags.updateMetaTags({
+                title: blog.title,
+                description: blog.brief,
+                image: blog.coverImage,
+                url: `${this._metaTags.baseUrl}/blogs/${slug}`,
+                keywords: blog.tags.join(', '),
+              });
             }
           });
       });

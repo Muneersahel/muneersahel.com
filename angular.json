@@ -38,7 +38,10 @@
               "node_modules/clipboard/dist/clipboard.min.js"
             ],
             "server": "src/main.server.ts",
-            "prerender": true,
+            "prerender": {
+              "routesFile": "src/prerender-routes.txt",
+              "discoverRoutes": true
+            },
             "ssr": {
               "entry": "server.ts"
             }

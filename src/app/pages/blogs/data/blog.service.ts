@@ -10,6 +10,7 @@ export type Blog = {
   date: string;
   brief: string;
   content: string;
+  tags: string[];
 };
 
 @Injectable({

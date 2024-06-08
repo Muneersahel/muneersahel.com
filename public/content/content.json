@@ -7,7 +7,8 @@
       "coverImage": "/images/blogs/angular-authentication.avif",
       "date": "2024-06-08",
       "content": "cotent/blogs/manage-authentication-state-with-angular-signal.md",
-      "brief": "Learn how to manage authentication state with Angular Signal. In this blog post, we will create a simple Angular application that uses Angular Signal to manage authentication state."
+      "brief": "Learn how to manage authentication state with Angular Signal. In this blog post, we will create a simple Angular application that uses Angular Signal to manage authentication state.",
+      "tags": ["angular", "authentication", "signal"]
     },
     {
       "num": "02",
@@ -16,7 +17,8 @@
       "coverImage": "/images/blogs/angular-authentication.avif",
       "date": "2024-06-08",
       "content": "/cotent/blogs/manage-authentication-state-with-ngrx-in-angular.md",
-      "brief": "Learn how to manage authentication state with NgRx in Angular. In this blog post, we will create a simple Angular application that uses NgRx to manage authentication state."
+      "brief": "Learn how to manage authentication state with NgRx in Angular. In this blog post, we will create a simple Angular application that uses NgRx to manage authentication state.",
+      "tags": ["angular", "authentication", "ngrx"]
     },
     {
       "num": "03",
@@ -25,7 +27,8 @@
       "coverImage": "/images/blogs/angular-ionic.avif",
       "date": "2024-06-13",
       "content": "/cotent/blogs/why-i-shifted-to-angular-ionic.md",
-      "brief": "Why I shifted to Angular Ionic. I shared my experience of shifting to Angular Ionic and how it has helped me build better cross-platform applications. Learn more..."
+      "brief": "Why I shifted to Angular Ionic. I shared my experience of shifting to Angular Ionic and how it has helped me build better cross-platform applications. Learn more...",
+      "tags": ["angular", "ionic"]
     }
   ]
 }

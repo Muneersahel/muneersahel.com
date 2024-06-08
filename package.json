@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "prerender": "node src/scripts/prerender",
     "serve:ssr:muneersahel.com": "node dist/muneersahel.com/server/server.mjs"
   },
   "private": true,
