@@ -29,6 +29,15 @@
       "content": "/cotent/blogs/why-i-shifted-to-angular-ionic.md",
       "brief": "Why I shifted to Angular Ionic. I shared my experience of shifting to Angular Ionic and how it has helped me build better cross-platform applications. Learn more...",
       "tags": ["angular", "ionic"]
+    },
+    {
+      "num": "04",
+      "slug": "introduction-to-nodejs",
+      "title": "Introduction to Node.js",
+      "date": "2024-06-13",
+      "content": "/cotent/blogs/introduction-to-nodejs.md",
+      "brief": "Introduction to Node.js. Learn what Node.js is, how it works, and why it is so popular among developers. Get started with Node.js today!",
+      "tags": ["nodejs"]
     }
   ]
 }
