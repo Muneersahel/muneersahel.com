@@ -59,13 +59,13 @@
   }
   .blog {
     h1 {
-      @apply text-4xl xl:text-5xl leading-[1.2] xl:leading-[1.2] font-semibold mb-2;
-    }
-    h2 {
       @apply text-3xl xl:text-4xl leading-[1.2] xl:leading-[1.2] font-semibold mb-2;
     }
+    h2 {
+      @apply text-2xl xl:text-3xl leading-[1.2] xl:leading-[1.2] font-semibold mb-2;
+    }
     h3 {
-      @apply text-xl xl:text-2xl leading-[1.2] xl:leading-[1.2] font-semibold mb-2;
+      @apply text-lg xl:text-xl leading-[1.2] xl:leading-[1.2] font-semibold mb-2;
     }
     p {
       @apply mb-4 text-white/80;
@@ -96,6 +96,9 @@
     }
     li {
       @apply my-2;
+    }
+    li p {
+      @apply my-0 contents;
     }
     /* bordered table */
     table {

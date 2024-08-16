@@ -23,7 +23,7 @@ import { MarkdownComponent } from 'ngx-markdown';
   template: `
     @if (blog(); as blog) {
       <section class="pb-8">
-        <div class="container blog">
+        <div class="container blog max-w-5xl">
           <h1
             class="text-3xl font-extrabold sm:text-4xl mb-6 border-b border-white/60 pb-4"
           >

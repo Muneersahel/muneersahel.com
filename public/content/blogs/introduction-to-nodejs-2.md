@@ -1,5 +1,7 @@
 # **Node.js: Building Practical Applications (Lesson 2)**
 
+<br />
+
 ## **Objectives:**
 
 - Build a simple RESTful API using Node.js and Express.
