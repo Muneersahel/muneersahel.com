@@ -34,10 +34,19 @@
       "num": "04",
       "slug": "introduction-to-nodejs",
       "title": "Introduction to Node.js",
-      "date": "2024-06-13",
+      "date": "2024-08-15",
       "content": "/cotent/blogs/introduction-to-nodejs.md",
       "brief": "Introduction to Node.js. Learn what Node.js is, how it works, and why it is so popular among developers. Get started with Node.js today!",
       "tags": ["nodejs"]
+    },
+    {
+      "num": "05",
+      "slug": "introduction-to-nodejs-2",
+      "title": "Introduction to Node.js 2",
+      "date": "2024-08-15",
+      "content": "/cotent/blogs/introduction-to-nodejs-2.md",
+      "brief": "Introduction to Node.js. Learn what Node.js is, how it works, and why it is so popular among developers. Get started with Node.js today!",
+      "tags": ["nodejs", "middleware", "routes", "CRUD"]
     }
   ]
 }
