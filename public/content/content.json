@@ -43,10 +43,19 @@
       "num": "05",
       "slug": "introduction-to-nodejs-2",
       "title": "Introduction to Node.js 2",
-      "date": "2024-08-15",
+      "date": "2024-08-17",
       "content": "/cotent/blogs/introduction-to-nodejs-2.md",
       "brief": "Introduction to Node.js. Learn what Node.js is, how it works, and why it is so popular among developers. Get started with Node.js today!",
       "tags": ["nodejs", "middleware", "routes", "CRUD"]
+    },
+    {
+      "num": "06",
+      "slug": "connect-nodejs-to-mysql",
+      "title": "Connect Node.js to MySQL",
+      "date": "2024-08-21",
+      "content": "/cotent/blogs/connect-nodejs-to-mysql.md",
+      "brief": "Connect Node.js to MySQL. Learn how to connect Node.js to MySQL database and perform CRUD operations. Get started with Node.js and MySQL today!",
+      "tags": ["nodejs", "middleware", "routes", "CRUD", "mysql"]
     }
   ]
 }
