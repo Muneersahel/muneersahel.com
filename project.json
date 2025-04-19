@@ -1,0 +1,114 @@
+{
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "name": "profile",
+  "projectType": "application",
+  "generators": {},
+  "sourceRoot": "src",
+  "prefix": "app",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "options": {
+        "allowedCommonJsDependencies": [
+          "@grpc/grpc-js",
+          "@grpc/proto-loader"
+        ],
+        "outputPath": "dist/profile",
+        "index": "src/index.html",
+        "browser": "src/main.ts",
+        "polyfills": [
+          "zone.js"
+        ],
+        "tsConfig": "tsconfig.app.json",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "public"
+          },
+          "src/robots.txt"
+        ],
+        "styles": [
+          "node_modules/prismjs/themes/prism-tomorrow.css",
+          "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css",
+          "src/styles.css"
+        ],
+        "scripts": [
+          "node_modules/prismjs/prism.js",
+          "node_modules/prismjs/components/prism-css.min.js",
+          "node_modules/prismjs/components/prism-scss.min.js",
+          "node_modules/prismjs/components/prism-typescript.min.js",
+          "node_modules/prismjs/components/prism-javascript.min.js",
+          "node_modules/prismjs/components/prism-json.min.js",
+          "node_modules/prismjs/components/prism-markdown.min.js",
+          "node_modules/prismjs/components/prism-bash.min.js",
+          "node_modules/prismjs/components/prism-yaml.min.js",
+          "node_modules/prismjs/components/prism-docker.min.js",
+          "node_modules/clipboard/dist/clipboard.min.js"
+        ],
+        "server": "src/main.server.ts",
+        "ssr": {
+          "entry": "server.ts"
+        },
+        "outputMode": "server"
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "1mb",
+              "maximumError": "1.5MB"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kB",
+              "maximumError": "4kB"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "profile:build:production"
+        },
+        "development": {
+          "buildTarget": "profile:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n"
+    },
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "polyfills": [
+          "zone.js",
+          "zone.js/testing"
+        ],
+        "tsConfig": "tsconfig.spec.json",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "public"
+          }
+        ],
+        "styles": [
+          "src/styles.css"
+        ],
+        "scripts": []
+      }
+    }
+  }
+}
