@@ -1,13 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { lucideArrowDownRight } from '@ng-icons/lucide';
-import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
 import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
 
 @Component({
-    selector: 'app-services',
-    imports: [HlmIconComponent, HlmButtonDirective],
-    providers: [provideIcons({ lucideArrowDownRight })],
-    template: `
+  selector: 'app-services',
+  imports: [HlmIconComponent],
+  providers: [provideIcons({ lucideArrowDownRight })],
+  template: `
     <section class="min-h-[80dvh] flex flex-col justify-center py-12 xl:pt-0">
       <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-[60px] ">
@@ -42,7 +41,7 @@ import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
       </div>
     </section>
   `,
-    changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class ServicesComponent {
   services = [

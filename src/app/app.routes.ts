@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from '@/pages/home';
 import { LayoutComponent } from './layout/layout.component';
 
-export const routes: Routes = [
+export const appRoutes: Routes = [
   {
     path: '',
     component: LayoutComponent,

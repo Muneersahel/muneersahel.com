@@ -17,26 +17,24 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { lucideAlignRight } from '@ng-icons/lucide';
 import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
 import {
-  HlmSheetCloseDirective,
   HlmSheetComponent,
   HlmSheetContentComponent,
 } from '@spartan-ng/ui-sheet-helm';
 import { links } from '../constants';
 
 @Component({
-    selector: 'app-mobile-nav',
-    imports: [
-        HlmSheetContentComponent,
-        HlmSheetComponent,
-        HlmSheetCloseDirective,
-        BrnSheetTriggerDirective,
-        BrnSheetContentDirective,
-        HlmIconComponent,
-        RouterLink,
-        RouterLinkActive,
-    ],
-    providers: [provideIcons({ lucideAlignRight })],
-    template: `
+  selector: 'app-mobile-nav',
+  imports: [
+    HlmSheetContentComponent,
+    HlmSheetComponent,
+    BrnSheetTriggerDirective,
+    BrnSheetContentDirective,
+    HlmIconComponent,
+    RouterLink,
+    RouterLinkActive,
+  ],
+  providers: [provideIcons({ lucideAlignRight })],
+  template: `
     <hlm-sheet>
       <button brnSheetTrigger side="right">
         <hlm-icon
@@ -74,7 +72,7 @@ import { links } from '../constants';
       </hlm-sheet-content>
     </hlm-sheet>
   `,
-    changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class MobileNavComponent {
   links = links;

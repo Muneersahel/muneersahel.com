@@ -18,13 +18,13 @@ import {
   withViewTransitions,
 } from '@angular/router';
 import { provideMarkdown } from 'ngx-markdown';
-import { routes } from './app.routes';
+import { appRoutes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(
-      routes,
+      appRoutes,
       withViewTransitions(),
       withComponentInputBinding(),
       withPreloading(PreloadAllModules),

@@ -4,6 +4,5 @@ onlyBuiltDependencies:
   - esbuild
   - lmdb
   - msgpackr-extract
-  - nice-napi
   - nx
   - protobufjs

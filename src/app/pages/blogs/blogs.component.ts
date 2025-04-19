@@ -1,4 +1,4 @@
-import { AsyncPipe, JsonPipe } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { lucideArrowDownRight } from '@ng-icons/lucide';
@@ -6,10 +6,10 @@ import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
 import { BlogService } from './data';
 
 @Component({
-    selector: 'app-blogs',
-    imports: [AsyncPipe, JsonPipe, HlmIconComponent, RouterLink],
-    providers: [provideIcons({ lucideArrowDownRight })],
-    template: `
+  selector: 'app-blogs',
+  imports: [AsyncPipe, HlmIconComponent, RouterLink],
+  providers: [provideIcons({ lucideArrowDownRight })],
+  template: `
     <section class="min-h-[80dvh] flex flex-col justify-center py-12 xl:pt-0">
       <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-[60px]">
@@ -44,7 +44,7 @@ import { BlogService } from './data';
       </div>
     </section>
   `,
-    changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class BlogsComponent {
   private _blogService = inject(BlogService);
