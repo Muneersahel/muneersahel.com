@@ -7,24 +7,23 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "prerender": "node src/scripts/prerender",
     "serve:ssr:muneersahel.com": "node dist/muneersahel.com/server/server.mjs"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^18.0.0",
-    "@angular/cdk": "18.0.2",
-    "@angular/common": "^18.0.0",
-    "@angular/compiler": "^18.0.0",
-    "@angular/core": "^18.0.0",
-    "@angular/fire": "18.0.1",
-    "@angular/forms": "^18.0.0",
-    "@angular/material": "18.0.2",
-    "@angular/platform-browser": "^18.0.0",
-    "@angular/platform-browser-dynamic": "^18.0.0",
-    "@angular/platform-server": "^18.0.0",
-    "@angular/router": "^18.0.0",
-    "@angular/ssr": "^18.0.1",
+    "@angular/animations": "^19.2.7",
+    "@angular/cdk": "19.2.10",
+    "@angular/common": "^19.2.7",
+    "@angular/compiler": "^19.2.7",
+    "@angular/core": "^19.2.7",
+    "@angular/fire": "19.1.0",
+    "@angular/forms": "^19.2.7",
+    "@angular/material": "19.2.10",
+    "@angular/platform-browser": "^19.2.7",
+    "@angular/platform-browser-dynamic": "^19.2.7",
+    "@angular/platform-server": "^19.2.7",
+    "@angular/router": "^19.2.7",
+    "@angular/ssr": "^19.2.8",
     "@ng-icons/core": "^25.1.0",
     "@ng-icons/lucide": "^26.3.0",
     "@spartan-ng/ui-accordion-brain": "0.0.1-alpha.351",
@@ -61,12 +60,12 @@
     "prismjs": "^1.29.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.3"
+    "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^18.0.1",
-    "@angular/cli": "^18.0.1",
-    "@angular/compiler-cli": "^18.0.0",
+    "@angular-devkit/build-angular": "^19.2.8",
+    "@angular/cli": "^19.2.8",
+    "@angular/compiler-cli": "^19.2.7",
     "@spartan-ng/cli": "^0.0.1-alpha.357",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
@@ -85,7 +84,7 @@
     "tailwind-scrollbar": "^3.1.0",
     "tailwindcss": "^3.4.4",
     "tailwindcss-animate": "^1.0.6",
-    "typescript": "~5.4.2"
+    "typescript": "~5.8.3"
   },
   "packageManager": "pnpm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971"
 }

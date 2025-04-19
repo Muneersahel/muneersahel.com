@@ -17,10 +17,9 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { MarkdownComponent } from 'ngx-markdown';
 
 @Component({
-  selector: 'app-single-blog',
-  standalone: true,
-  imports: [MarkdownComponent, NgOptimizedImage, ReadingTimePipe, DatePipe],
-  template: `
+    selector: 'app-single-blog',
+    imports: [MarkdownComponent, NgOptimizedImage, ReadingTimePipe, DatePipe],
+    template: `
     @if (blog(); as blog) {
       <section class="pb-8">
         <div class="container blog max-w-5xl">
@@ -56,7 +55,7 @@ import { MarkdownComponent } from 'ngx-markdown';
       </section>
     }
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export default class SingleBlogComponent {
   private _blogService = inject(BlogService);

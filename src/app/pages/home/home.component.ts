@@ -8,17 +8,16 @@ import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
 import { StatsComponent } from './components';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [
-    HlmButtonDirective,
-    HlmIconComponent,
-    SocialsComponent,
-    NgOptimizedImage,
-    StatsComponent,
-  ],
-  providers: [provideIcons({ lucideDownload })],
-  template: `
+    selector: 'app-home',
+    imports: [
+        HlmButtonDirective,
+        HlmIconComponent,
+        SocialsComponent,
+        NgOptimizedImage,
+        StatsComponent,
+    ],
+    providers: [provideIcons({ lucideDownload })],
+    template: `
     <section class="h-full">
       <div class="container">
         <div
@@ -74,7 +73,7 @@ import { StatsComponent } from './components';
       <app-stats />
     </section>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomeComponent {
   private metaTags = inject(MetaTagsService);

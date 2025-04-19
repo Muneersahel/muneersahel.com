@@ -9,19 +9,18 @@ import {
 import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
 
 @Component({
-  selector: 'app-socials',
-  standalone: true,
-  imports: [HlmIconComponent],
-  providers: [
-    provideIcons({
-      lucideGithub,
-      lucideLinkedin,
-      lucideYoutube,
-      lucideTwitter,
-      lucideInstagram,
-    }),
-  ],
-  template: `
+    selector: 'app-socials',
+    imports: [HlmIconComponent],
+    providers: [
+        provideIcons({
+            lucideGithub,
+            lucideLinkedin,
+            lucideYoutube,
+            lucideTwitter,
+            lucideInstagram,
+        }),
+    ],
+    template: `
     <div [class]="containerStyles()">
       @for (item of socials; track item.name) {
         <a [href]="item.url" target="_blank" [class]="iconStyles()">
@@ -30,7 +29,7 @@ import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
       }
     </div>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SocialsComponent {
   containerStyles = input('flex items center gap-4');

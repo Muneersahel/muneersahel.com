@@ -6,21 +6,20 @@ import MobileNavComponent from './mobile-nav.component';
 import { NavComponent } from './nav.component';
 
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [
-    HlmButtonModule,
-    RouterLink,
-    RouterLinkActive,
-    NavComponent,
-    MobileNavComponent,
-  ],
-  styles: `
+    selector: 'app-header',
+    imports: [
+        HlmButtonModule,
+        RouterLink,
+        RouterLinkActive,
+        NavComponent,
+        MobileNavComponent,
+    ],
+    styles: `
     :host {
       @apply sticky top-0 z-10;
     }
   `,
-  template: `
+    template: `
     <header class="py-8 xl:py-12 text-white">
       <!-- logo -->
       <div class="container flex items-center justify-between">
@@ -45,6 +44,6 @@ import { NavComponent } from './nav.component';
       </div>
     </header>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {}

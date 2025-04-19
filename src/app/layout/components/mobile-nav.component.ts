@@ -24,20 +24,19 @@ import {
 import { links } from '../constants';
 
 @Component({
-  selector: 'app-mobile-nav',
-  standalone: true,
-  imports: [
-    HlmSheetContentComponent,
-    HlmSheetComponent,
-    HlmSheetCloseDirective,
-    BrnSheetTriggerDirective,
-    BrnSheetContentDirective,
-    HlmIconComponent,
-    RouterLink,
-    RouterLinkActive,
-  ],
-  providers: [provideIcons({ lucideAlignRight })],
-  template: `
+    selector: 'app-mobile-nav',
+    imports: [
+        HlmSheetContentComponent,
+        HlmSheetComponent,
+        HlmSheetCloseDirective,
+        BrnSheetTriggerDirective,
+        BrnSheetContentDirective,
+        HlmIconComponent,
+        RouterLink,
+        RouterLinkActive,
+    ],
+    providers: [provideIcons({ lucideAlignRight })],
+    template: `
     <hlm-sheet>
       <button brnSheetTrigger side="right">
         <hlm-icon
@@ -75,7 +74,7 @@ import { links } from '../constants';
       </hlm-sheet-content>
     </hlm-sheet>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export default class MobileNavComponent {
   links = links;
