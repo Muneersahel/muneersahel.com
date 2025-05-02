@@ -1,7 +1,7 @@
 onlyBuiltDependencies:
-  - '@firebase/util'
-  - '@parcel/watcher'
-  - '@swc/core'
+  - "@firebase/util"
+  - "@parcel/watcher"
+  - "@swc/core"
   - esbuild
   - lmdb
   - msgpackr-extract

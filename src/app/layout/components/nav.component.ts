@@ -1,12 +1,12 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { RouterLink, RouterLinkActive } from "@angular/router";
 
-import { links } from '../constants';
+import { links } from "../constants";
 
 @Component({
-    selector: 'app-nav',
-    imports: [RouterLink, RouterLinkActive],
-    template: `
+  selector: "app-nav",
+  imports: [RouterLink, RouterLinkActive],
+  template: `
     <nav>
       <ul class="flex gap-8">
         @for (link of links; track link.name) {
@@ -24,7 +24,7 @@ import { links } from '../constants';
       </ul>
     </nav>
   `,
-    changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavComponent {
   links = links;

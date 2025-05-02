@@ -1,47 +1,47 @@
-import { Routes } from '@angular/router';
+import { Routes } from "@angular/router";
 
-import { HomeComponent } from '@/pages/home';
-import { LayoutComponent } from './layout/layout.component';
+import { HomeComponent } from "@/pages/home";
+import { LayoutComponent } from "./layout/layout.component";
 
 export const appRoutes: Routes = [
   {
-    path: '',
+    path: "",
     component: LayoutComponent,
     children: [
-      { path: '', component: HomeComponent },
+      { path: "", component: HomeComponent },
       {
-        path: 'services',
-        loadComponent: () => import('@/pages/services/services.component'),
+        path: "services",
+        loadComponent: () => import("@/pages/services/services.component"),
       },
       {
-        path: 'resume',
-        loadComponent: () => import('@/pages/resume/resume.component'),
+        path: "resume",
+        loadComponent: () => import("@/pages/resume/resume.component"),
       },
       {
-        path: 'works',
-        loadComponent: () => import('@/pages/works/works.component'),
+        path: "works",
+        loadComponent: () => import("@/pages/works/works.component"),
       },
       {
-        path: 'contact',
-        loadComponent: () => import('./pages/contact/contact.component'),
+        path: "contact",
+        loadComponent: () => import("./pages/contact/contact.component"),
       },
       {
-        path: 'blogs',
+        path: "blogs",
         children: [
           {
-            path: '',
-            loadComponent: () => import('./pages/blogs/blogs.component'),
+            path: "",
+            loadComponent: () => import("./pages/blogs/blogs.component"),
           },
           {
-            path: ':slug',
+            path: ":slug",
             loadComponent: () =>
               import(
-                './pages/blogs/components/single-blog/single-blog.component'
+                "./pages/blogs/components/single-blog/single-blog.component"
               ),
           },
         ],
       },
     ],
   },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
+  { path: "**", redirectTo: "", pathMatch: "full" },
 ];

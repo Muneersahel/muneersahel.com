@@ -7,12 +7,12 @@ import {
   forwardRef,
   input,
   model,
-} from '@angular/core';
-import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { BrnCheckboxComponent } from '@spartan-ng/ui-checkbox-brain';
-import { hlm } from '@spartan-ng/ui-core';
-import type { ClassValue } from 'clsx';
-import { HlmCheckboxCheckIconComponent } from './hlm-checkbox-checkicon.component';
+} from "@angular/core";
+import { NG_VALUE_ACCESSOR } from "@angular/forms";
+import { BrnCheckboxComponent } from "@spartan-ng/ui-checkbox-brain";
+import { hlm } from "@spartan-ng/ui-core";
+import type { ClassValue } from "clsx";
+import { HlmCheckboxCheckIconComponent } from "./hlm-checkbox-checkicon.component";
 
 export const HLM_CHECKBOX_VALUE_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
@@ -21,7 +21,7 @@ export const HLM_CHECKBOX_VALUE_ACCESSOR = {
 };
 
 @Component({
-  selector: 'hlm-checkbox',
+  selector: "hlm-checkbox",
   standalone: true,
   imports: [BrnCheckboxComponent, HlmCheckboxCheckIconComponent],
   template: `
@@ -45,22 +45,22 @@ export const HLM_CHECKBOX_VALUE_ACCESSOR = {
     </brn-checkbox>
   `,
   host: {
-    class: 'contents',
-    '[attr.id]': 'null',
-    '[attr.aria-label]': 'null',
-    '[attr.aria-labelledby]': 'null',
-    '[attr.aria-describedby]': 'null',
+    class: "contents",
+    "[attr.id]": "null",
+    "[attr.aria-label]": "null",
+    "[attr.aria-labelledby]": "null",
+    "[attr.aria-describedby]": "null",
   },
   providers: [HLM_CHECKBOX_VALUE_ACCESSOR],
 })
 export class HlmCheckboxComponent {
-  public readonly userClass = input<ClassValue>('', { alias: 'class' });
+  public readonly userClass = input<ClassValue>("", { alias: "class" });
   protected _computedClass = computed(() =>
     hlm(
-      'group inline-flex border border-foreground shrink-0 cursor-pointer items-center rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring' +
-        ' focus-visible:ring-offset-2 focus-visible:ring-offset-background data-[state=checked]:text-background data-[state=checked]:bg-primary data-[state=unchecked]:bg-background',
+      "group inline-flex border border-foreground shrink-0 cursor-pointer items-center rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" +
+        " focus-visible:ring-offset-2 focus-visible:ring-offset-background data-[state=checked]:text-background data-[state=checked]:bg-primary data-[state=unchecked]:bg-background",
       this.userClass(),
-      this.disabled() ? 'cursor-not-allowed opacity-50' : '',
+      this.disabled() ? "cursor-not-allowed opacity-50" : "",
     ),
   );
 
@@ -69,28 +69,28 @@ export class HlmCheckboxComponent {
 
   /** Used to set the aria-label attribute on the underlying brn element. */
   public readonly ariaLabel = input<string | null>(null, {
-    alias: 'aria-label',
+    alias: "aria-label",
   });
 
   /** Used to set the aria-labelledby attribute on the underlying brn element. */
   public readonly ariaLabelledby = input<string | null>(null, {
-    alias: 'aria-labelledby',
+    alias: "aria-labelledby",
   });
 
   /** Used to set the aria-describedby attribute on the underlying brn element. */
   public readonly ariaDescribedby = input<string | null>(null, {
-    alias: 'aria-describedby',
+    alias: "aria-describedby",
   });
 
-  public readonly checked = model<boolean | 'indeterminate'>(false);
+  public readonly checked = model<boolean | "indeterminate">(false);
 
   public readonly name = input<string | null>(null);
   public readonly disabled = input(false, { transform: booleanAttribute });
   public readonly required = input(false, { transform: booleanAttribute });
 
   // icon inputs
-  public readonly checkIconName = input<string>('lucideCheck');
-  public readonly checkIconClass = input<string>('');
+  public readonly checkIconName = input<string>("lucideCheck");
+  public readonly checkIconClass = input<string>("");
 
   @Output()
   public changed = new EventEmitter<boolean>();
@@ -100,7 +100,7 @@ export class HlmCheckboxComponent {
 
     const previousChecked = this.checked();
     this.checked.set(
-      previousChecked === 'indeterminate' ? true : !previousChecked,
+      previousChecked === "indeterminate" ? true : !previousChecked,
     );
     this._onChange(!previousChecked);
     this.changed.emit(!previousChecked);

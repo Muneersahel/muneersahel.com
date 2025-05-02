@@ -1,11 +1,11 @@
-import { CountUpDirective } from '@/shared/directives';
-import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { CountUpDirective } from "@/shared/directives";
+import { NgClass } from "@angular/common";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 
 @Component({
-    selector: 'app-stats',
-    imports: [CountUpDirective, NgClass],
-    template: `
+  selector: "app-stats",
+  imports: [CountUpDirective, NgClass],
+  template: `
     <section class="pt-4 pb-12 xl:pt-0 xl:pb-0">
       <div class="container">
         <div class="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
@@ -35,13 +35,13 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
       </div>
     </section>
   `,
-    changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class StatsComponent {
   stats = [
-    { num: 12, label: 'Years of experience' },
-    { num: 5, label: 'Projects completed' },
-    { num: 3, label: 'Technology mastered' },
-    { num: 5, label: 'Code commits' },
+    { num: 12, label: "Years of experience" },
+    { num: 5, label: "Projects completed" },
+    { num: 3, label: "Technology mastered" },
+    { num: 5, label: "Code commits" },
   ];
 }

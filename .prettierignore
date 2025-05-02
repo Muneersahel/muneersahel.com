@@ -4,3 +4,7 @@
 /.nx/cache
 /.nx/workspace-data
 .angular
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+node_modules/

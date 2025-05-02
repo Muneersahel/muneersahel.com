@@ -1,14 +1,14 @@
-import { HttpClient, provideHttpClient, withFetch } from '@angular/common/http';
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import { HttpClient, provideHttpClient, withFetch } from "@angular/common/http";
+import { ApplicationConfig, provideZoneChangeDetection } from "@angular/core";
 import {
   ScreenTrackingService,
   getAnalytics,
   provideAnalytics,
-} from '@angular/fire/analytics';
-import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
-import { getFirestore, provideFirestore } from '@angular/fire/firestore';
-import { provideClientHydration } from '@angular/platform-browser';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+} from "@angular/fire/analytics";
+import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
+import { getFirestore, provideFirestore } from "@angular/fire/firestore";
+import { provideClientHydration } from "@angular/platform-browser";
+import { provideAnimationsAsync } from "@angular/platform-browser/animations/async";
 import {
   PreloadAllModules,
   provideRouter,
@@ -16,9 +16,9 @@ import {
   withInMemoryScrolling,
   withPreloading,
   withViewTransitions,
-} from '@angular/router';
-import { provideMarkdown } from 'ngx-markdown';
-import { appRoutes } from './app.routes';
+} from "@angular/router";
+import { provideMarkdown } from "ngx-markdown";
+import { appRoutes } from "./app.routes";
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -29,8 +29,8 @@ export const appConfig: ApplicationConfig = {
       withComponentInputBinding(),
       withPreloading(PreloadAllModules),
       withInMemoryScrolling({
-        anchorScrolling: 'enabled',
-        scrollPositionRestoration: 'enabled',
+        anchorScrolling: "enabled",
+        scrollPositionRestoration: "enabled",
       }),
     ),
     provideClientHydration(),
@@ -39,14 +39,14 @@ export const appConfig: ApplicationConfig = {
     provideMarkdown({ loader: HttpClient }),
     provideFirebaseApp(() =>
       initializeApp({
-        projectId: 'muneersahel',
-        appId: '1:1049500314015:web:b0f618cd743a58a9b3b5aa',
-        storageBucket: 'muneersahel.appspot.com',
+        projectId: "muneersahel",
+        appId: "1:1049500314015:web:b0f618cd743a58a9b3b5aa",
+        storageBucket: "muneersahel.appspot.com",
         // locationId: 'us-central',
-        apiKey: 'AIzaSyAsjcjQCJvJuJcZPt_5r0M5OLX5ZGP8te8',
-        authDomain: 'muneersahel.firebaseapp.com',
-        messagingSenderId: '1049500314015',
-        measurementId: 'G-G2BMEHD10R',
+        apiKey: "AIzaSyAsjcjQCJvJuJcZPt_5r0M5OLX5ZGP8te8",
+        authDomain: "muneersahel.firebaseapp.com",
+        messagingSenderId: "1049500314015",
+        measurementId: "G-G2BMEHD10R",
       }),
     ),
     provideAnalytics(() => getAnalytics()),

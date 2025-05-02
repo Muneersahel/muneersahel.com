@@ -1,12 +1,12 @@
-import { AsyncPipe } from '@angular/common';
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { lucideArrowDownRight } from '@ng-icons/lucide';
-import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
-import { BlogService } from './data';
+import { AsyncPipe } from "@angular/common";
+import { ChangeDetectionStrategy, Component, inject } from "@angular/core";
+import { RouterLink } from "@angular/router";
+import { lucideArrowDownRight } from "@ng-icons/lucide";
+import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
+import { BlogService } from "./data";
 
 @Component({
-  selector: 'app-blogs',
+  selector: "app-blogs",
   imports: [AsyncPipe, HlmIconComponent, RouterLink],
   providers: [provideIcons({ lucideArrowDownRight })],
   template: `

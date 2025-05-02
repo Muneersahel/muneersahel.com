@@ -1,8 +1,8 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 import {
   BrnSheetContentDirective,
   BrnSheetTriggerDirective,
-} from '@spartan-ng/ui-sheet-brain';
+} from "@spartan-ng/ui-sheet-brain";
 
 // import {
 //   HlmSheetComponent,
@@ -13,17 +13,17 @@ import {
 //   HlmSheetTitleDirective,
 // } from '@ui/sheet';
 
-import { RouterLink, RouterLinkActive } from '@angular/router';
-import { lucideAlignRight } from '@ng-icons/lucide';
-import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
+import { RouterLink, RouterLinkActive } from "@angular/router";
+import { lucideAlignRight } from "@ng-icons/lucide";
+import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
 import {
   HlmSheetComponent,
   HlmSheetContentComponent,
-} from '@spartan-ng/ui-sheet-helm';
-import { links } from '../constants';
+} from "@spartan-ng/ui-sheet-helm";
+import { links } from "../constants";
 
 @Component({
-  selector: 'app-mobile-nav',
+  selector: "app-mobile-nav",
   imports: [
     HlmSheetContentComponent,
     HlmSheetComponent,

@@ -1,0 +1,23 @@
+## Angular instructions
+
+- Use the inject method istead of a constructor for dependency injection.
+- Make use of signals where possible.
+- Always use the Control Flow instead of ngIf and ngFor.
+- Use signal inputs and outputs instead of @Input and @Output.
+- Don't add standalone: true to the decorators, this is enabled by default.
+- Import rxjs operators from 'rxjs' instead of 'rxjs/operators'.
+- Prefer template driven forms over reactive forms.
+- Use the async pipe instead of subscribing to observables in the component.
+- Use the latest Angular features and best practices, currently Angular 19.
+- Use nx CLI for project setup and management.
+- Follow the Angular style guide for consistent code structure.
+- Use TypeScript for type safety and better tooling support.
+- Make use of Angular standalone components.
+- Angular component should have a maximum of 200 lines of code.
+- Use **services** for http requests and **@ngrx/signals** store for data management.
+- Use **RxJS** for handling asynchronous operations and event streams.
+- Use **tailwind** CSS for styling.
+- Use **Spartan Ng** (https://www.spartan.ng) UI components.
+- Provide more modern UI components.
+- Ensure accessibility standards are met for all UI components.
+- Use SFC (Single File Components) for better organization and encapsulation.

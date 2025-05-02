@@ -1,11 +1,11 @@
-import { inject } from '@angular/core';
-import { RenderMode, ServerRoute } from '@angular/ssr';
-import { firstValueFrom } from 'rxjs';
-import { BlogService } from './pages/blogs/data';
+import { inject } from "@angular/core";
+import { RenderMode, ServerRoute } from "@angular/ssr";
+import { firstValueFrom } from "rxjs";
+import { BlogService } from "./pages/blogs/data";
 
 export const serverRoutes: ServerRoute[] = [
   {
-    path: 'blogs/:slug',
+    path: "blogs/:slug",
     renderMode: RenderMode.Prerender,
     async getPrerenderParams() {
       const blogService = inject(BlogService);
@@ -14,7 +14,7 @@ export const serverRoutes: ServerRoute[] = [
     },
   },
   {
-    path: '**',
+    path: "**",
     renderMode: RenderMode.Prerender,
   },
 ];

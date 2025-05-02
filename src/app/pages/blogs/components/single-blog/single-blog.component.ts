@@ -1,7 +1,7 @@
-import { Blog, BlogService } from '@/pages/blogs/data';
-import { ReadingTimePipe } from '@/shared/pipes';
-import { MetaTagsService } from '@/shared/services';
-import { DatePipe, NgOptimizedImage } from '@angular/common';
+import { Blog, BlogService } from "@/pages/blogs/data";
+import { ReadingTimePipe } from "@/shared/pipes";
+import { MetaTagsService } from "@/shared/services";
+import { DatePipe, NgOptimizedImage } from "@angular/common";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -12,14 +12,14 @@ import {
   input,
   signal,
   untracked,
-} from '@angular/core';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { MarkdownComponent } from 'ngx-markdown';
+} from "@angular/core";
+import { takeUntilDestroyed } from "@angular/core/rxjs-interop";
+import { MarkdownComponent } from "ngx-markdown";
 
 @Component({
-    selector: 'app-single-blog',
-    imports: [MarkdownComponent, NgOptimizedImage, ReadingTimePipe, DatePipe],
-    template: `
+  selector: "app-single-blog",
+  imports: [MarkdownComponent, NgOptimizedImage, ReadingTimePipe, DatePipe],
+  template: `
     @if (blog(); as blog) {
       <section class="pb-8">
         <div class="container blog max-w-5xl">
@@ -55,7 +55,7 @@ import { MarkdownComponent } from 'ngx-markdown';
       </section>
     }
   `,
-    changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class SingleBlogComponent {
   private _blogService = inject(BlogService);
@@ -93,7 +93,7 @@ export default class SingleBlogComponent {
                 description: blog.brief,
                 image: blog.coverImage,
                 url: `${this._metaTags.baseUrl}/blogs/${slug}`,
-                keywords: blog.tags.join(', '),
+                keywords: blog.tags.join(", "),
               });
             }
           });

@@ -1,12 +1,12 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { HlmButtonModule } from '@spartan-ng/ui-button-helm';
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { RouterLink } from "@angular/router";
+import { HlmButtonModule } from "@spartan-ng/ui-button-helm";
 
-import MobileNavComponent from './mobile-nav.component';
-import { NavComponent } from './nav.component';
+import MobileNavComponent from "./mobile-nav.component";
+import { NavComponent } from "./nav.component";
 
 @Component({
-  selector: 'app-header',
+  selector: "app-header",
   imports: [HlmButtonModule, RouterLink, NavComponent, MobileNavComponent],
   styles: `
     :host {

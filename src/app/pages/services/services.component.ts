@@ -1,9 +1,9 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { lucideArrowDownRight } from '@ng-icons/lucide';
-import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { lucideArrowDownRight } from "@ng-icons/lucide";
+import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
 
 @Component({
-  selector: 'app-services',
+  selector: "app-services",
   imports: [HlmIconComponent],
   providers: [provideIcons({ lucideArrowDownRight })],
   template: `
@@ -46,39 +46,39 @@ import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
 export default class ServicesComponent {
   services = [
     {
-      num: '01',
-      title: 'Web Development',
+      num: "01",
+      title: "Web Development",
       description:
-        'Crafting beautiful and functional websites that are easy to use and navigate.',
-      href: '/services/web-development',
+        "Crafting beautiful and functional websites that are easy to use and navigate.",
+      href: "/services/web-development",
     },
     {
-      num: '02',
-      title: 'Mobile Applications',
+      num: "02",
+      title: "Mobile Applications",
       description:
-        'Building mobile apps that are fast, secure, and easy to use.',
-      href: '/services/mobile-applications',
+        "Building mobile apps that are fast, secure, and easy to use.",
+      href: "/services/mobile-applications",
     },
     {
-      num: '03',
-      title: 'UI/UX Design',
+      num: "03",
+      title: "UI/UX Design",
       description:
-        'Creating user-friendly interfaces that are easy to navigate and use.',
-      href: '/services/ui-ux-design',
+        "Creating user-friendly interfaces that are easy to navigate and use.",
+      href: "/services/ui-ux-design",
     },
     {
-      num: '04',
-      title: 'Technical Writing',
+      num: "04",
+      title: "Technical Writing",
       description:
-        'Creating technical documentation that is clear, concise, and easy to understand.',
-      href: '/services/technical-writing',
+        "Creating technical documentation that is clear, concise, and easy to understand.",
+      href: "/services/technical-writing",
     },
     {
-      num: '05',
-      title: 'E-Commerce Solutions',
+      num: "05",
+      title: "E-Commerce Solutions",
       description:
-        'Building e-commerce websites that are secure, fast, and easy to use.',
-      href: '/services/e-commerce-solutions',
+        "Building e-commerce websites that are secure, fast, and easy to use.",
+      href: "/services/e-commerce-solutions",
     },
   ];
 }
