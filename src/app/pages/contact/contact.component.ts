@@ -73,7 +73,7 @@ import { HlmLabelDirective } from "@spartan-ng/ui-label-helm";
                   </div>
                   <div>
                     <h3 class="font-medium mb-1">Location</h3>
-                    <p class="text-white/60">Gaza, Palestine</p>
+                    <p class="text-white/60">Dar es Salaam, Tanzania</p>
                   </div>
                 </div>
 
@@ -101,10 +101,11 @@ import { HlmLabelDirective } from "@spartan-ng/ui-label-helm";
                   <div>
                     <h3 class="font-medium mb-1">Phone</h3>
                     <a
-                      href="tel:+970599123456"
+                      href="tel:+255780555445"
                       class="text-white/60 hover:text-accent transition-colors"
-                      >+970 599 123 456</a
                     >
+                      +255 780 555 445
+                    </a>
                   </div>
                 </div>
               </div>

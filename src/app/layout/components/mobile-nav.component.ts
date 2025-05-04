@@ -36,7 +36,7 @@ import { links } from "../constants";
   providers: [provideIcons({ lucideAlignRight })],
   template: `
     <hlm-sheet>
-      <button brnSheetTrigger side="right">
+      <button brnSheetTrigger side="right" aria-label="Open menu">
         <hlm-icon
           name="lucideAlignRight"
           size="lg"

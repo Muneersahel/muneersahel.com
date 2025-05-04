@@ -23,7 +23,12 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
   template: `
     <div [class]="containerStyles()">
       @for (item of socials; track item.name) {
-        <a [href]="item.url" target="_blank" [class]="iconStyles()">
+        <a
+          [href]="item.url"
+          target="_blank"
+          [class]="iconStyles()"
+          [attr.aria-label]="item.name"
+        >
           <hlm-icon [name]="item.icon" class="h-5 w-5"></hlm-icon>
         </a>
       }
