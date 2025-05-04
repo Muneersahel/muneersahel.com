@@ -39,27 +39,27 @@ export class SocialsComponent {
     {
       name: "Github",
       icon: "lucideGithub",
-      url: "",
+      url: "https://github.com/Muneersahel",
     },
     {
       name: "Linkedin",
       icon: "lucideLinkedin",
-      url: "",
+      url: "https://linkedin.com/in/munir-said-847347184",
     },
     {
       name: "Youtube",
       icon: "lucideYoutube",
-      url: "",
+      url: "https://www.youtube.com/@muneersahel",
     },
     {
       name: "Twitter",
       icon: "lucideTwitter",
-      url: "",
+      url: "https://x.com/Muneersahel",
     },
     {
       name: "Instagram",
       icon: "lucideInstagram",
-      url: "",
+      url: "https://instagram.com/muneersahel",
     },
   ];
 }

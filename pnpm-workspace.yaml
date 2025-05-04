@@ -1,12 +1,12 @@
+packages:
+  - libs/*
 onlyBuiltDependencies:
-  - "@firebase/util"
-  - "@parcel/watcher"
-  - "@swc/core"
+  - '@firebase/util'
+  - '@parcel/watcher'
+  - '@swc/core'
+  - core-js
   - esbuild
   - lmdb
   - msgpackr-extract
   - nx
   - protobufjs
-
-packages:
-  - libs/*

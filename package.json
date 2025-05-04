@@ -54,8 +54,11 @@
     "class-variance-authority": "^0.7.1",
     "clipboard": "^2.0.11",
     "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
     "embla-carousel-angular": "^19.0.0",
     "express": "^4.21.2",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.1",
     "marked": "^15.0.8",
     "ngx-markdown": "^19.1.1",
     "ngx-scrollbar": "^18.0.0",
@@ -116,5 +119,5 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.19.0"
   },
-  "packageManager": "pnpm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971"
+  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
 }

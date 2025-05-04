@@ -18,6 +18,7 @@
 - Use **RxJS** for handling asynchronous operations and event streams.
 - Use **tailwind** CSS for styling.
 - Use **Spartan Ng** (https://www.spartan.ng) UI components.
+- The website is in darkmode
 - Provide more modern UI components.
 - Ensure accessibility standards are met for all UI components.
 - Use SFC (Single File Components) for better organization and encapsulation.

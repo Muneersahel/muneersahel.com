@@ -1,4 +1,4 @@
-import { MetaTagsService } from "@/shared/services";
+import { CvService, MetaTagsService } from "@/shared/services";
 import { ChangeDetectionStrategy, Component, inject } from "@angular/core";
 import {
   lucideArrowRight,
@@ -26,6 +26,15 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
       lucideArrowRight,
     }),
   ],
+  styles: `
+    li::marker {
+      @apply text-accent font-semibold;
+      content: "[" counter(list-item) "]" " ";
+      &:before {
+        content: "• ";
+      }
+    }
+  `,
   template: `
     <section class="py-12 min-h-[80dvh]">
       <div class="container ">
@@ -47,6 +56,9 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
               variant="outline"
               size="lg"
               class="uppercase flex items-center gap-2"
+              [href]="cvService.downloadUrl()"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Download CV
               <hlm-icon name="lucideDownload" class="h-5 w-5"></hlm-icon>
@@ -234,71 +246,91 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
 })
 export default class ResumeComponent {
   private metaTags = inject(MetaTagsService);
-
-  constructor() {
-    this.metaTags.updateMetaTags({
-      title: "Resume | Munir Issa",
-      description:
-        "Professional resume of Munir Issa, showcasing work experience, education, and skills.",
-    });
-  }
+  protected cvService = inject(CvService);
 
   workExperience = [
     {
-      position: "Senior Software Engineer",
-      company: "Tech Solutions Inc.",
-      location: "Remote",
-      period: "2021 - Present",
+      position: "CTO & Lead Engineer",
+      company: "Medikea Healthcare App.",
+      location: "Dar es Salaam, Tanzania",
+      period: "2023 - Present",
       description:
-        "Lead developer for enterprise web applications using Angular and Node.js.",
+        "Lead the development of a healthcare application, overseeing a team of 8 developers.",
       achievements: [
-        "Architected and implemented a scalable front-end solution that improved load times by 40%",
-        "Mentored junior developers and established coding standards across the team",
-        "Implemented CI/CD pipeline, reducing deployment time by 60%",
+        "Designed and implemented a microservices architecture for the backend, improving scalability and maintainability",
+        "Integrated third-party APIs for real-time health monitoring and telemedicine features",
+        "Conducted code reviews and established best practices for the development team",
+        "Implemented security measures to protect sensitive health data, ensuring compliance with HIPAA regulations",
+        "Led the migration of the application to a cloud-based infrastructure, reducing costs by 30%",
+        "Developed a comprehensive testing strategy, including unit tests, integration tests, and end-to-end tests",
+        "Participated in Agile ceremonies, including sprint planning, daily stand-ups, and retrospectives",
+        "Authomated the deployment process using Docker, reducing deployment time by 40%",
+        "Provided technical guidance and mentorship to junior developers, fostering a culture of continuous learning",
+        "Contributed to the open-source community by sharing knowledge and best practices through blog posts and talks",
+        "Implemented performance monitoring and logging solutions to identify and resolve issues proactively",
+        "Collaborated with cross-functional teams to gather requirements and deliver high-quality software solutions",
+        "Developed and maintained technical documentation for the application architecture, APIs, and deployment processes",
+        "Conducted training sessions for the development team on new technologies and best practices",
+      ],
+    },
+    {
+      position: "Frontend Engineer",
+      company: "Medikea Healthcare App.",
+      location: "Dar es Salaam, Tanzania",
+      period: "2022 - Present",
+      description:
+        "Developed and maintained the frontend of a healthcare application using Angular.",
+      achievements: [
+        "Conducted code reviews and provided constructive feedback to team members",
+        "Optimized application performance by implementing lazy loading and code splitting techniques",
+        "Participated in Agile ceremonies, including sprint planning, daily stand-ups, and retrospectives",
+        "Developed and maintained technical documentation for the front-end architecture and components",
+        "Structured the application using a modular approach, improving maintainability and scalability",
+        "Implemented state management using signalStore from NgRx, improving data flow and reducing complexity",
+        "Mastered the use of RxJS for handling asynchronous data streams and managing side effects",
+        "Mastered the use of Angular Material for building responsive and accessible user interfaces",
+        "Implemented unit tests and end-to-end tests using Jasmine and Protractor, ensuring high code quality",
       ],
     },
     {
       position: "Full Stack Developer",
-      company: "Digital Innovations",
-      location: "New York, USA",
-      period: "2018 - 2021",
+      company: "Zanzibar Multiplex Company",
+      location: "Zanzibar, Tanzania",
+      period: "July 2021 - Oct 2021",
       description:
-        "Developed responsive web applications using modern JavaScript frameworks.",
+        "Developed a web application for the company using Angular and Laravel.",
       achievements: [
-        "Built RESTful APIs and microservices using Node.js and Express",
-        "Implemented authentication and authorization using JWT",
-        "Collaborated with UI/UX designers to create intuitive user interfaces",
+        "Designed and implemented a RESTful API using Laravel for the backend",
+        "Developed a responsive frontend using Angular, ensuring cross-browser compatibility",
+        "Implemented authentication and authorization features to secure sensitive data",
+        "Conducted performance testing and optimization to ensure fast loading times",
+        "Learned about multiplexing and its impact on the journalism and film industry",
       ],
     },
     {
-      position: "Frontend Developer",
-      company: "WebSphere Solutions",
-      location: "Berlin, Germany",
-      period: "2016 - 2018",
-      description: "Created responsive user interfaces for client projects.",
+      position: "Student Coordinator",
+      company: "University of Dar es Salaam",
+      location: "Dar es Salaam, Tanzania",
+      period: "2020 - 2021",
+      description:
+        "Coordinated student activities and events for IET(Institute of Engineers Tanzania) at University of Dar es Salaam.",
       achievements: [
-        "Developed mobile-first web applications using Angular",
-        "Collaborated with a team of 5 developers to deliver projects on time",
-        "Reduced page load times by 35% through optimization techniques",
+        "Organized workshops and seminars on various engineering topics",
+        "Collaborated with faculty and industry professionals to provide students with networking opportunities",
+        "Led a team of volunteers to plan and execute events, ensuring smooth operations",
+        "Developed marketing materials and promoted events through social media and campus channels",
+        "Gathered feedback from participants to improve future events and activities",
       ],
     },
   ];
 
   education = [
     {
-      degree: "Master of Science in Computer Science",
-      institution: "Stanford University",
-      location: "Stanford, CA",
-      period: "2014 - 2016",
-      description:
-        "Specialized in Software Engineering and Distributed Systems",
-    },
-    {
-      degree: "Bachelor of Engineering in Telecommunications",
-      institution: "Technical University",
-      location: "Munich, Germany",
-      period: "2010 - 2014",
-      description: "Graduated with honors, GPA 3.8/4.0",
+      degree: "Bachelor of Science in Telecommunication Engineering",
+      institution: "University of Dar es Salaam",
+      location: "Dar es Salaam, Tanzania",
+      period: "2018 - 2022",
+      description: "Graduated with, GPA 4.0/5.0",
     },
   ];
 
@@ -314,6 +346,15 @@ export default class ResumeComponent {
         "SCSS",
         "RxJS",
         "Redux",
+        "NgRx",
+        "Tailwind CSS",
+        "Material Design",
+        "Bootstrap",
+        "Responsive Design",
+        "RESTful APIs",
+        "WebSockets",
+        "Progressive Web Apps (PWAs)",
+        "Single Page Applications (SPAs)",
         "Jest",
       ],
     },
@@ -326,7 +367,9 @@ export default class ResumeComponent {
         "MongoDB",
         "PostgreSQL",
         "RESTful APIs",
-        "GraphQL",
+        "Django",
+        "FastAPI",
+        "Swagger",
       ],
     },
     {
@@ -340,6 +383,8 @@ export default class ResumeComponent {
         "Firebase",
         "Jira",
         "Figma",
+        "Postman",
+        "Bruno",
       ],
     },
   ];
@@ -366,17 +411,17 @@ export default class ResumeComponent {
     {
       language: "English",
       proficiency: "Fluent",
-      level: 95,
+      level: 90,
     },
     {
-      language: "German",
-      proficiency: "Professional",
-      level: 80,
+      language: "Swahili",
+      proficiency: "Native",
+      level: 100,
     },
     {
       language: "Arabic",
-      proficiency: "Native",
-      level: 100,
+      proficiency: "Basic",
+      level: 20,
     },
   ];
 }

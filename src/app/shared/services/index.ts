@@ -1,1 +1,2 @@
-export * from './meta-tags.service';
+export * from "./cv-service";
+export * from "./meta-tags.service";
