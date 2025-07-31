@@ -1,10 +1,10 @@
 {
-  "$schema": "node_modules/nx/schemas/project-schema.json",
   "name": "profile",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "generators": {},
   "sourceRoot": "src",
   "prefix": "app",
+  "generators": {},
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
@@ -80,7 +80,8 @@
           "buildTarget": "profile:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "continuous": true
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n"
