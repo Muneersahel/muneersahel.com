@@ -41,6 +41,11 @@ export const appRoutes: Routes = [
           },
         ],
       },
+      {
+        path: "login",
+        loadComponent: () =>
+          import("./pages/login/login.component").then((m) => m.LoginComponent),
+      },
     ],
   },
   { path: "**", redirectTo: "", pathMatch: "full" },

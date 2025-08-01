@@ -23,16 +23,18 @@ import { NavComponent } from "./nav.component";
           </a>
         </h1>
 
-        <!-- desktop nav and hire me button -->
+        <!-- desktop nav, login and hire me button -->
         <div class="hidden xl:flex items-center gap-8">
           <app-nav />
-          <a routerLink="/contact" hlmBtn color="accent" class="ml-4">
+          <a routerLink="/login" hlmBtn color="primary" class="ml-4"> Login </a>
+          <a routerLink="/contact" hlmBtn color="accent" class="ml-2">
             Hire Me
           </a>
         </div>
 
-        <!-- mobile nav -->
-        <div class="xl:hidden">
+        <!-- mobile nav and login button -->
+        <div class="xl:hidden flex items-center gap-2">
+          <a routerLink="/login" hlmBtn color="primary"> Login </a>
           <app-mobile-nav />
         </div>
       </div>
