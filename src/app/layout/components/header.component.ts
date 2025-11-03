@@ -16,7 +16,9 @@ import { NavComponent } from "./nav.component";
   template: `
     <header class="py-8 xl:py-12 text-white">
       <!-- logo -->
-      <div class="container flex items-center justify-between">
+      <div
+        class="container flex items-center justify-between backdrop-blur-md bg-white/5 rounded-full px-8 py-4 border border-white/10 shadow-lg"
+      >
         <h1 class="text-4xl font-semibold">
           <a routerLink="/" class="">
             Muneer<span class="text-accent">.</span>

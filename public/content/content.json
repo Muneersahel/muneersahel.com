@@ -56,6 +56,15 @@
       "content": "/cotent/blogs/connect-nodejs-to-mysql.md",
       "brief": "Connect Node.js to MySQL. Learn how to connect Node.js to MySQL database and perform CRUD operations. Get started with Node.js and MySQL today!",
       "tags": ["nodejs", "middleware", "routes", "CRUD", "mysql"]
+    },
+    {
+      "num": "07",
+      "slug": "typesafe-routes-in-angular",
+      "title": "Typesafe Routes in Angular",
+      "date": "2025-11-03",
+      "content": "/cotent/blogs/typesafe-routes-in-angular.md",
+      "brief": "Learn how to create typesafe routes in Angular. In this blog post, we will explore the benefits of using typesafe routes and how to implement them in your Angular application.",
+      "tags": ["angular", "routing", "typescript"]
     }
   ]
 }

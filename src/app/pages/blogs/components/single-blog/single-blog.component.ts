@@ -50,7 +50,9 @@ import { MarkdownComponent } from "ngx-markdown";
               <span>{{ (markdown | readingTime).minutes }} min read</span>
             </div>
           }
-          <markdown [src]="filePath()" clipboard />
+          @if (markdown(); as markdown) {
+            <markdown [data]="markdown" clipboard />
+          }
         </div>
       </section>
     }
@@ -63,25 +65,15 @@ export default class SingleBlogComponent {
   private _metaTags = inject(MetaTagsService);
 
   slug = input.required<string>();
-  filePath = computed(() => {
-    return `content/blogs/${this.slug()}.md`;
-  });
 
   blog = signal<Blog | null>(null);
-  markdown = signal<string | null>(null);
+  markdown = computed(() => this.blog()?.content || "");
 
   constructor() {
     effect(() => {
       const slug = this.slug();
 
       untracked(() => {
-        this._blogService
-          .getMarkdown(this.slug())
-          .pipe(takeUntilDestroyed(this._destroyRef))
-          .subscribe((value) => {
-            this.markdown.set(value);
-          });
-
         this._blogService
           .getBlog(slug)
           .pipe(takeUntilDestroyed(this._destroyRef))
