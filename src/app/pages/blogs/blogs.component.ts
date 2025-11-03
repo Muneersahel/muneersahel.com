@@ -34,7 +34,9 @@ import { BlogService } from "./data";
               <h2
                 class="text-4xl font-bold text-white group-hover:text-accent transition-all duration-500"
               >
-                {{ blog.title }}
+                <a [routerLink]="['/blogs', blog.slug]">
+                  {{ blog.title }}
+                </a>
               </h2>
               <p class="text-white/60 ">{{ blog.brief }}</p>
               <div class="border-b border-white/20 w-full"></div>
