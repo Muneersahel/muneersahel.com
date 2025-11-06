@@ -1,8 +1,10 @@
+import { provideIcons } from "@ng-icons/core";
+import { NgIcon } from "@ng-icons/core";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import {
   BrnSheetContentDirective,
   BrnSheetTriggerDirective,
-} from "@spartan-ng/ui-sheet-brain";
+} from "@spartan-ng/brain/sheet";
 
 // import {
 //   HlmSheetComponent,
@@ -15,7 +17,7 @@ import {
 
 import { RouterLink, RouterLinkActive } from "@angular/router";
 import { lucideAlignRight } from "@ng-icons/lucide";
-import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
+import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
 import {
   HlmSheetComponent,
   HlmSheetContentComponent,
@@ -29,7 +31,8 @@ import { links } from "../constants";
     HlmSheetComponent,
     BrnSheetTriggerDirective,
     BrnSheetContentDirective,
-    HlmIconComponent,
+    NgIcon,
+    HlmIconDirective,
     RouterLink,
     RouterLinkActive,
   ],
@@ -37,11 +40,12 @@ import { links } from "../constants";
   template: `
     <hlm-sheet>
       <button brnSheetTrigger side="right" aria-label="Open menu">
-        <hlm-icon
+        <ng-icon
+          hlm
           name="lucideAlignRight"
           size="lg"
           class="text-accent"
-        ></hlm-icon>
+        ></ng-icon>
       </button>
 
       <hlm-sheet-content *brnSheetContent="let ctx">

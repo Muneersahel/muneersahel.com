@@ -1,3 +1,5 @@
+import { provideIcons } from "@ng-icons/core";
+import { NgIcon } from "@ng-icons/core";
 import { SocialsComponent } from "@/shared/components";
 import { MetaTagsService } from "@/shared/services";
 import { NgClass } from "@angular/common";
@@ -21,7 +23,7 @@ import {
   lucideSend,
 } from "@ng-icons/lucide";
 import { HlmButtonDirective } from "@spartan-ng/ui-button-helm";
-import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
+import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
 import { HlmInputDirective } from "@spartan-ng/ui-input-helm";
 import { HlmLabelDirective } from "@spartan-ng/ui-label-helm";
 
@@ -31,7 +33,8 @@ import { HlmLabelDirective } from "@spartan-ng/ui-label-helm";
   imports: [
     ReactiveFormsModule,
     HlmButtonDirective,
-    HlmIconComponent,
+    NgIcon,
+    HlmIconDirective,
     HlmInputDirective,
     HlmLabelDirective,
     SocialsComponent,
@@ -69,7 +72,7 @@ import { HlmLabelDirective } from "@spartan-ng/ui-label-helm";
                 <!-- Location -->
                 <div class="flex items-start gap-4">
                   <div class="bg-accent/10 rounded-full p-3 text-accent">
-                    <hlm-icon name="lucideMapPin" class="h-6 w-6"></hlm-icon>
+                    <ng-icon hlm size="base" name="lucideMapPin"></ng-icon>
                   </div>
                   <div>
                     <h3 class="font-medium mb-1">Location</h3>
@@ -80,7 +83,7 @@ import { HlmLabelDirective } from "@spartan-ng/ui-label-helm";
                 <!-- Email -->
                 <div class="flex items-start gap-4">
                   <div class="bg-accent/10 rounded-full p-3 text-accent">
-                    <hlm-icon name="lucideMail" class="h-6 w-6"></hlm-icon>
+                    <ng-icon hlm size="base" name="lucideMail"></ng-icon>
                   </div>
                   <div>
                     <h3 class="font-medium mb-1">Email</h3>
@@ -96,7 +99,7 @@ import { HlmLabelDirective } from "@spartan-ng/ui-label-helm";
                 <!-- Phone -->
                 <div class="flex items-start gap-4">
                   <div class="bg-accent/10 rounded-full p-3 text-accent">
-                    <hlm-icon name="lucidePhone" class="h-6 w-6"></hlm-icon>
+                    <ng-icon hlm size="base" name="lucidePhone"></ng-icon>
                   </div>
                   <div>
                     <h3 class="font-medium mb-1">Phone</h3>
@@ -236,7 +239,7 @@ import { HlmLabelDirective } from "@spartan-ng/ui-label-helm";
                       Sending...
                     } @else {
                       Send Message
-                      <hlm-icon name="lucideSend" class="h-5 w-5"></hlm-icon>
+                      <ng-icon hlm size="20px" name="lucideSend"></ng-icon>
                     }
                   </button>
                 </div>

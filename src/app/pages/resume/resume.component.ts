@@ -1,3 +1,5 @@
+import { provideIcons } from "@ng-icons/core";
+import { NgIcon } from "@ng-icons/core";
 import { CvService, MetaTagsService } from "@/shared/services";
 import { ChangeDetectionStrategy, Component, inject } from "@angular/core";
 import {
@@ -10,12 +12,12 @@ import {
 } from "@ng-icons/lucide";
 import { HlmButtonDirective } from "@spartan-ng/ui-button-helm";
 import { HlmCardModule } from "@spartan-ng/ui-card-helm";
-import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
+import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
 
 @Component({
   selector: "app-resume",
   standalone: true,
-  imports: [HlmButtonDirective, HlmIconComponent, HlmCardModule],
+  imports: [HlmButtonDirective, NgIcon, HlmIconDirective, HlmCardModule],
   providers: [
     provideIcons({
       lucideDownload,
@@ -52,7 +54,7 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
               rel="noopener noreferrer"
             >
               Download CV
-              <hlm-icon name="lucideDownload" class="h-5 w-5"></hlm-icon>
+              <ng-icon hlm size="20px" name="lucideDownload"></ng-icon>
             </a>
           </div>
         </div>
@@ -63,10 +65,7 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
             <!-- Experience Section -->
             <div class="mb-12">
               <div class="flex items-center gap-2 mb-6">
-                <hlm-icon
-                  name="lucideLaptop"
-                  class="h-6 w-6 text-accent"
-                ></hlm-icon>
+                <ng-icon hlm name="lucideLaptop" class="text-accent"></ng-icon>
                 <h2 class="text-2xl font-bold">Work Experience</h2>
               </div>
 
@@ -81,10 +80,7 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
                       {{ job.position }}
                     </h3>
                     <div class="text-white/60 flex items-center gap-2">
-                      <hlm-icon
-                        name="lucideCalendar"
-                        class="h-4 w-4"
-                      ></hlm-icon>
+                      <ng-icon hlm name="lucideCalendar"></ng-icon>
                       <span>{{ job.period }}</span>
                     </div>
                   </div>
@@ -93,10 +89,11 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
                     @if (job.location) {
                       <div class="flex items-center text-white/60">
                         <span>•</span>
-                        <hlm-icon
+                        <ng-icon
+                          hlm
                           name="lucideMapPin"
-                          class="h-4 w-4 ml-2 mr-1"
-                        ></hlm-icon>
+                          class="ml-2 mr-1"
+                        ></ng-icon>
                         <span>{{ job.location }}</span>
                       </div>
                     }
@@ -120,10 +117,11 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
             <!-- Education Section -->
             <div>
               <div class="flex items-center gap-2 mb-6">
-                <hlm-icon
+                <ng-icon
+                  hlm
                   name="lucideGraduationCap"
-                  class="h-6 w-6 text-accent"
-                ></hlm-icon>
+                  class="text-accent"
+                ></ng-icon>
                 <h2 class="text-2xl font-bold">Education</h2>
               </div>
 
@@ -138,10 +136,7 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
                       {{ edu.degree }}
                     </h3>
                     <div class="text-white/60 flex items-center gap-2">
-                      <hlm-icon
-                        name="lucideCalendar"
-                        class="h-4 w-4"
-                      ></hlm-icon>
+                      <ng-icon hlm name="lucideCalendar"></ng-icon>
                       <span>{{ edu.period }}</span>
                     </div>
                   </div>
@@ -150,10 +145,11 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
                     @if (edu.location) {
                       <div class="flex items-center text-white/60">
                         <span>•</span>
-                        <hlm-icon
+                        <ng-icon
+                          hlm
                           name="lucideMapPin"
-                          class="h-4 w-4 ml-2 mr-1"
-                        ></hlm-icon>
+                          class="ml-2 mr-1"
+                        ></ng-icon>
                         <span>{{ edu.location }}</span>
                       </div>
                     }

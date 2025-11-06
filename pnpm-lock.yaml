@@ -53,75 +53,21 @@ importers:
       '@ng-icons/lucide':
         specifier: ^31.3.0
         version: 31.3.0
-      '@spartan-ng/ui-accordion-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(clsx@2.1.1)(rxjs@7.8.2)
+      '@spartan-ng/brain':
+        specifier: 0.0.1-alpha.550
+        version: 0.0.1-alpha.550(861cdaa6aa482619e96a096884772d29)
       '@spartan-ng/ui-alertdialog-brain':
         specifier: 0.0.1-alpha.374
         version: 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(@spartan-ng/ui-dialog-brain@0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(rxjs@7.8.2))
-      '@spartan-ng/ui-avatar-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)
-      '@spartan-ng/ui-checkbox-brain':
-        specifier: 0.0.1-alpha.357
-        version: 0.0.1-alpha.357(3edfe081f7eb05e22348e5744a323a32)
-      '@spartan-ng/ui-collapsible-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))
-      '@spartan-ng/ui-command-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@ngneat/overview@5.1.1(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@ngneat/until-destroy@10.0.0(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@ngxpert/cmdk@1.0.0(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))
       '@spartan-ng/ui-core':
         specifier: 0.0.1-alpha.374
         version: 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17)
-      '@spartan-ng/ui-dialog-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(rxjs@7.8.2)
-      '@spartan-ng/ui-forms-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/forms@20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2))
       '@spartan-ng/ui-hovercard-brain':
         specifier: 0.0.1-alpha.374
         version: 0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(rxjs@7.8.2)
-      '@spartan-ng/ui-label-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/forms@20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2))
-      '@spartan-ng/ui-menu-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))
-      '@spartan-ng/ui-popover-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(@spartan-ng/ui-dialog-brain@0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(rxjs@7.8.2))
-      '@spartan-ng/ui-progress-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))
       '@spartan-ng/ui-radiogroup-brain':
         specifier: 0.0.1-alpha.374
         version: 0.0.1-alpha.374(7cc32027b8d1a33a83c256749e99b33f)
-      '@spartan-ng/ui-select-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(7a83a94ab714075ba7c29de958b8e263)
-      '@spartan-ng/ui-separator-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))
-      '@spartan-ng/ui-sheet-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(@spartan-ng/ui-dialog-brain@0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(rxjs@7.8.2))
-      '@spartan-ng/ui-switch-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(3edfe081f7eb05e22348e5744a323a32)
-      '@spartan-ng/ui-table-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))
-      '@spartan-ng/ui-tabs-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@spartan-ng/ui-toggle-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/forms@20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2))
-      '@spartan-ng/ui-tooltip-brain':
-        specifier: 0.0.1-alpha.374
-        version: 0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(rxjs@7.8.2)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -191,10 +137,10 @@ importers:
         version: 9.26.0
       '@module-federation/enhanced':
         specifier: ^0.9.0
-        version: 0.9.1(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17)))
+        version: 0.9.1(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9))
       '@nx/angular':
         specifier: 22.0.2
-        version: 22.0.2(3f0a0bf2320a7037a52b6e1a7103006d)
+        version: 22.0.2(3e400c52471e813e9a7806f5fbcd5277)
       '@nx/eslint':
         specifier: 22.0.2
         version: 22.0.2(@babel/traverse@7.28.5)(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))(@zkochan/js-yaml@0.0.7)(eslint@9.29.0(jiti@2.6.1))(nx@22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))
@@ -218,7 +164,7 @@ importers:
         version: 20.3.8(chokidar@4.0.3)
       '@spartan-ng/cli':
         specifier: ^0.0.1-alpha.444
-        version: 0.0.1-alpha.451(b00f07699589cffe973b76b84f0e9f36)
+        version: 0.0.1-alpha.451(82fcd72f528d4c167a983dcbf5d14a71)
       '@swc-node/register':
         specifier: ~1.9.1
         version: 1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3)
@@ -2997,17 +2943,6 @@ packages:
   '@ng-icons/lucide@31.3.0':
     resolution: {integrity: sha512-QxWZT7MRZVa4J234BiH5vzg8kwQGZuqP22ba6QjqBVzVY2U4tgCHXcImZVYhy1Uiznwrw5S9ZMZfXZVfnc81/w==}
 
-  '@ngneat/overview@5.1.1':
-    resolution: {integrity: sha512-Dz7yylhS08Mo+A8SXo7KyJBJMxD18Oq/G5v/ndvd5C8Gi3uOrAiXUjxvqRCPMxrg03FlkvEsD5/4TvMKtrUfAQ==}
-    peerDependencies:
-      '@angular/core': '>=16'
-
-  '@ngneat/until-destroy@10.0.0':
-    resolution: {integrity: sha512-xXFAabQ4YVJ82LYxdgUlaKZyR3dSbxqG3woSyaclzxfCgWMEDweCcM/GGYbNiHJa0WwklI98RXHvca+UyCxpeg==}
-    peerDependencies:
-      '@angular/core': '>=13'
-      rxjs: ^6.4.0 || ^7.0.0
-
   '@ngtools/webpack@20.3.8':
     resolution: {integrity: sha512-hwmpnUKHpC89rne9t/OBeoPM9MBiD9rAfVwnntK+d13/v44U2jWVON7ogIcyjWb+PyAn8VNn1/G404+YmOvxCA==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
@@ -3015,12 +2950,6 @@ packages:
       '@angular/compiler-cli': ^20.0.0
       typescript: '>=5.8 <6.0'
       webpack: ^5.54.0
-
-  '@ngxpert/cmdk@1.0.0':
-    resolution: {integrity: sha512-PmZEKINJxWbGEE4GJ+iyB881z2YWETL1s8l2snqnmmVKCzTZjQruCY0JA8rLIAmLz6m9jlXUVj3Ox05i216tCQ==}
-    peerDependencies:
-      '@angular/common': '>=16.0.0'
-      '@angular/core': '>16.0.0'
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -3559,19 +3488,25 @@ packages:
   '@socket.io/component-emitter@3.1.2':
     resolution: {integrity: sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==}
 
+  '@spartan-ng/brain@0.0.1-alpha.550':
+    resolution: {integrity: sha512-9XsV/oBY9hn7ImsbvPI9VPZNynqoQkEXMags3bdHtwSuRhkB8dX8Yr3y4ntDwWZsZUkMiuxwYOkfQZFNjclSfg==}
+    peerDependencies:
+      '@angular/cdk': ^19.0.0
+      '@angular/common': ^19.0.0
+      '@angular/core': ^19.0.0
+      '@angular/forms': ^19.0.0
+      clsx: '>=2.0.0'
+      luxon: '>=3.0.0'
+      rxjs: '>=6.6.0'
+      tailwindcss: '>=3.3.0'
+    peerDependenciesMeta:
+      luxon:
+        optional: true
+
   '@spartan-ng/cli@0.0.1-alpha.451':
     resolution: {integrity: sha512-MlrKY+Bp69YoLd6PZ8tFduL32iQrnemQeb+wvOi1pe7q1F/laZ0naoT8zSQHEea77Xu6qWb/hNZ3hsWKnw1sxw==}
     peerDependencies:
       tslib: ^2.3.0
-
-  '@spartan-ng/ui-accordion-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-atiLwwtN7PS1iIVeWkRt6EdOkDlqCsz8DFKKc3/ue/6Wwa0+00F/O8RZ5Abbzy56sZMFx8NmpdekIpHIMgce5w==}
-    peerDependencies:
-      '@angular/cdk': '>=18.0.0'
-      '@angular/core': '>=18.0.0'
-      '@spartan-ng/ui-core': 0.0.1-alpha.374
-      clsx: ^2.1.1
-      rxjs: '>=6.6.0'
 
   '@spartan-ng/ui-alertdialog-brain@0.0.1-alpha.374':
     resolution: {integrity: sha512-lHNtL6Jue285Sgj5sNkhVWP9gScM431SR9fP0ekYgpH9RRBkknjkrhLQZzG+3Wm9idQ8qZbpX9oBiJS5tuOn5g==}
@@ -3579,36 +3514,6 @@ packages:
       '@angular/core': '>=18.0.0'
       '@spartan-ng/ui-core': 0.0.1-alpha.374
       '@spartan-ng/ui-dialog-brain': 0.0.1-alpha.374
-
-  '@spartan-ng/ui-avatar-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-yUqxnfl6q19O2TBzOW3qn6Pkn86Lq/nmiZ3teZCUjZfUaQoWyTGbCispNZvBV9kpvk2ckKykkNW+5MZ5o1n/Ng==}
-    peerDependencies:
-      '@angular/cdk': '>=18.0.0'
-      '@angular/core': '>=18.0.0'
-      clsx: ^2.1.1
-
-  '@spartan-ng/ui-checkbox-brain@0.0.1-alpha.357':
-    resolution: {integrity: sha512-PKhK5zb5LzZPbK5WSJdKO2SFHfs1SfFAuhC1vuhDJn0wearUlOEgEwFCFqt7Kx1rrRM+Jzf01vrKpTv/1mntUQ==}
-    peerDependencies:
-      '@angular/cdk': '>=18.0.0'
-      '@angular/common': '>=18.0.0'
-      '@angular/core': '>=18.0.0'
-      '@angular/forms': '>=18.0.0'
-      '@spartan-ng/ui-forms-brain': 0.0.1-alpha.357
-
-  '@spartan-ng/ui-collapsible-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-YbGH+tWzOVF0sZB4SUWW11cKuJBbNyPP8Cyc9XqFXE1ta8yvXsINPnyDd65g9cHCENpH8lgjGenUJKw4XRgW+g==}
-    peerDependencies:
-      '@angular/core': '>=18.0.0'
-
-  '@spartan-ng/ui-command-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-BhO3TpOcGoZMDVJnBWJy5+5n50u5OSNFbN1x2ft9T8l63kTK/uU5EO5mupstkCAQAD1z7N91uGbN5Od2g6HIgg==}
-    peerDependencies:
-      '@angular/common': '>=18.0.0'
-      '@angular/core': '>=18.0.0'
-      '@ngneat/overview': ^5.1.1
-      '@ngneat/until-destroy': ^10.0.0
-      '@ngxpert/cmdk': ^1.0.0
 
   '@spartan-ng/ui-core@0.0.1-alpha.374':
     resolution: {integrity: sha512-wCz74mMbt4Yoh41SxbqE8JFOIB5eWiZ5IktfCMGx6HtCCQyzrogkT/XLDiO/Dz0jObzPXRU4klLj0PXR5FIl4Q==}
@@ -3628,12 +3533,6 @@ packages:
       '@spartan-ng/ui-core': 0.0.1-alpha.374
       rxjs: '>=6.6.0'
 
-  '@spartan-ng/ui-formfield-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-wKNGP71m9S926tL/JCwVi4ypR+kYW2Jxo/butMm7y8iFIzREa1+JKIux1VnzjEoZafiflD939GqTqF+rUi4PmA==}
-    peerDependencies:
-      '@angular/core': '>=18.0.0'
-      '@angular/forms': '>=18.0.0'
-
   '@spartan-ng/ui-forms-brain@0.0.1-alpha.374':
     resolution: {integrity: sha512-NMMLdq0BNKvqCer57se5u0cw0BeV+yjw9ZylEPB9MgB1zGwgriMHlPyiXx6Mr70LDBn7K0NJbNY2AWul/SbPvg==}
     peerDependencies:
@@ -3648,32 +3547,6 @@ packages:
       '@spartan-ng/ui-core': 0.0.1-alpha.374
       rxjs: '>=6.6.0'
 
-  '@spartan-ng/ui-label-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-3mjA4z1+E60iia18K3DeLnP3DT+BqOc/32NL6iZJe5a/T0rLlNuXnnKH4anHVQNrT8DbIHX9i6f9dn4F8olzdQ==}
-    peerDependencies:
-      '@angular/common': '>=18.0.0'
-      '@angular/core': '>=18.0.0'
-      '@angular/forms': '>=18.0.0'
-
-  '@spartan-ng/ui-menu-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-sS22ExmubTcH6WMR3hCaA74JWU2lDy4+q54isgZBPC0c9fnfPM7vFcNa/JxbnWUN76B+luH0kklfyz4s92lfGA==}
-    peerDependencies:
-      '@angular/cdk': '>=18.0.0'
-      '@angular/core': '>=18.0.0'
-
-  '@spartan-ng/ui-popover-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-JtKCGGiSdrHvM/YK8RF3Ojg8ZbUKkpOYqEptkEkC20eOfcnOhe3ROsHj5pBng3z34ovDVSuA114Q7OmOjlZEtQ==}
-    peerDependencies:
-      '@angular/core': '>=18.0.0'
-      '@spartan-ng/ui-core': 0.0.1-alpha.374
-      '@spartan-ng/ui-dialog-brain': 0.0.1-alpha.374
-
-  '@spartan-ng/ui-progress-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-P6NWo3fzX1CFxhsFcwJt4D3FoZG4G/pq6Ddt5+ped5y0HZFY+0ifDLGwguaeOWXDtBCm2zNCgEoxw/q7ibhtJg==}
-    peerDependencies:
-      '@angular/cdk': '>=18.0.0'
-      '@angular/core': '>=18.0.0'
-
   '@spartan-ng/ui-radiogroup-brain@0.0.1-alpha.374':
     resolution: {integrity: sha512-6n0LnFn8wVLVclj415zh2L20O1NZyyh2aF3QOEK6zUXA7Y4R4SYmyrwKV/VyoxcQ+3yxbC4aVX9lh2QvnQRGJg==}
     peerDependencies:
@@ -3681,71 +3554,6 @@ packages:
       '@angular/core': '>=18.0.0'
       '@angular/forms': '>=18.0.0'
       '@spartan-ng/ui-forms-brain': 0.0.1-alpha.374
-
-  '@spartan-ng/ui-select-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-A3cUyShJXOFW3Qs7VleNMKKzLNpPBgb/lEHAnRcfcj+mBXgnBYuIZ+J+ESCNUA5oWhJ1QQVbvlPcpzgCI8C9tA==}
-    peerDependencies:
-      '@angular/cdk': '>=18.0.0'
-      '@angular/common': '>=18.0.0'
-      '@angular/core': '>=18.0.0'
-      '@angular/forms': '>=18.0.0'
-      '@spartan-ng/ui-core': 0.0.1-alpha.374
-      '@spartan-ng/ui-formfield-brain': 0.0.1-alpha.374
-      '@spartan-ng/ui-forms-brain': 0.0.1-alpha.374
-      '@spartan-ng/ui-label-brain': 0.0.1-alpha.374
-      rxjs: '>=6.6.0'
-
-  '@spartan-ng/ui-separator-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-IEL/NpVPLuoWi9ximzYApV0Lyf7QT+WYYL8CgPp1aMCqCvZIHKt9JZOQjxfYrTCOM3n6EIvRIcdH6nqLOG/9bA==}
-    peerDependencies:
-      '@angular/cdk': '>=18.0.0'
-      '@angular/core': '>=18.0.0'
-
-  '@spartan-ng/ui-sheet-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-W09pn0+3OzwYGn9j6hY4wGjflM3KIuMdgh3LSxqEvDuwUl0ZE1gmZgqp4HVi3JiyNYDrA111hIVRzbRleiVzJg==}
-    peerDependencies:
-      '@angular/core': '>=18.0.0'
-      '@spartan-ng/ui-core': 0.0.1-alpha.374
-      '@spartan-ng/ui-dialog-brain': 0.0.1-alpha.374
-
-  '@spartan-ng/ui-switch-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-/4pzuvNqvRspcMu/fqGCXoTuhtj7HtacgK3Qg47MMaoy8RfmSZ1fpuS/W71PK9QgsXsxnkpPt0wjedBCghWE1w==}
-    peerDependencies:
-      '@angular/cdk': '>=18.0.0'
-      '@angular/common': '>=18.0.0'
-      '@angular/core': '>=18.0.0'
-      '@angular/forms': '>=18.0.0'
-      '@spartan-ng/ui-forms-brain': 0.0.1-alpha.374
-
-  '@spartan-ng/ui-table-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-fYHvgBPKoeOG819KV6lyO/Vxua3X6hCrmtAaaZk7UdsdSz35CsHcUfxmrYB1+PnssyLMnsbTS3NYro1XKx3LbQ==}
-    peerDependencies:
-      '@angular/cdk': '>=18.0.0'
-      '@angular/core': '>=18.0.0'
-      '@spartan-ng/ui-core': 0.0.1-alpha.374
-
-  '@spartan-ng/ui-tabs-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-tOCjL56mjapIo8MsivV/8yrddEB4uhVs0ynWEvhepRxMjOYmDyTzdmhoqBfEgjqEYfeiH8cVwk2+AXYfYsOQVQ==}
-    peerDependencies:
-      '@angular/cdk': '>=18.0.0'
-      '@angular/core': '>=18.0.0'
-      rxjs: '>=6.6.0'
-
-  '@spartan-ng/ui-toggle-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-scDgHydgc/FT+s26uTN7NWr+5PpqiwwPem/cipK5pdhGNY3obfVjJttwJwONxAUg2VmbZb/QlPEZ/cVQfrdV6w==}
-    peerDependencies:
-      '@angular/cdk': '>=18.0.0'
-      '@angular/core': '>=18.0.0'
-      '@angular/forms': '>=18.0.0'
-
-  '@spartan-ng/ui-tooltip-brain@0.0.1-alpha.374':
-    resolution: {integrity: sha512-Rj0/VWRhWefTLFc4IhSVmli747dq3XIA/5uMrb3fb28z92IKyyLnMMNEbuyT2ELLURAufoOQkPF8+07LjVMzVw==}
-    peerDependencies:
-      '@angular/cdk': '>=18.0.0'
-      '@angular/common': '>=18.0.0'
-      '@angular/core': '>=18.0.0'
-      '@spartan-ng/ui-core': 0.0.1-alpha.374
-      rxjs: '>=6.6.0'
 
   '@swc-node/core@1.13.3':
     resolution: {integrity: sha512-OGsvXIid2Go21kiNqeTIn79jcaX4l0G93X2rAnas4LFoDyA9wAwVK7xZdm+QsKoMn5Mus2yFLCc4OtX2dD/PWA==}
@@ -9831,7 +9639,7 @@ snapshots:
       typescript: 5.9.3
       webpack: 5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9)
       webpack-dev-middleware: 7.4.2(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9))
-      webpack-dev-server: 5.2.2(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17)))
+      webpack-dev-server: 5.2.2(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9))
       webpack-merge: 6.0.1
       webpack-subresource-integrity: 5.1.0(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9))
     optionalDependencies:
@@ -9872,7 +9680,7 @@ snapshots:
       '@angular-devkit/architect': 0.2003.8(chokidar@4.0.3)
       rxjs: 7.8.2
       webpack: 5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9)
-      webpack-dev-server: 5.2.2(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17)))
+      webpack-dev-server: 5.2.2(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9))
     transitivePeerDependencies:
       - chokidar
 
@@ -9965,62 +9773,6 @@ snapshots:
       '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
       tslib: 2.8.1
 
-  '@angular/build@20.3.8(13703e6f164beb28742b71f6b89eeb71)':
-    dependencies:
-      '@ampproject/remapping': 2.3.0
-      '@angular-devkit/architect': 0.2003.8(chokidar@4.0.3)
-      '@angular/compiler': 20.3.9
-      '@angular/compiler-cli': 20.3.9(@angular/compiler@20.3.9)(typescript@5.9.3)
-      '@babel/core': 7.28.3
-      '@babel/helper-annotate-as-pure': 7.27.3
-      '@babel/helper-split-export-declaration': 7.24.7
-      '@inquirer/confirm': 5.1.14(@types/node@22.15.3)
-      '@vitejs/plugin-basic-ssl': 2.1.0(vite@7.1.11(@types/node@22.15.3)(jiti@2.6.1)(less@4.4.0)(lightningcss@1.30.2)(sass-embedded@1.87.0)(sass@1.90.0)(stylus@0.64.0)(terser@5.43.1)(yaml@2.7.1))
-      beasties: 0.3.5
-      browserslist: 4.24.5
-      esbuild: 0.25.9
-      https-proxy-agent: 7.0.6
-      istanbul-lib-instrument: 6.0.3
-      jsonc-parser: 3.3.1
-      listr2: 9.0.1
-      magic-string: 0.30.17
-      mrmime: 2.0.1
-      parse5-html-rewriting-stream: 8.0.0
-      picomatch: 4.0.3
-      piscina: 5.1.3
-      rollup: 4.52.3
-      sass: 1.90.0
-      semver: 7.7.2
-      source-map-support: 0.5.21
-      tinyglobby: 0.2.14
-      tslib: 2.8.1
-      typescript: 5.9.3
-      vite: 7.1.11(@types/node@22.15.3)(jiti@2.6.1)(less@4.3.0)(lightningcss@1.30.2)(sass-embedded@1.87.0)(sass@1.90.0)(stylus@0.64.0)(terser@5.43.1)(yaml@2.7.1)
-      watchpack: 2.4.4
-    optionalDependencies:
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      '@angular/platform-browser': 20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))
-      '@angular/platform-server': 20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/compiler@20.3.9)(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2)
-      '@angular/ssr': 20.3.8(077d5f60beaa1910a011f979691d6a97)
-      karma: 6.4.4
-      less: 4.3.0
-      lmdb: 3.4.2
-      postcss: 8.5.3
-      tailwindcss: 4.1.17
-    transitivePeerDependencies:
-      - '@types/node'
-      - chokidar
-      - jiti
-      - lightningcss
-      - sass-embedded
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
-      - tsx
-      - yaml
-    optional: true
-
   '@angular/build@20.3.8(75b374d9353003783514f1974ca78b23)':
     dependencies:
       '@ampproject/remapping': 2.3.0
@@ -10051,7 +9803,7 @@ snapshots:
       tinyglobby: 0.2.14
       tslib: 2.8.1
       typescript: 5.9.3
-      vite: 7.1.11(@types/node@22.15.3)(jiti@2.6.1)(less@4.3.0)(lightningcss@1.30.2)(sass-embedded@1.87.0)(sass@1.89.2)(stylus@0.64.0)(terser@5.43.1)(yaml@2.7.1)
+      vite: 7.1.11(@types/node@22.15.3)(jiti@2.6.1)(less@4.4.0)(lightningcss@1.30.2)(sass-embedded@1.87.0)(sass@1.90.0)(stylus@0.64.0)(terser@5.43.1)(yaml@2.7.1)
       watchpack: 2.4.4
     optionalDependencies:
       '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
@@ -10075,6 +9827,62 @@ snapshots:
       - terser
       - tsx
       - yaml
+
+  '@angular/build@20.3.8(c464123e85c949359a741dff7d332c02)':
+    dependencies:
+      '@ampproject/remapping': 2.3.0
+      '@angular-devkit/architect': 0.2003.8(chokidar@4.0.3)
+      '@angular/compiler': 20.3.9
+      '@angular/compiler-cli': 20.3.9(@angular/compiler@20.3.9)(typescript@5.9.3)
+      '@babel/core': 7.28.3
+      '@babel/helper-annotate-as-pure': 7.27.3
+      '@babel/helper-split-export-declaration': 7.24.7
+      '@inquirer/confirm': 5.1.14(@types/node@22.15.3)
+      '@vitejs/plugin-basic-ssl': 2.1.0(vite@7.1.11(@types/node@22.15.3)(jiti@2.6.1)(less@4.4.0)(lightningcss@1.30.2)(sass-embedded@1.87.0)(sass@1.90.0)(stylus@0.64.0)(terser@5.43.1)(yaml@2.7.1))
+      beasties: 0.3.5
+      browserslist: 4.24.5
+      esbuild: 0.25.9
+      https-proxy-agent: 7.0.6
+      istanbul-lib-instrument: 6.0.3
+      jsonc-parser: 3.3.1
+      listr2: 9.0.1
+      magic-string: 0.30.17
+      mrmime: 2.0.1
+      parse5-html-rewriting-stream: 8.0.0
+      picomatch: 4.0.3
+      piscina: 5.1.3
+      rollup: 4.52.3
+      sass: 1.90.0
+      semver: 7.7.2
+      source-map-support: 0.5.21
+      tinyglobby: 0.2.14
+      tslib: 2.8.1
+      typescript: 5.9.3
+      vite: 7.1.11(@types/node@22.15.3)(jiti@2.6.1)(less@4.4.0)(lightningcss@1.30.2)(sass-embedded@1.87.0)(sass@1.90.0)(stylus@0.64.0)(terser@5.43.1)(yaml@2.7.1)
+      watchpack: 2.4.4
+    optionalDependencies:
+      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
+      '@angular/platform-browser': 20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))
+      '@angular/platform-server': 20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/compiler@20.3.9)(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2)
+      '@angular/ssr': 20.3.8(077d5f60beaa1910a011f979691d6a97)
+      karma: 6.4.4
+      less: 4.4.0
+      lmdb: 3.4.2
+      postcss: 8.5.3
+      tailwindcss: 4.1.17
+    transitivePeerDependencies:
+      - '@types/node'
+      - chokidar
+      - jiti
+      - lightningcss
+      - sass-embedded
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - tsx
+      - yaml
+    optional: true
 
   '@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)':
     dependencies:
@@ -13247,6 +13055,34 @@ snapshots:
       - supports-color
       - utf-8-validate
 
+  '@module-federation/enhanced@0.21.2(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9))':
+    dependencies:
+      '@module-federation/bridge-react-webpack-plugin': 0.21.2
+      '@module-federation/cli': 0.21.2(typescript@5.9.3)
+      '@module-federation/data-prefetch': 0.21.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@module-federation/dts-plugin': 0.21.2(typescript@5.9.3)
+      '@module-federation/error-codes': 0.21.2
+      '@module-federation/inject-external-runtime-core-plugin': 0.21.2(@module-federation/runtime-tools@0.21.2)
+      '@module-federation/managers': 0.21.2
+      '@module-federation/manifest': 0.21.2(typescript@5.9.3)
+      '@module-federation/rspack': 0.21.2(@rspack/core@1.6.0(@swc/helpers@0.5.17))(typescript@5.9.3)
+      '@module-federation/runtime-tools': 0.21.2
+      '@module-federation/sdk': 0.21.2
+      btoa: 1.2.1
+      schema-utils: 4.3.2
+      upath: 2.0.1
+    optionalDependencies:
+      typescript: 5.9.3
+      webpack: 5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9)
+    transitivePeerDependencies:
+      - '@rspack/core'
+      - bufferutil
+      - debug
+      - react
+      - react-dom
+      - supports-color
+      - utf-8-validate
+
   '@module-federation/enhanced@0.21.2(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17)))':
     dependencies:
       '@module-federation/bridge-react-webpack-plugin': 0.21.2
@@ -13275,7 +13111,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@module-federation/enhanced@0.9.1(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17)))':
+  '@module-federation/enhanced@0.9.1(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9))':
     dependencies:
       '@module-federation/bridge-react-webpack-plugin': 0.9.1
       '@module-federation/data-prefetch': 0.9.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -13291,7 +13127,7 @@ snapshots:
       upath: 2.0.1
     optionalDependencies:
       typescript: 5.9.3
-      webpack: 5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17))
+      webpack: 5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9)
     transitivePeerDependencies:
       - '@rspack/core'
       - bufferutil
@@ -13375,6 +13211,27 @@ snapshots:
       chalk: 3.0.0
       find-pkg: 2.0.0
     transitivePeerDependencies:
+      - bufferutil
+      - debug
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - vue-tsc
+
+  '@module-federation/node@2.7.21(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9))':
+    dependencies:
+      '@module-federation/enhanced': 0.21.2(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9))
+      '@module-federation/runtime': 0.21.2
+      '@module-federation/sdk': 0.21.2
+      btoa: 1.2.1
+      encoding: 0.1.13
+      node-fetch: 2.7.0(encoding@0.1.13)
+      webpack: 5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9)
+    optionalDependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+    transitivePeerDependencies:
+      - '@rspack/core'
       - bufferutil
       - debug
       - supports-color
@@ -13667,33 +13524,11 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@ngneat/overview@5.1.1(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))':
-    dependencies:
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      tslib: 2.8.1
-
-  '@ngneat/until-destroy@10.0.0(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)':
-    dependencies:
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      rxjs: 7.8.2
-      tslib: 2.8.1
-
   '@ngtools/webpack@20.3.8(@angular/compiler-cli@20.3.9(@angular/compiler@20.3.9)(typescript@5.9.3))(typescript@5.9.3)(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9))':
     dependencies:
       '@angular/compiler-cli': 20.3.9(@angular/compiler@20.3.9)(typescript@5.9.3)
       typescript: 5.9.3
       webpack: 5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9)
-
-  '@ngxpert/cmdk@1.0.0(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)':
-    dependencies:
-      '@angular/cdk': 20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/common': 20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      '@ngneat/overview': 5.1.1(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))
-      '@ngneat/until-destroy': 10.0.0(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      tslib: 2.8.1
-    transitivePeerDependencies:
-      - rxjs
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -13766,7 +13601,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@nx/angular@22.0.2(3f0a0bf2320a7037a52b6e1a7103006d)':
+  '@nx/angular@22.0.2(3e400c52471e813e9a7806f5fbcd5277)':
     dependencies:
       '@angular-devkit/core': 20.3.8(chokidar@4.0.3)
       '@angular-devkit/schematics': 20.3.8(chokidar@4.0.3)
@@ -13774,7 +13609,7 @@ snapshots:
       '@nx/eslint': 22.0.2(@babel/traverse@7.28.5)(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))(@zkochan/js-yaml@0.0.7)(eslint@9.29.0(jiti@2.6.1))(nx@22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))
       '@nx/js': 22.0.2(@babel/traverse@7.28.5)(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))(nx@22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))
       '@nx/module-federation': 22.0.2(@babel/traverse@7.28.5)(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/helpers@0.5.17)(nx@22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)
-      '@nx/rspack': 22.0.2(@babel/traverse@7.28.5)(@module-federation/enhanced@0.9.1(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17))))(@module-federation/node@2.7.21(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17))))(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/helpers@0.5.17)(@types/express@4.17.21)(less@4.3.0)(nx@22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))(react-dom@19.1.0(react@19.1.0))(react-refresh@0.17.0)(react@19.1.0)(typescript@5.9.3)
+      '@nx/rspack': 22.0.2(@babel/traverse@7.28.5)(@module-federation/enhanced@0.9.1(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9)))(@module-federation/node@2.7.21(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9)))(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/helpers@0.5.17)(@types/express@4.17.21)(less@4.4.0)(nx@22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))(react-dom@19.1.0(react@19.1.0))(react-refresh@0.17.0)(react@19.1.0)(typescript@5.9.3)
       '@nx/web': 22.0.2(@babel/traverse@7.28.5)(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))(nx@22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))
       '@nx/webpack': 22.0.2(@babel/traverse@7.28.5)(@rspack/core@1.6.0(@swc/helpers@0.5.17))(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))(lightningcss@1.30.2)(nx@22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))(typescript@5.9.3)
       '@nx/workspace': 22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))
@@ -13791,7 +13626,7 @@ snapshots:
       webpack-merge: 5.10.0
     optionalDependencies:
       '@angular-devkit/build-angular': 20.3.8(3e8b32d5d56f0940f8f1c987e523aae3)
-      '@angular/build': 20.3.8(13703e6f164beb28742b71f6b89eeb71)
+      '@angular/build': 20.3.8(c464123e85c949359a741dff7d332c02)
     transitivePeerDependencies:
       - '@babel/traverse'
       - '@module-federation/enhanced'
@@ -14030,10 +13865,10 @@ snapshots:
   '@nx/nx-win32-x64-msvc@22.0.2':
     optional: true
 
-  '@nx/rspack@22.0.2(@babel/traverse@7.28.5)(@module-federation/enhanced@0.9.1(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17))))(@module-federation/node@2.7.21(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17))))(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/helpers@0.5.17)(@types/express@4.17.21)(less@4.3.0)(nx@22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))(react-dom@19.1.0(react@19.1.0))(react-refresh@0.17.0)(react@19.1.0)(typescript@5.9.3)':
+  '@nx/rspack@22.0.2(@babel/traverse@7.28.5)(@module-federation/enhanced@0.9.1(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9)))(@module-federation/node@2.7.21(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9)))(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/helpers@0.5.17)(@types/express@4.17.21)(less@4.4.0)(nx@22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))(react-dom@19.1.0(react@19.1.0))(react-refresh@0.17.0)(react@19.1.0)(typescript@5.9.3)':
     dependencies:
-      '@module-federation/enhanced': 0.9.1(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17)))
-      '@module-federation/node': 2.7.21(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17)))
+      '@module-federation/enhanced': 0.9.1(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9))
+      '@module-federation/node': 2.7.21(@rspack/core@1.6.0(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9))
       '@nx/devkit': 22.0.2(nx@22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))
       '@nx/js': 22.0.2(@babel/traverse@7.28.5)(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))(nx@22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))
       '@nx/module-federation': 22.0.2(@babel/traverse@7.28.5)(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/helpers@0.5.17)(nx@22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.3)
@@ -14048,7 +13883,7 @@ snapshots:
       enquirer: 2.3.6
       express: 4.21.2
       http-proxy-middleware: 3.0.5
-      less-loader: 11.1.0(less@4.3.0)(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17)))
+      less-loader: 11.1.0(less@4.4.0)(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17)))
       license-webpack-plugin: 4.0.2(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17)))
       loader-utils: 2.0.4
       parse5: 4.0.0
@@ -14483,9 +14318,22 @@ snapshots:
 
   '@socket.io/component-emitter@3.1.2': {}
 
-  '@spartan-ng/cli@0.0.1-alpha.451(b00f07699589cffe973b76b84f0e9f36)':
+  '@spartan-ng/brain@0.0.1-alpha.550(861cdaa6aa482619e96a096884772d29)':
     dependencies:
-      '@nx/angular': 22.0.2(3f0a0bf2320a7037a52b6e1a7103006d)
+      '@angular/cdk': 20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
+      '@angular/common': 20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
+      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
+      '@angular/forms': 20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2)
+      clsx: 2.1.1
+      rxjs: 7.8.2
+      tailwindcss: 4.1.17
+      tslib: 2.8.1
+    optionalDependencies:
+      luxon: 3.6.1
+
+  '@spartan-ng/cli@0.0.1-alpha.451(82fcd72f528d4c167a983dcbf5d14a71)':
+    dependencies:
+      '@nx/angular': 22.0.2(3e400c52471e813e9a7806f5fbcd5277)
       '@nx/devkit': 20.8.1(nx@22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))
       '@nx/js': 22.0.2(@babel/traverse@7.28.5)(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))(nx@22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))
       '@nx/workspace': 22.0.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))
@@ -14540,50 +14388,11 @@ snapshots:
       - webpack-cli
       - webpack-hot-middleware
 
-  '@spartan-ng/ui-accordion-brain@0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(clsx@2.1.1)(rxjs@7.8.2)':
-    dependencies:
-      '@angular/cdk': 20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      '@spartan-ng/ui-core': 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17)
-      clsx: 2.1.1
-      rxjs: 7.8.2
-      tslib: 2.8.1
-
   '@spartan-ng/ui-alertdialog-brain@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(@spartan-ng/ui-dialog-brain@0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(rxjs@7.8.2))':
     dependencies:
       '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
       '@spartan-ng/ui-core': 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17)
       '@spartan-ng/ui-dialog-brain': 0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(rxjs@7.8.2)
-      tslib: 2.8.1
-
-  '@spartan-ng/ui-avatar-brain@0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)':
-    dependencies:
-      '@angular/cdk': 20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      clsx: 2.1.1
-      tslib: 2.8.1
-
-  '@spartan-ng/ui-checkbox-brain@0.0.1-alpha.357(3edfe081f7eb05e22348e5744a323a32)':
-    dependencies:
-      '@angular/cdk': 20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/common': 20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      '@angular/forms': 20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2)
-      '@spartan-ng/ui-forms-brain': 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/forms@20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2))
-      tslib: 2.8.1
-
-  '@spartan-ng/ui-collapsible-brain@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))':
-    dependencies:
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      tslib: 2.8.1
-
-  '@spartan-ng/ui-command-brain@0.0.1-alpha.374(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@ngneat/overview@5.1.1(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@ngneat/until-destroy@10.0.0(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@ngxpert/cmdk@1.0.0(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))':
-    dependencies:
-      '@angular/common': 20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      '@ngneat/overview': 5.1.1(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))
-      '@ngneat/until-destroy': 10.0.0(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@ngxpert/cmdk': 1.0.0(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
       tslib: 2.8.1
 
   '@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17)':
@@ -14604,12 +14413,6 @@ snapshots:
       rxjs: 7.8.2
       tslib: 2.8.1
 
-  '@spartan-ng/ui-formfield-brain@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/forms@20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2))':
-    dependencies:
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      '@angular/forms': 20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2)
-      tslib: 2.8.1
-
   '@spartan-ng/ui-forms-brain@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/forms@20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2))':
     dependencies:
       '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
@@ -14624,103 +14427,12 @@ snapshots:
       rxjs: 7.8.2
       tslib: 2.8.1
 
-  '@spartan-ng/ui-label-brain@0.0.1-alpha.374(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/forms@20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2))':
-    dependencies:
-      '@angular/common': 20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      '@angular/forms': 20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2)
-      tslib: 2.8.1
-
-  '@spartan-ng/ui-menu-brain@0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))':
-    dependencies:
-      '@angular/cdk': 20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      tslib: 2.8.1
-
-  '@spartan-ng/ui-popover-brain@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(@spartan-ng/ui-dialog-brain@0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(rxjs@7.8.2))':
-    dependencies:
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      '@spartan-ng/ui-core': 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17)
-      '@spartan-ng/ui-dialog-brain': 0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(rxjs@7.8.2)
-      tslib: 2.8.1
-
-  '@spartan-ng/ui-progress-brain@0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))':
-    dependencies:
-      '@angular/cdk': 20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      tslib: 2.8.1
-
   '@spartan-ng/ui-radiogroup-brain@0.0.1-alpha.374(7cc32027b8d1a33a83c256749e99b33f)':
     dependencies:
       '@angular/cdk': 20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
       '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
       '@angular/forms': 20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2)
       '@spartan-ng/ui-forms-brain': 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/forms@20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2))
-      tslib: 2.8.1
-
-  '@spartan-ng/ui-select-brain@0.0.1-alpha.374(7a83a94ab714075ba7c29de958b8e263)':
-    dependencies:
-      '@angular/cdk': 20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/common': 20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      '@angular/forms': 20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2)
-      '@spartan-ng/ui-core': 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17)
-      '@spartan-ng/ui-formfield-brain': 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/forms@20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2))
-      '@spartan-ng/ui-forms-brain': 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/forms@20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2))
-      '@spartan-ng/ui-label-brain': 0.0.1-alpha.374(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/forms@20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2))
-      rxjs: 7.8.2
-      tslib: 2.8.1
-
-  '@spartan-ng/ui-separator-brain@0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))':
-    dependencies:
-      '@angular/cdk': 20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      tslib: 2.8.1
-
-  '@spartan-ng/ui-sheet-brain@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(@spartan-ng/ui-dialog-brain@0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(rxjs@7.8.2))':
-    dependencies:
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      '@spartan-ng/ui-core': 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17)
-      '@spartan-ng/ui-dialog-brain': 0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(rxjs@7.8.2)
-      tslib: 2.8.1
-
-  '@spartan-ng/ui-switch-brain@0.0.1-alpha.374(3edfe081f7eb05e22348e5744a323a32)':
-    dependencies:
-      '@angular/cdk': 20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/common': 20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      '@angular/forms': 20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2)
-      '@spartan-ng/ui-forms-brain': 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/forms@20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2))
-      tslib: 2.8.1
-
-  '@spartan-ng/ui-table-brain@0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))':
-    dependencies:
-      '@angular/cdk': 20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      '@spartan-ng/ui-core': 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17)
-      tslib: 2.8.1
-
-  '@spartan-ng/ui-tabs-brain@0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)':
-    dependencies:
-      '@angular/cdk': 20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      rxjs: 7.8.2
-      tslib: 2.8.1
-
-  '@spartan-ng/ui-toggle-brain@0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/forms@20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2))':
-    dependencies:
-      '@angular/cdk': 20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      '@angular/forms': 20.3.9(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@20.3.9(@angular/animations@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2)
-      tslib: 2.8.1
-
-  '@spartan-ng/ui-tooltip-brain@0.0.1-alpha.374(@angular/cdk@20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(@spartan-ng/ui-core@0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17))(rxjs@7.8.2)':
-    dependencies:
-      '@angular/cdk': 20.2.11(@angular/common@20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/common': 20.3.9(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
-      '@angular/core': 20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0)
-      '@spartan-ng/ui-core': 0.0.1-alpha.374(@angular/core@20.3.9(@angular/compiler@20.3.9)(rxjs@7.8.2)(zone.js@0.15.0))(clsx@2.1.1)(rxjs@7.8.2)(tailwind-merge@2.6.0)(tailwindcss-animate@1.0.7(tailwindcss@4.1.17))(tailwindcss@4.1.17)
-      rxjs: 7.8.2
       tslib: 2.8.1
 
   '@swc-node/core@1.13.3(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)':
@@ -15448,7 +15160,7 @@ snapshots:
 
   '@vitejs/plugin-basic-ssl@2.1.0(vite@7.1.11(@types/node@22.15.3)(jiti@2.6.1)(less@4.4.0)(lightningcss@1.30.2)(sass-embedded@1.87.0)(sass@1.90.0)(stylus@0.64.0)(terser@5.43.1)(yaml@2.7.1))':
     dependencies:
-      vite: 7.1.11(@types/node@22.15.3)(jiti@2.6.1)(less@4.3.0)(lightningcss@1.30.2)(sass-embedded@1.87.0)(sass@1.89.2)(stylus@0.64.0)(terser@5.43.1)(yaml@2.7.1)
+      vite: 7.1.11(@types/node@22.15.3)(jiti@2.6.1)(less@4.4.0)(lightningcss@1.30.2)(sass-embedded@1.87.0)(sass@1.90.0)(stylus@0.64.0)(terser@5.43.1)(yaml@2.7.1)
 
   '@webassemblyjs/ast@1.14.1':
     dependencies:
@@ -18717,6 +18429,12 @@ snapshots:
       less: 4.3.0
       webpack: 5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17))
 
+  less-loader@11.1.0(less@4.4.0)(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17))):
+    dependencies:
+      klona: 2.0.6
+      less: 4.4.0
+      webpack: 5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17))
+
   less-loader@12.3.0(@rspack/core@1.6.0(@swc/helpers@0.5.17))(less@4.4.0)(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9)):
     dependencies:
       less: 4.4.0
@@ -21197,7 +20915,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite@7.1.11(@types/node@22.15.3)(jiti@2.6.1)(less@4.3.0)(lightningcss@1.30.2)(sass-embedded@1.87.0)(sass@1.89.2)(stylus@0.64.0)(terser@5.43.1)(yaml@2.7.1):
+  vite@7.1.11(@types/node@22.15.3)(jiti@2.6.1)(less@4.4.0)(lightningcss@1.30.2)(sass-embedded@1.87.0)(sass@1.90.0)(stylus@0.64.0)(terser@5.43.1)(yaml@2.7.1):
     dependencies:
       esbuild: 0.25.9
       fdir: 6.5.0(picomatch@4.0.3)
@@ -21209,34 +20927,13 @@ snapshots:
       '@types/node': 22.15.3
       fsevents: 2.3.3
       jiti: 2.6.1
-      less: 4.3.0
-      lightningcss: 1.30.2
-      sass: 1.89.2
-      sass-embedded: 1.87.0
-      stylus: 0.64.0
-      terser: 5.43.1
-      yaml: 2.7.1
-
-  vite@7.1.11(@types/node@22.15.3)(jiti@2.6.1)(less@4.3.0)(lightningcss@1.30.2)(sass-embedded@1.87.0)(sass@1.90.0)(stylus@0.64.0)(terser@5.43.1)(yaml@2.7.1):
-    dependencies:
-      esbuild: 0.25.9
-      fdir: 6.5.0(picomatch@4.0.3)
-      picomatch: 4.0.3
-      postcss: 8.5.6
-      rollup: 4.52.3
-      tinyglobby: 0.2.15
-    optionalDependencies:
-      '@types/node': 22.15.3
-      fsevents: 2.3.3
-      jiti: 2.6.1
-      less: 4.3.0
+      less: 4.4.0
       lightningcss: 1.30.2
       sass: 1.90.0
       sass-embedded: 1.87.0
       stylus: 0.64.0
       terser: 5.43.1
       yaml: 2.7.1
-    optional: true
 
   void-elements@2.0.1: {}
 
@@ -21314,6 +21011,44 @@ snapshots:
       schema-utils: 4.3.2
     optionalDependencies:
       webpack: 5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17))
+
+  webpack-dev-server@5.2.2(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9)):
+    dependencies:
+      '@types/bonjour': 3.5.13
+      '@types/connect-history-api-fallback': 1.5.4
+      '@types/express': 4.17.21
+      '@types/express-serve-static-core': 4.19.6
+      '@types/serve-index': 1.9.4
+      '@types/serve-static': 1.15.7
+      '@types/sockjs': 0.3.36
+      '@types/ws': 8.18.1
+      ansi-html-community: 0.0.8
+      bonjour-service: 1.3.0
+      chokidar: 3.6.0
+      colorette: 2.0.20
+      compression: 1.8.0
+      connect-history-api-fallback: 2.0.0
+      express: 4.21.2
+      graceful-fs: 4.2.11
+      http-proxy-middleware: 2.0.9(@types/express@4.17.21)
+      ipaddr.js: 2.2.0
+      launch-editor: 2.10.0
+      open: 10.2.0
+      p-retry: 6.2.1
+      schema-utils: 4.3.2
+      selfsigned: 2.4.1
+      serve-index: 1.9.1
+      sockjs: 0.3.24
+      spdy: 4.0.2
+      webpack-dev-middleware: 7.4.2(webpack@5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9))
+      ws: 8.18.1
+    optionalDependencies:
+      webpack: 5.101.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.9)
+    transitivePeerDependencies:
+      - bufferutil
+      - debug
+      - supports-color
+      - utf-8-validate
 
   webpack-dev-server@5.2.2(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17))):
     dependencies:

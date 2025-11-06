@@ -1,3 +1,5 @@
+import { provideIcons } from "@ng-icons/core";
+import { NgIcon } from "@ng-icons/core";
 import { SocialsComponent } from "@/shared/components";
 import { CvService, MetaTagsService } from "@/shared/services";
 import { NgOptimizedImage } from "@angular/common";
@@ -10,7 +12,7 @@ import {
 import { toSignal } from "@angular/core/rxjs-interop";
 import { lucideArrowRight, lucideDownload } from "@ng-icons/lucide";
 import { HlmButtonDirective } from "@spartan-ng/ui-button-helm";
-import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
+import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
 import { map, startWith, timer } from "rxjs";
 import { StatsComponent } from "./components";
 
@@ -18,7 +20,8 @@ import { StatsComponent } from "./components";
   selector: "app-home",
   imports: [
     HlmButtonDirective,
-    HlmIconComponent,
+    NgIcon,
+    HlmIconDirective,
     SocialsComponent,
     NgOptimizedImage,
     StatsComponent,
@@ -66,7 +69,7 @@ import { StatsComponent } from "./components";
                 rel="noopener noreferrer"
               >
                 Download CV
-                <hlm-icon name="lucideDownload" class="h-5 w-5"></hlm-icon>
+                <ng-icon hlm size="20px" name="lucideDownload"></ng-icon>
               </a>
 
               <div class="mb-8 xl:mb-0">

@@ -1,3 +1,5 @@
+import { provideIcons } from "@ng-icons/core";
+import { NgIcon } from "@ng-icons/core";
 import { SocialsComponent } from "@/shared/components";
 import { MetaTagsService } from "@/shared/services";
 import { ChangeDetectionStrategy, Component, inject } from "@angular/core";
@@ -13,14 +15,15 @@ import {
 import { HlmBadgeDirective } from "@spartan-ng/ui-badge-helm";
 import { HlmButtonDirective } from "@spartan-ng/ui-button-helm";
 import { HlmCardModule } from "@spartan-ng/ui-card-helm";
-import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
+import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
 
 @Component({
   selector: "app-works",
   standalone: true,
   imports: [
     HlmButtonDirective,
-    HlmIconComponent,
+    NgIcon,
+    HlmIconDirective,
     HlmCardModule,
     HlmBadgeDirective,
     SocialsComponent,
@@ -61,7 +64,7 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
               class="uppercase flex items-center gap-2"
             >
               View GitHub
-              <hlm-icon name="lucideGithub" class="h-5 w-5"></hlm-icon>
+              <ng-icon hlm size="20px" name="lucideGithub"></ng-icon>
             </a>
           </div>
         </div>
@@ -69,7 +72,12 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
         <!-- Featured Projects Section -->
         <section id="featured-projects" class="mb-16">
           <div class="flex items-center gap-2 mb-6">
-            <hlm-icon name="lucideStar" class="h-6 w-6 text-accent"></hlm-icon>
+            <ng-icon
+              hlm
+              size="base"
+              name="lucideStar"
+              class="text-accent"
+            ></ng-icon>
             <h2 class="text-2xl font-bold">Featured Projects</h2>
           </div>
 
@@ -118,10 +126,7 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
                           variant="outline"
                           class="px-3"
                         >
-                          <hlm-icon
-                            name="lucideGithub"
-                            class="h-5 w-5"
-                          ></hlm-icon>
+                          <ng-icon hlm name="lucideGithub"></ng-icon>
                         </a>
                       }
                       @if (project.liveUrl) {
@@ -132,10 +137,7 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
                           variant="outline"
                           class="px-3"
                         >
-                          <hlm-icon
-                            name="lucideExternalLink"
-                            class="h-5 w-5"
-                          ></hlm-icon>
+                          <ng-icon hlm name="lucideExternalLink"></ng-icon>
                         </a>
                       }
                     </div>
@@ -146,10 +148,7 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
                       class="text-accent group-hover:underline flex items-center gap-1"
                     >
                       Learn more
-                      <hlm-icon
-                        name="lucideArrowRight"
-                        class="h-4 w-4"
-                      ></hlm-icon>
+                      <ng-icon hlm name="lucideArrowRight"></ng-icon>
                     </a>
                   </div>
                 </div>
@@ -161,7 +160,12 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
         <!-- Coding Activity Section -->
         <section id="coding-activity" class="mb-16">
           <div class="flex items-center gap-2 mb-6">
-            <hlm-icon name="lucideCode" class="h-6 w-6 text-accent"></hlm-icon>
+            <ng-icon
+              hlm
+              size="base"
+              name="lucideCode"
+              class="text-accent"
+            ></ng-icon>
             <h2 class="text-2xl font-bold">Coding Activity</h2>
           </div>
 
@@ -185,10 +189,7 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
         <!-- Technologies Section -->
         <section id="technologies" class="mb-16">
           <div class="flex items-center gap-2 mb-6">
-            <hlm-icon
-              name="lucideLayers"
-              class="h-6 w-6 text-accent"
-            ></hlm-icon>
+            <ng-icon hlm name="lucideLayers" class="text-accent"></ng-icon>
             <h2 class="text-2xl font-bold">Technologies & Tools</h2>
           </div>
 
@@ -217,7 +218,12 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
         <!-- Testimonials Section -->
         <section id="testimonials">
           <div class="flex items-center gap-2 mb-6">
-            <hlm-icon name="lucideUsers" class="h-6 w-6 text-accent"></hlm-icon>
+            <ng-icon
+              hlm
+              size="base"
+              name="lucideUsers"
+              class="text-accent"
+            ></ng-icon>
             <h2 class="text-2xl font-bold">Testimonials</h2>
           </div>
 

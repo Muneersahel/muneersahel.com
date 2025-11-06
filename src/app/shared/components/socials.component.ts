@@ -1,3 +1,5 @@
+import { provideIcons } from "@ng-icons/core";
+import { NgIcon } from "@ng-icons/core";
 import { ChangeDetectionStrategy, Component, input } from "@angular/core";
 import {
   lucideGithub,
@@ -6,11 +8,11 @@ import {
   lucideTwitter,
   lucideYoutube,
 } from "@ng-icons/lucide";
-import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
+import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
 
 @Component({
   selector: "app-socials",
-  imports: [HlmIconComponent],
+  imports: [NgIcon, HlmIconDirective],
   providers: [
     provideIcons({
       lucideGithub,
@@ -29,7 +31,7 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
           [class]="iconStyles()"
           [attr.aria-label]="item.name"
         >
-          <hlm-icon [name]="item.icon" class="h-5 w-5"></hlm-icon>
+          <ng-icon hlm size="20px" [name]="item.icon"></ng-icon>
         </a>
       }
     </div>

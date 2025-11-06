@@ -1,13 +1,15 @@
+import { provideIcons } from "@ng-icons/core";
+import { NgIcon } from "@ng-icons/core";
 import { AsyncPipe } from "@angular/common";
 import { ChangeDetectionStrategy, Component, inject } from "@angular/core";
 import { RouterLink } from "@angular/router";
 import { lucideArrowDownRight } from "@ng-icons/lucide";
-import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
+import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
 import { BlogService } from "./data";
 
 @Component({
   selector: "app-blogs",
-  imports: [AsyncPipe, HlmIconComponent, RouterLink],
+  imports: [AsyncPipe, NgIcon, HlmIconDirective, RouterLink],
   providers: [provideIcons({ lucideArrowDownRight })],
   template: `
     <section class="min-h-[80dvh] flex flex-col justify-center py-12 xl:pt-0">
@@ -25,10 +27,11 @@ import { BlogService } from "./data";
                   [routerLink]="['/blogs', blog.slug]"
                   class="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                 >
-                  <hlm-icon
+                  <ng-icon
+                    hlm
                     name="lucideArrowDownRight"
-                    class="w-8 h-8 text-primary"
-                  ></hlm-icon>
+                    class="text-primary"
+                  ></ng-icon>
                 </a>
               </div>
               <h2
