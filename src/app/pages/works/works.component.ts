@@ -90,7 +90,7 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
                       <span
                         hlmBadge
                         variant="outline"
-                        class="bg-black/50 backdrop-blur-sm text-white/80 text-xs px-2 py-1 rounded-full transition-colors duration-300 group-hover:bg-accent group-hover:text-primary group-hover:border-accent"
+                        class="bg-black/50 backdrop-blur-xs text-white/80 text-xs px-2 py-1 rounded-full transition-colors duration-300 group-hover:bg-accent group-hover:text-primary group-hover:border-accent"
                       >
                         {{ tag }}
                       </span>

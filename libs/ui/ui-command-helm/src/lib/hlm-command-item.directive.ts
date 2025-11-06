@@ -18,7 +18,7 @@ export class HlmCommandItemDirective {
 
 	protected _computedClass = computed(() =>
 		hlm(
-			'items-center relative cursor-default select-none rounded-sm px-2 py-1.5 text-sm outline-none\n' +
+			'items-center relative cursor-default select-none rounded-sm px-2 py-1.5 text-sm outline-hidden\n' +
 				'aria-selected:bg-accent aria-selected:text-accent-foreground\n' +
 				'hover:bg-accent/50\n' +
 				'disabled:pointer-events-none disabled:opacity-50',

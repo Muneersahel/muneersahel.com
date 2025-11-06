@@ -26,17 +26,8 @@ import { HlmIconComponent, provideIcons } from "@spartan-ng/ui-icon-helm";
       lucideArrowRight,
     }),
   ],
-  styles: `
-    li::marker {
-      @apply text-accent font-semibold;
-      content: "[" counter(list-item) "]" " ";
-      &:before {
-        content: "• ";
-      }
-    }
-  `,
   template: `
-    <section class="py-12 min-h-[80dvh]">
+    <section class="py-12 min-h-[80dvh] resume">
       <div class="container ">
         <!-- Header Section -->
         <div

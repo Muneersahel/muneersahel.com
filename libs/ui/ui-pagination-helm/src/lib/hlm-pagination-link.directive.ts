@@ -47,7 +47,7 @@ export class HlmPaginationLinkDirective {
 		hlm(
 			paginationLinkVariants(),
 			buttonVariants({
-				variant: this.isActive() ? 'outline' : 'ghost',
+				variant: this.isActive() ? 'outline-solid' : 'ghost',
 				size: this.size(),
 			}),
 			this.class(),

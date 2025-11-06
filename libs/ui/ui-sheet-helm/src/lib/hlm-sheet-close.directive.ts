@@ -13,7 +13,7 @@ export class HlmSheetCloseDirective {
   public readonly userClass = input<ClassValue>('', { alias: 'class' });
   protected _computedClass = computed(() =>
     hlm(
-      'absolute right-8 top-8 transition-opacity outline-none',
+      'absolute right-8 top-8 transition-opacity outline-hidden',
       this.userClass(),
     ),
   );

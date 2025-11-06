@@ -13,7 +13,7 @@ export class HlmToggleGroupDirective {
 	public readonly userClass = input<ClassValue>('', { alias: 'class' });
 	protected _computedClass = computed(() =>
 		hlm(
-			'inline-flex items-center rounded-md [&>[hlm][brnToggle][variant="outline"]]:-mx-[0.5px] [&>[hlm][brnToggle]]:rounded-none focus:[&>[hlm][brnToggle]]:z-10 first-of-type:[&>[hlm][brnToggle]]:rounded-l-md last-of-type:[&>[hlm][brnToggle]]:rounded-r-md',
+			'inline-flex items-center rounded-md [&>[hlm][brnToggle][variant="outline"]]:-mx-[0.5px] [&>[hlm][brnToggle]]:rounded-none [&>[hlm][brnToggle]]:focus:z-10 [&>[hlm][brnToggle]]:first-of-type:rounded-l-md [&>[hlm][brnToggle]]:last-of-type:rounded-r-md',
 			this.userClass(),
 		),
 	);

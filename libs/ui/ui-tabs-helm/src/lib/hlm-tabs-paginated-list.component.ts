@@ -31,7 +31,7 @@ import { listVariants } from './hlm-tabs-list.component';
 			<hlm-icon size="base" name="lucideChevronLeft" />
 		</button>
 
-		<div #tabListContainer class="z-[1] flex grow overflow-hidden " (keydown)="_handleKeydown($event)">
+		<div #tabListContainer class="z-1 flex grow overflow-hidden " (keydown)="_handleKeydown($event)">
 			<div class="relative grow transition-transform" #tabList role="tablist" (cdkObserveContent)="_onContentChanges()">
 				<div #tabListInner [class]="_tabListClass()">
 					<ng-content></ng-content>
@@ -71,7 +71,7 @@ export class HlmTabsPaginatedListComponent extends BrnTabsPaginatedListDirective
 	@ViewChild('previousPaginator') _previousPaginator!: ElementRef<HTMLElement>;
 
 	public readonly userClass = input<ClassValue>('', { alias: 'class' });
-	protected _computedClass = computed(() => hlm('flex overflow-hidden relative flex-shrink-0', this.userClass()));
+	protected _computedClass = computed(() => hlm('flex overflow-hidden relative shrink-0', this.userClass()));
 
 	public readonly tabLisClass = input<ClassValue>('', { alias: 'class' });
 	protected _tabListClass = computed(() => hlm(listVariants(), this.tabLisClass()));
@@ -79,7 +79,7 @@ export class HlmTabsPaginatedListComponent extends BrnTabsPaginatedListDirective
 	public readonly paginationButtonClass = input<ClassValue>('', { alias: 'class' });
 	protected _paginationButtonClass = computed(() =>
 		hlm(
-			'relative z-[2] select-none data-[pagination=previous]:pr-1 data-[pagination=next]:pl-1 disabled:cursor-default',
+			'relative z-2 select-none data-[pagination=previous]:pr-1 data-[pagination=next]:pl-1 disabled:cursor-default',
 			buttonVariants({ variant: 'ghost', size: 'icon' }),
 			this.paginationButtonClass(),
 		),

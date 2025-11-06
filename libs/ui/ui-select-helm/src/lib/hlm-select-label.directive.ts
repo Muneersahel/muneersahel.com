@@ -19,7 +19,7 @@ export class HlmSelectLabelDirective implements OnInit {
 	protected _computedClass = computed(() =>
 		hlm(
 			'pl-8 pr-2 text-sm font-semibold rtl:pl-2 rtl:pr-8',
-			this._stickyLabels() ? 'sticky top-0 bg-popover block z-[2]' : '',
+			this._stickyLabels() ? 'sticky top-0 bg-popover block z-2' : '',
 			this.userClass(),
 		),
 	);

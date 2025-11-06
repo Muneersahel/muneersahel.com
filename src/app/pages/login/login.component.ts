@@ -1,5 +1,16 @@
-import { ChangeDetectionStrategy, Component, signal } from "@angular/core";
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  signal,
+} from "@angular/core";
+import {
+  Auth,
+  AuthErrorCodes,
+  signInWithEmailAndPassword,
+} from "@angular/fire/auth";
 import { FormsModule, NgForm } from "@angular/forms";
+import { Router } from "@angular/router";
 import { HlmButtonDirective } from "@spartan-ng/ui-button-helm";
 import {
   HlmCardContentDirective,
@@ -8,6 +19,7 @@ import {
   HlmCardTitleDirective,
 } from "@spartan-ng/ui-card-helm";
 import { HlmInputDirective } from "@spartan-ng/ui-input-helm";
+import { toast } from "ngx-sonner";
 
 @Component({
   selector: "app-login",
@@ -27,7 +39,7 @@ import { HlmInputDirective } from "@spartan-ng/ui-input-helm";
     >
       <div
         hlmCard
-        class="w-full max-w-md bg-white/5 rounded-lg p-8 border border-border shadow-lg backdrop-blur-sm"
+        class="w-full max-w-md bg-white/5 rounded-lg p-8 border border-border shadow-lg backdrop-blur-xs"
       >
         <div hlmCardHeader class="mb-8">
           <h1
@@ -99,41 +111,44 @@ import { HlmInputDirective } from "@spartan-ng/ui-input-helm";
               }
             </button>
           </form>
-          @if (error()) {
-            <div class="mt-4 text-red-500 text-center text-sm">
-              {{ error() }}
-            </div>
-          }
         </div>
       </div>
     </section>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  styles: [``],
 })
 export class LoginComponent {
+  readonly #auth = inject(Auth);
+  readonly #router = inject(Router);
+
   email = "";
   password = "";
+
   loading = signal(false);
-  error = signal("");
 
   onSubmit(form: NgForm) {
     if (form.invalid) return;
     this.loading.set(true);
-    this.error.set("");
-    // Simulate login (replace with real auth logic)
-    setTimeout(() => {
-      this.loading.set(false);
-      if (
-        this.email.toLowerCase() === "test@example.com" &&
-        this.password === "password"
-      ) {
-        // Success: redirect or show success message
-        this.error.set("");
-        // ...
-      } else {
-        this.error.set("Invalid email or password.");
-      }
-    }, 1200);
+    signInWithEmailAndPassword(this.#auth, this.email, this.password)
+      .then(() => {
+        this.loading.set(false);
+        this.#router.navigate(["/"]);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+
+        let msg = "";
+        if (errorCode === AuthErrorCodes.INVALID_PASSWORD) {
+          msg = "Invalid password. Please try again.";
+        } else if (errorCode === AuthErrorCodes.USER_DELETED) {
+          msg =
+            "No user found with this email. Please check your email and try again.";
+        } else {
+          msg = "An unexpected error occurred. Please try again.";
+        }
+
+        this.loading.set(false);
+        toast.error("Error", { description: msg });
+      });
   }
 }
