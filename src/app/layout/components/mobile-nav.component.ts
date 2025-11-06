@@ -1,14 +1,10 @@
-import { provideIcons } from "@ng-icons/core";
-import { NgIcon } from "@ng-icons/core";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import {
-  BrnSheetContentDirective,
-  BrnSheetTriggerDirective,
-} from "@spartan-ng/brain/sheet";
+import { NgIcon, provideIcons } from "@ng-icons/core";
+import { BrnSheetContent, BrnSheetTrigger } from "@spartan-ng/brain/sheet";
 
 // import {
-//   HlmSheetComponent,
-//   HlmSheetContentComponent,
+//   HlmSheet,
+//   HlmSheetContent,
 //   HlmSheetDescriptionDirective,
 //   HlmSheetFooterComponent,
 //   HlmSheetHeaderComponent,
@@ -17,22 +13,17 @@ import {
 
 import { RouterLink, RouterLinkActive } from "@angular/router";
 import { lucideAlignRight } from "@ng-icons/lucide";
-import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
-import {
-  HlmSheetComponent,
-  HlmSheetContentComponent,
-} from "@spartan-ng/ui-sheet-helm";
+import { HlmSheet, HlmSheetContent } from "@spartan-ng/helm/sheet";
 import { links } from "../constants";
 
 @Component({
   selector: "app-mobile-nav",
   imports: [
-    HlmSheetContentComponent,
-    HlmSheetComponent,
-    BrnSheetTriggerDirective,
-    BrnSheetContentDirective,
+    HlmSheetContent,
+    HlmSheet,
+    BrnSheetTrigger,
+    BrnSheetContent,
     NgIcon,
-    HlmIconDirective,
     RouterLink,
     RouterLinkActive,
   ],

@@ -11,14 +11,14 @@ import {
 } from "@angular/fire/auth";
 import { FormsModule, NgForm } from "@angular/forms";
 import { Router } from "@angular/router";
-import { HlmButtonDirective } from "@spartan-ng/ui-button-helm";
+import { HlmButton } from "@spartan-ng/helm/button";
 import {
-  HlmCardContentDirective,
-  HlmCardDirective,
-  HlmCardHeaderDirective,
-  HlmCardTitleDirective,
-} from "@spartan-ng/ui-card-helm";
-import { HlmInputDirective } from "@spartan-ng/ui-input-helm";
+  HlmCardContent,
+  HlmCard,
+  HlmCardHeader,
+  HlmCardTitle,
+} from "@spartan-ng/helm/card";
+import { HlmInput } from "@spartan-ng/helm/input";
 import { toast } from "ngx-sonner";
 
 @Component({
@@ -26,12 +26,12 @@ import { toast } from "ngx-sonner";
   standalone: true,
   imports: [
     FormsModule,
-    HlmButtonDirective,
-    HlmInputDirective,
-    HlmCardDirective,
-    HlmCardHeaderDirective,
-    HlmCardTitleDirective,
-    HlmCardContentDirective,
+    HlmButton,
+    HlmInput,
+    HlmCard,
+    HlmCardHeader,
+    HlmCardTitle,
+    HlmCardContent,
   ],
   template: `
     <section

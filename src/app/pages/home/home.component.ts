@@ -1,5 +1,3 @@
-import { provideIcons } from "@ng-icons/core";
-import { NgIcon } from "@ng-icons/core";
 import { SocialsComponent } from "@/shared/components";
 import { CvService, MetaTagsService } from "@/shared/services";
 import { NgOptimizedImage } from "@angular/common";
@@ -10,18 +8,17 @@ import {
   inject,
 } from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
+import { NgIcon, provideIcons } from "@ng-icons/core";
 import { lucideArrowRight, lucideDownload } from "@ng-icons/lucide";
-import { HlmButtonDirective } from "@spartan-ng/ui-button-helm";
-import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
+import { HlmButton } from "@spartan-ng/helm/button";
 import { map, startWith, timer } from "rxjs";
 import { StatsComponent } from "./components";
 
 @Component({
   selector: "app-home",
   imports: [
-    HlmButtonDirective,
+    HlmButton,
     NgIcon,
-    HlmIconDirective,
     SocialsComponent,
     NgOptimizedImage,
     StatsComponent,

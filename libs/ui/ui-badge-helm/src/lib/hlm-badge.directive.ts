@@ -1,3 +1,4 @@
+import { hlm } from "@spartan-ng/helm/utils";
 import {
   Directive,
   Input,
@@ -6,7 +7,7 @@ import {
   input,
   signal,
 } from "@angular/core";
-import { hlm } from "@spartan-ng/brain/core";
+
 import { type VariantProps, cva } from "class-variance-authority";
 import type { ClassValue } from "clsx";
 
@@ -60,7 +61,7 @@ type badgeVariants = VariantProps<typeof badgeVariants>;
     "[class]": "_computedClass()",
   },
 })
-export class HlmBadgeDirective {
+export class HlmBadge {
   public readonly userClass = input<ClassValue>("", { alias: "class" });
   protected _computedClass = computed(() =>
     hlm(

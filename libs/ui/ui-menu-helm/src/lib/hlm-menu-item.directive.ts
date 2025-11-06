@@ -1,3 +1,4 @@
+import { hlm } from "@spartan-ng/helm/utils";
 import {
   Directive,
   Input,
@@ -6,8 +7,8 @@ import {
   input,
   signal,
 } from "@angular/core";
-import { hlm } from "@spartan-ng/brain/core";
-import { BrnMenuItemDirective } from "@spartan-ng/brain/menu";
+
+import { BrnMenuItem } from "@spartan-ng/brain/menu";
 import { type VariantProps, cva } from "class-variance-authority";
 import type { ClassValue } from "clsx";
 
@@ -28,13 +29,13 @@ export type HlmMenuItemVariants = VariantProps<typeof hlmMenuItemVariants>;
   },
   hostDirectives: [
     {
-      directive: BrnMenuItemDirective,
+      directive: BrnMenuItem,
       inputs: ["disabled: disabled"],
       outputs: ["triggered: triggered"],
     },
   ],
 })
-export class HlmMenuItemDirective {
+export class HlmMenuItem {
   private readonly _inset = signal<boolean>(false);
 
   public readonly userClass = input<ClassValue>("", { alias: "class" });

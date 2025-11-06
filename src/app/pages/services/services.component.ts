@@ -1,12 +1,10 @@
-import { provideIcons } from "@ng-icons/core";
-import { NgIcon } from "@ng-icons/core";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { NgIcon, provideIcons } from "@ng-icons/core";
 import { lucideArrowDownRight } from "@ng-icons/lucide";
-import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
 
 @Component({
   selector: "app-services",
-  imports: [NgIcon, HlmIconDirective],
+  imports: [NgIcon],
   providers: [provideIcons({ lucideArrowDownRight })],
   template: `
     <section class="min-h-[80dvh] flex flex-col justify-center py-12 xl:pt-0">

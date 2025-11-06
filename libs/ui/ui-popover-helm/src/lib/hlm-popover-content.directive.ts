@@ -1,3 +1,5 @@
+import { injectExposesStateProvider } from "@spartan-ng/brain/core";
+import { hlm } from "@spartan-ng/helm/utils";
 import {
   Directive,
   ElementRef,
@@ -8,7 +10,7 @@ import {
   input,
   signal,
 } from "@angular/core";
-import { hlm, injectExposesStateProvider } from "@spartan-ng/brain/core";
+
 import type { ClassValue } from "clsx";
 
 @Directive({
@@ -18,7 +20,7 @@ import type { ClassValue } from "clsx";
     "[class]": "_computedClass()",
   },
 })
-export class HlmPopoverContentDirective {
+export class HlmPopoverContent {
   private _stateProvider = injectExposesStateProvider({ host: true });
   public state = this._stateProvider.state ?? signal("closed");
   private _renderer = inject(Renderer2);

@@ -1,5 +1,6 @@
 import { Directive, Input, computed, input, signal } from "@angular/core";
-import { hlm } from "@spartan-ng/brain/core";
+import { hlm } from "@spartan-ng/helm/utils";
+
 import { cva, type VariantProps } from "class-variance-authority";
 import type { ClassValue } from "clsx";
 
@@ -14,9 +15,9 @@ export const buttonVariants = cva(
           "border border-accent bg-transparent text-accent hover:bg-accent hover:text-primary",
       },
       size: {
-        default: "h-[44px] px-6",
-        md: "h-[48px] px-6",
-        lg: "h-[56px] px-8 text-sm uppercase tracking-[2px]",
+        default: "h-11 px-6",
+        md: "h-12 px-6",
+        lg: "h-14 px-8 text-sm uppercase tracking-[2px]",
       },
     },
     defaultVariants: {
@@ -34,7 +35,7 @@ export type ButtonVariants = VariantProps<typeof buttonVariants>;
     "[class]": "_computedClass()",
   },
 })
-export class HlmButtonDirective {
+export class HlmButton {
   public readonly userClass = input<ClassValue>("", { alias: "class" });
   private readonly _settableClass = signal<ClassValue>("");
 

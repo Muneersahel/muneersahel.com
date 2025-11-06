@@ -1,8 +1,7 @@
-import { provideIcons } from "@ng-icons/core";
-import { NgIcon } from "@ng-icons/core";
 import { SocialsComponent } from "@/shared/components";
 import { MetaTagsService } from "@/shared/services";
 import { ChangeDetectionStrategy, Component, inject } from "@angular/core";
+import { NgIcon, provideIcons } from "@ng-icons/core";
 import {
   lucideArrowRight,
   lucideCode,
@@ -12,22 +11,14 @@ import {
   lucideStar,
   lucideUsers,
 } from "@ng-icons/lucide";
-import { HlmBadgeDirective } from "@spartan-ng/ui-badge-helm";
-import { HlmButtonDirective } from "@spartan-ng/ui-button-helm";
-import { HlmCardModule } from "@spartan-ng/ui-card-helm";
-import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
+import { HlmBadge } from "@spartan-ng/helm/badge";
+import { HlmButton } from "@spartan-ng/helm/button";
+import { HlmCardImports } from "@spartan-ng/helm/card";
 
 @Component({
   selector: "app-works",
   standalone: true,
-  imports: [
-    HlmButtonDirective,
-    NgIcon,
-    HlmIconDirective,
-    HlmCardModule,
-    HlmBadgeDirective,
-    SocialsComponent,
-  ],
+  imports: [HlmButton, NgIcon, HlmCardImports, HlmBadge, SocialsComponent],
   providers: [
     provideIcons({
       lucideArrowRight,

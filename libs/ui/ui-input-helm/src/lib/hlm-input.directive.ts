@@ -1,5 +1,6 @@
+import { hlm } from "@spartan-ng/helm/utils";
 import { Directive, Input, computed, input, signal } from "@angular/core";
-import { hlm } from "@spartan-ng/brain/core";
+
 import { type VariantProps, cva } from "class-variance-authority";
 import type { ClassValue } from "clsx";
 
@@ -32,7 +33,7 @@ type InputVariants = VariantProps<typeof inputVariants>;
     "[class]": "_computedClass()",
   },
 })
-export class HlmInputDirective {
+export class HlmInput {
   private readonly _size = signal<InputVariants["size"]>("default");
   @Input()
   set size(value: InputVariants["size"]) {

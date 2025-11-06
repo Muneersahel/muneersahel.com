@@ -1,3 +1,4 @@
+import { hlm } from "@spartan-ng/helm/utils";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -8,16 +9,16 @@ import {
 } from "@angular/core";
 import { NgIcon, provideIcons } from "@ng-icons/core";
 import { lucideCheck } from "@ng-icons/lucide";
-import { hlm } from "@spartan-ng/brain/core";
-import { BrnSelectOptionDirective } from "@spartan-ng/brain/select";
-import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
+
+import { BrnSelectOption } from "@spartan-ng/brain/select";
+import { HlmIcon } from "@spartan-ng/helm/icon";
 import type { ClassValue } from "clsx";
 
 @Component({
   selector: "hlm-option",
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  hostDirectives: [BrnSelectOptionDirective],
+  hostDirectives: [BrnSelectOption],
   providers: [provideIcons({ lucideCheck })],
   host: {
     "[class]": "_computedClass()",
@@ -34,10 +35,10 @@ import type { ClassValue } from "clsx";
       }
     </span>
   `,
-  imports: [NgIcon, HlmIconDirective],
+  imports: [NgIcon, HlmIcon],
 })
-export class HlmSelectOptionComponent {
-  protected readonly _brnSelectOption = inject(BrnSelectOptionDirective, {
+export class HlmSelectOption {
+  protected readonly _brnSelectOption = inject(BrnSelectOption, {
     host: true,
   });
   public readonly userClass = input<ClassValue>("", { alias: "class" });

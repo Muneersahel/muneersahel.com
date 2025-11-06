@@ -1,5 +1,7 @@
+import { injectCustomClassSettable } from "@spartan-ng/brain/core";
+import { hlm } from "@spartan-ng/helm/utils";
 import { Directive, computed, effect, input } from "@angular/core";
-import { hlm, injectCustomClassSettable } from "@spartan-ng/brain/core";
+
 import type { ClassValue } from "clsx";
 
 @Directive({
@@ -9,7 +11,7 @@ import type { ClassValue } from "clsx";
     "[class]": "_computedClass()",
   },
 })
-export class HlmSheetOverlayDirective {
+export class HlmSheetOverlay {
   private _classSettable = injectCustomClassSettable({
     optional: true,
     host: true,

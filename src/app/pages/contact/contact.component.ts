@@ -1,5 +1,3 @@
-import { provideIcons } from "@ng-icons/core";
-import { NgIcon } from "@ng-icons/core";
 import { SocialsComponent } from "@/shared/components";
 import { MetaTagsService } from "@/shared/services";
 import { NgClass } from "@angular/common";
@@ -15,6 +13,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from "@angular/forms";
+import { NgIcon, provideIcons } from "@ng-icons/core";
 import {
   lucideArrowRight,
   lucideMail,
@@ -22,21 +21,19 @@ import {
   lucidePhone,
   lucideSend,
 } from "@ng-icons/lucide";
-import { HlmButtonDirective } from "@spartan-ng/ui-button-helm";
-import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
-import { HlmInputDirective } from "@spartan-ng/ui-input-helm";
-import { HlmLabelDirective } from "@spartan-ng/ui-label-helm";
+import { HlmButton } from "@spartan-ng/helm/button";
+import { HlmInput } from "@spartan-ng/helm/input";
+import { HlmLabel } from "@spartan-ng/helm/label";
 
 @Component({
   selector: "app-contact",
   standalone: true,
   imports: [
     ReactiveFormsModule,
-    HlmButtonDirective,
+    HlmButton,
     NgIcon,
-    HlmIconDirective,
-    HlmInputDirective,
-    HlmLabelDirective,
+    HlmInput,
+    HlmLabel,
     SocialsComponent,
     NgClass,
   ],

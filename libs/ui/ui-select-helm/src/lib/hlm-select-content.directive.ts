@@ -1,9 +1,10 @@
-import { Directive, Input, computed, input, signal } from "@angular/core";
 import {
-  hlm,
   injectExposedSideProvider,
   injectExposesStateProvider,
 } from "@spartan-ng/brain/core";
+import { hlm } from "@spartan-ng/helm/utils";
+import { Directive, Input, computed, input, signal } from "@angular/core";
+
 import type { ClassValue } from "clsx";
 
 @Directive({
@@ -15,7 +16,7 @@ import type { ClassValue } from "clsx";
     "[attr.data-side]": '_sideProvider?.side() ?? "bottom"',
   },
 })
-export class HlmSelectContentDirective {
+export class HlmSelectContent {
   public readonly userClass = input<ClassValue>("", { alias: "class" });
   protected readonly _stateProvider = injectExposesStateProvider({
     optional: true,
