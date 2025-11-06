@@ -1,17 +1,15 @@
-import { hlm } from "@spartan-ng/helm/utils";
-import { provideIcons } from "@ng-icons/core";
-import { NgIcon } from "@ng-icons/core";
 import { Component, computed, input } from "@angular/core";
+import { NgIcon, provideIcons } from "@ng-icons/core";
 import { lucideChevronRight } from "@ng-icons/lucide";
+import { hlm } from "@spartan-ng/helm/utils";
 
-import { HlmIcon } from "@spartan-ng/helm/icon";
 import type { ClassValue } from "clsx";
 
 @Component({
   selector: "hlm-menu-item-sub-indicator",
   standalone: true,
   providers: [provideIcons({ lucideChevronRight })],
-  imports: [NgIcon, HlmIcon],
+  imports: [NgIcon],
   template: `
     <ng-icon hlm size="none" class="w-full h-full" name="lucideChevronRight" />
   `,
