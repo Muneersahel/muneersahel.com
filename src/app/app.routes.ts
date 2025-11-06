@@ -1,12 +1,16 @@
 import { Routes } from "@angular/router";
 
+import { authGuard } from "@/guards/auth.guard";
+import { publicGuard } from "@/guards/public.guard";
+import { LayoutComponent } from "@/layout/layout.component";
+import { AdminLayoutComponent } from "@/pages/admin/admin-layout.component";
 import { HomeComponent } from "@/pages/home";
-import { LayoutComponent } from "./layout/layout.component";
 
 export const appRoutes: Routes = [
   {
     path: "",
     component: LayoutComponent,
+    canActivate: [publicGuard],
     children: [
       { path: "", component: HomeComponent },
       {
@@ -47,6 +51,13 @@ export const appRoutes: Routes = [
           import("./pages/login/login.component").then((m) => m.LoginComponent),
       },
     ],
+  },
+  {
+    path: "admin",
+    canActivate: [authGuard],
+    component: AdminLayoutComponent,
+    loadChildren: () =>
+      import("./pages/admin/admin.routes").then((m) => m.routes),
   },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];
