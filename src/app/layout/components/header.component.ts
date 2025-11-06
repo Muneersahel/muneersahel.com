@@ -1,13 +1,13 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { RouterLink } from "@angular/router";
-import { HlmButtonModule } from "@spartan-ng/helm/button";
+import { HlmButtonImports } from "@spartan-ng/helm/button";
 
 import MobileNavComponent from "./mobile-nav.component";
 import { NavComponent } from "./nav.component";
 
 @Component({
   selector: "app-header",
-  imports: [HlmButtonModule, RouterLink, NavComponent, MobileNavComponent],
+  imports: [HlmButtonImports, RouterLink, NavComponent, MobileNavComponent],
   host: { class: "sticky top-0 z-10" },
   template: `
     <header class="py-8 xl:py-12 text-white">
