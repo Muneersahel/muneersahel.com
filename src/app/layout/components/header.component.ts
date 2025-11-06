@@ -8,11 +8,7 @@ import { NavComponent } from "./nav.component";
 @Component({
   selector: "app-header",
   imports: [HlmButtonModule, RouterLink, NavComponent, MobileNavComponent],
-  styles: `
-    :host {
-      @apply sticky top-0 z-10;
-    }
-  `,
+  host: { class: "sticky top-0 z-10" },
   template: `
     <header class="py-8 xl:py-12 text-white">
       <!-- logo -->
@@ -29,9 +25,9 @@ import { NavComponent } from "./nav.component";
         <div class="hidden xl:flex items-center gap-8">
           <app-nav />
           <a routerLink="/login" hlmBtn color="primary" class="ml-4"> Login </a>
-          <a routerLink="/contact" hlmBtn color="accent" class="ml-2">
+          <!-- <a routerLink="/contact" hlmBtn color="accent" class="ml-2">
             Hire Me
-          </a>
+          </a> -->
         </div>
 
         <!-- mobile nav and login button -->

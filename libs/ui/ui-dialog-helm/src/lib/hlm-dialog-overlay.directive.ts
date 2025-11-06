@@ -3,7 +3,7 @@ import { hlm, injectCustomClassSettable } from '@spartan-ng/ui-core';
 import type { ClassValue } from 'clsx';
 
 export const hlmDialogOverlayClass =
-	'bg-background/80 backdrop-blur-sm data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0';
+	'bg-background/80 backdrop-blur-xs data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0';
 
 @Directive({
 	selector: '[hlmDialogOverlay],brn-dialog-overlay[hlm]',

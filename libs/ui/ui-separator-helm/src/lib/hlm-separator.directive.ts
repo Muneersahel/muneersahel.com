@@ -16,7 +16,7 @@ export class HlmSeparatorDirective {
 	protected _computedClass = computed(() =>
 		hlm(
 			'inline-flex shrink-0 border-0 bg-border',
-			this.orientation() === 'horizontal' ? 'h-[1px] w-full' : 'h-full w-[1px]',
+			this.orientation() === 'horizontal' ? 'h-px w-full' : 'h-full w-px',
 			this.userClass(),
 		),
 	);

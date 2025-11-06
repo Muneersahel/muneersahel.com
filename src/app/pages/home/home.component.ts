@@ -30,7 +30,7 @@ import { StatsComponent } from "./components";
         <div
           class="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24"
         >
-          <div class="text-center xl:text-left order-2 xl:order-none">
+          <div class="text-center xl:text-left order-2 xl:order-0">
             @if (isHeroVisible()) {
               <div
                 class="mb-4 transition-all duration-300 ease-in-out"
@@ -78,7 +78,7 @@ import { StatsComponent } from "./components";
             </div>
           </div>
 
-          <div class="order-1 xl:order-none mb-8 xl:mb-0">
+          <div class="order-1 xl:order-0 mb-8 xl:mb-0">
             <div
               class="relative w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten m-auto xl:mr-0"
             >

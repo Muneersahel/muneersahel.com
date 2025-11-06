@@ -6,6 +6,7 @@ import {
   provideAnalytics,
 } from "@angular/fire/analytics";
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
+import { getAuth, provideAuth } from "@angular/fire/auth";
 import { getFirestore, provideFirestore } from "@angular/fire/firestore";
 import { provideClientHydration } from "@angular/platform-browser";
 import { provideAnimationsAsync } from "@angular/platform-browser/animations/async";
@@ -49,6 +50,7 @@ export const appConfig: ApplicationConfig = {
         measurementId: "G-G2BMEHD10R",
       }),
     ),
+    provideAuth(() => getAuth()),
     provideAnalytics(() => getAnalytics()),
     ScreenTrackingService,
     provideFirestore(() => getFirestore()),

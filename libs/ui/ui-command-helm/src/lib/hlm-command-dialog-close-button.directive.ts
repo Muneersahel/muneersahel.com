@@ -18,5 +18,5 @@ export class HlmCommandDialogCloseButtonDirective {
 	}
 
 	public readonly userClass = input<ClassValue>('', { alias: 'class' });
-	protected _computedClass = computed(() => hlm('!p-1 !h-5 !w-5', this.userClass()));
+	protected _computedClass = computed(() => hlm('p-1! h-5! w-5!', this.userClass()));
 }
