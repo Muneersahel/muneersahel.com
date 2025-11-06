@@ -1,7 +1,6 @@
-import { provideIcons } from "@ng-icons/core";
-import { NgIcon } from "@ng-icons/core";
 import { CvService, MetaTagsService } from "@/shared/services";
 import { ChangeDetectionStrategy, Component, inject } from "@angular/core";
+import { NgIcon, provideIcons } from "@ng-icons/core";
 import {
   lucideArrowRight,
   lucideCalendar,
@@ -10,14 +9,13 @@ import {
   lucideLaptop,
   lucideMapPin,
 } from "@ng-icons/lucide";
-import { HlmButtonDirective } from "@spartan-ng/ui-button-helm";
-import { HlmCardModule } from "@spartan-ng/ui-card-helm";
-import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
+import { HlmButton } from "@spartan-ng/helm/button";
+import { HlmCardImports } from "@spartan-ng/helm/card";
 
 @Component({
   selector: "app-resume",
   standalone: true,
-  imports: [HlmButtonDirective, NgIcon, HlmIconDirective, HlmCardModule],
+  imports: [HlmButton, NgIcon, HlmCardImports],
   providers: [
     provideIcons({
       lucideDownload,

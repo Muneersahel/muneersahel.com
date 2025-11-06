@@ -1,0 +1,52 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": "./",
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "bundler",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": ["ES2022", "dom"],
+    "paths": {
+      "@/*": ["src/app/*"],
+      "@spartan-ng/helm/utils": ["libs/ui/utils/src/index.ts"],
+      "@spartan-ng/helm/aspect-ratio": [
+        "./libs/ui/ui-aspectratio-helm/src/index.ts"
+      ],
+      "@spartan-ng/helm/badge": ["./libs/ui/ui-badge-helm/src/index.ts"],
+      "@spartan-ng/helm/button": ["./libs/ui/ui-button-helm/src/index.ts"],
+      "@spartan-ng/helm/card": ["./libs/ui/ui-card-helm/src/index.ts"],
+      "@spartan-ng/helm/hover-card": [
+        "./libs/ui/ui-hovercard-helm/src/index.ts"
+      ],
+      "@spartan-ng/helm/icon": ["./libs/ui/ui-icon-helm/src/index.ts"],
+      "@spartan-ng/helm/input": ["./libs/ui/ui-input-helm/src/index.ts"],
+      "@spartan-ng/helm/label": ["./libs/ui/ui-label-helm/src/index.ts"],
+      "@spartan-ng/helm/menu": ["./libs/ui/ui-menu-helm/src/index.ts"],
+      "@spartan-ng/helm/popover": ["./libs/ui/ui-popover-helm/src/index.ts"],
+      "@spartan-ng/helm/progress": ["./libs/ui/ui-progress-helm/src/index.ts"],
+      "@spartan-ng/helm/select": ["./libs/ui/ui-select-helm/src/index.ts"],
+      "@spartan-ng/helm/separator": [
+        "./libs/ui/ui-separator-helm/src/index.ts"
+      ],
+      "@spartan-ng/helm/sheet": ["./libs/ui/ui-sheet-helm/src/index.ts"],
+      "@spartan-ng/helm/skeleton": ["./libs/ui/ui-skeleton-helm/src/index.ts"],
+      "@spartan-ng/helm/sonner": ["./libs/ui/ui-sonner-helm/src/index.ts"],
+      "@spartan-ng/helm/spinner": ["./libs/ui/ui-spinner-helm/src/index.ts"],
+      "@spartan-ng/helm/tabs": ["./libs/ui/ui-tabs-helm/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

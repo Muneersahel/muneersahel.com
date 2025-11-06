@@ -1,3 +1,4 @@
+import { hlm } from "@spartan-ng/helm/utils";
 import {
   Directive,
   type OnInit,
@@ -6,21 +7,21 @@ import {
   input,
   signal,
 } from "@angular/core";
-import { hlm } from "@spartan-ng/brain/core";
-import { BrnSelectLabelDirective } from "@spartan-ng/brain/select";
+
+import { BrnSelectLabel } from "@spartan-ng/brain/select";
 import type { ClassValue } from "clsx";
-import { HlmSelectContentDirective } from "./hlm-select-content.directive";
+import { HlmSelectContent } from "./hlm-select-content.directive";
 
 @Directive({
   selector: "[hlmSelectLabel], hlm-select-label",
-  hostDirectives: [BrnSelectLabelDirective],
+  hostDirectives: [BrnSelectLabel],
   standalone: true,
   host: {
     "[class]": "_computedClass()",
   },
 })
-export class HlmSelectLabelDirective implements OnInit {
-  private readonly selectContent = inject(HlmSelectContentDirective);
+export class HlmSelectLabel implements OnInit {
+  private readonly selectContent = inject(HlmSelectContent);
   private readonly _stickyLabels = signal(false);
   public readonly userClass = input<ClassValue>("", { alias: "class" });
   protected _computedClass = computed(() =>

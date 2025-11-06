@@ -1,5 +1,6 @@
+import { hlm } from "@spartan-ng/helm/utils";
 import { Component, computed, input } from "@angular/core";
-import { hlm } from "@spartan-ng/brain/core";
+
 import { type VariantProps, cva } from "class-variance-authority";
 import type { ClassValue } from "clsx";
 
@@ -50,7 +51,7 @@ export type SpinnerVariants = VariantProps<typeof spinnerVariants>;
     <span class="sr-only"><ng-content /></span>
   `,
 })
-export class HlmSpinnerComponent {
+export class HlmSpinner {
   public readonly size = input<SpinnerVariants["size"]>("default");
   public readonly userClass = input<ClassValue>("", { alias: "class" });
   protected _computedClass = computed(() =>

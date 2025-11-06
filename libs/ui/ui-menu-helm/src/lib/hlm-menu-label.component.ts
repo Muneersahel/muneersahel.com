@@ -1,3 +1,4 @@
+import { hlm } from "@spartan-ng/helm/utils";
 import {
   Component,
   Input,
@@ -6,7 +7,7 @@ import {
   input,
   signal,
 } from "@angular/core";
-import { hlm } from "@spartan-ng/brain/core";
+
 import type { ClassValue } from "clsx";
 
 @Component({
@@ -17,7 +18,7 @@ import type { ClassValue } from "clsx";
     "[class]": "_computedClass()",
   },
 })
-export class HlmMenuLabelComponent {
+export class HlmMenuLabel {
   public readonly userClass = input<ClassValue>("", { alias: "class" });
   protected _computedClass = computed(() =>
     hlm(

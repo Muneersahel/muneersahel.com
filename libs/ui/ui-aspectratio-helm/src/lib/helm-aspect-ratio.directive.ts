@@ -9,7 +9,8 @@ import {
   input,
   signal,
 } from "@angular/core";
-import { hlm } from "@spartan-ng/brain/core";
+import { hlm } from "@spartan-ng/helm/utils";
+
 import type { ClassValue } from "clsx";
 
 const parseDividedString = (value: NumberInput): NumberInput => {
@@ -28,7 +29,7 @@ const parseDividedString = (value: NumberInput): NumberInput => {
     "[style.padding-bottom]": "_computedPaddingBottom()",
   },
 })
-export class HlmAspectRatioDirective implements AfterViewInit {
+export class HlmAspectRatio implements AfterViewInit {
   private readonly _ratio = signal(1);
   private readonly _el: HTMLElement = inject(ElementRef).nativeElement;
 

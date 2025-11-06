@@ -1,3 +1,4 @@
+import { hlm } from "@spartan-ng/helm/utils";
 import {
   Directive,
   type DoCheck,
@@ -9,7 +10,7 @@ import {
   input,
   signal,
 } from "@angular/core";
-import { hlm } from "@spartan-ng/brain/core";
+
 import type { ClassValue } from "clsx";
 
 @Directive({
@@ -19,7 +20,7 @@ import type { ClassValue } from "clsx";
     "[class]": "_computedClass()",
   },
 })
-export class HlmProgressIndicatorDirective implements DoCheck {
+export class HlmProgressIndicator implements DoCheck {
   private _element = inject(ElementRef);
   private _renderer = inject(Renderer2);
   private readonly _value = signal(0);

@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
-import { HlmToasterComponent } from './lib/hlm-toaster.component';
+import { NgModule } from "@angular/core";
+import { HlmToaster } from "./lib/hlm-toaster.component";
 
-export * from './lib/hlm-toaster.component';
+export * from "./lib/hlm-toaster.component";
 
 @NgModule({
-	imports: [HlmToasterComponent],
-	exports: [HlmToasterComponent],
+  imports: [HlmToaster],
+  exports: [HlmToaster],
 })
 export class HlmToasterModule {}

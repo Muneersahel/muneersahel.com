@@ -12,7 +12,8 @@ import {
   signal,
 } from "@angular/core";
 import { type IconName, NgIconComponent } from "@ng-icons/core";
-import { hlm } from "@spartan-ng/brain/core";
+import { hlm } from "@spartan-ng/helm/utils";
+
 import { cva } from "class-variance-authority";
 import type { ClassValue } from "clsx";
 
@@ -63,7 +64,7 @@ const TAILWIND_H_W_PATTERN = /\b(h-\d+|w-\d+)\b/g;
     "[class]": "_computedClass()",
   },
 })
-export class HlmIconComponent implements OnDestroy {
+export class HlmIcon implements OnDestroy {
   private readonly _host = inject(ElementRef);
   private readonly _platformId = inject(PLATFORM_ID);
 

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { RouterLink } from "@angular/router";
-import { HlmButtonModule } from "@spartan-ng/ui-button-helm";
+import { HlmButtonModule } from "@spartan-ng/helm/button";
 
 import MobileNavComponent from "./mobile-nav.component";
 import { NavComponent } from "./nav.component";

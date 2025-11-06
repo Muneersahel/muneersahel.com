@@ -1,3 +1,4 @@
+import { hlm } from "@spartan-ng/helm/utils";
 import { provideIcons } from "@ng-icons/core";
 import { NgIcon } from "@ng-icons/core";
 import { CdkObserveContent } from "@angular/cdk/observers";
@@ -11,20 +12,17 @@ import {
   input,
 } from "@angular/core";
 import { lucideChevronLeft, lucideChevronRight } from "@ng-icons/lucide";
-import { buttonVariants } from "@spartan-ng/ui-button-helm";
-import { hlm } from "@spartan-ng/brain/core";
-import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
-import {
-  BrnTabsPaginatedListDirective,
-  BrnTabsTriggerDirective,
-} from "@spartan-ng/brain/tabs";
+import { buttonVariants } from "@spartan-ng/helm/button";
+
+import { HlmIcon } from "@spartan-ng/helm/icon";
+import { BrnTabsPaginatedList, BrnTabsTrigger } from "@spartan-ng/brain/tabs";
 import { ClassValue } from "clsx";
 import { listVariants } from "./hlm-tabs-list.component";
 
 @Component({
   selector: "hlm-paginated-tabs-list",
   standalone: true,
-  imports: [CdkObserveContent, NgIcon, HlmIconDirective],
+  imports: [CdkObserveContent, NgIcon, HlmIcon],
   providers: [provideIcons({ lucideChevronRight, lucideChevronLeft })],
   template: `
     <button
@@ -82,9 +80,9 @@ import { listVariants } from "./hlm-tabs-list.component";
     "[class]": "_computedClass()",
   },
 })
-export class HlmTabsPaginatedListComponent extends BrnTabsPaginatedListDirective {
-  @ContentChildren(BrnTabsTriggerDirective, { descendants: false })
-  _items!: QueryList<BrnTabsTriggerDirective>;
+export class HlmTabsPaginatedList extends BrnTabsPaginatedList {
+  @ContentChildren(BrnTabsTrigger, { descendants: false })
+  _items!: QueryList<BrnTabsTrigger>;
   @ViewChild("tabListContainer", { static: true })
   _tabListContainer!: ElementRef;
   @ViewChild("tabList", { static: true }) _tabList!: ElementRef;

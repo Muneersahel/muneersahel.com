@@ -1,4 +1,9 @@
 import {
+  injectExposedSideProvider,
+  injectExposesStateProvider,
+} from "@spartan-ng/brain/core";
+import { hlm } from "@spartan-ng/helm/utils";
+import {
   Component,
   ElementRef,
   Renderer2,
@@ -8,11 +13,7 @@ import {
   input,
   signal,
 } from "@angular/core";
-import {
-  hlm,
-  injectExposedSideProvider,
-  injectExposesStateProvider,
-} from "@spartan-ng/brain/core";
+
 import type { ClassValue } from "clsx";
 
 @Component({
@@ -23,7 +24,7 @@ import type { ClassValue } from "clsx";
   },
   template: ` <ng-content /> `,
 })
-export class HlmHoverCardContentComponent {
+export class HlmHoverCardContent {
   private readonly _renderer = inject(Renderer2);
   private readonly _element = inject(ElementRef);
 

@@ -1,5 +1,3 @@
-import { provideIcons } from "@ng-icons/core";
-import { NgIcon } from "@ng-icons/core";
 import {
   Component,
   ElementRef,
@@ -10,17 +8,18 @@ import {
   input,
   signal,
 } from "@angular/core";
+import { NgIcon, provideIcons } from "@ng-icons/core";
 import { lucideX } from "@ng-icons/lucide";
 import {
-  hlm,
   injectExposedSideProvider,
   injectExposesStateProvider,
 } from "@spartan-ng/brain/core";
-import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
-import { BrnSheetCloseDirective } from "@spartan-ng/brain/sheet";
+import { hlm } from "@spartan-ng/helm/utils";
+
+import { BrnSheetClose } from "@spartan-ng/brain/sheet";
 import { cva } from "class-variance-authority";
 import type { ClassValue } from "clsx";
-import { HlmSheetCloseDirective } from "./hlm-sheet-close.directive";
+import { HlmSheetClose } from "./hlm-sheet-close.directive";
 
 export const sheetVariants = cva(
   "fixed z-50 gap-4 bg-primary p-6 shadow-lg transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-500",
@@ -43,12 +42,7 @@ export const sheetVariants = cva(
 
 @Component({
   selector: "hlm-sheet-content",
-  imports: [
-    HlmSheetCloseDirective,
-    BrnSheetCloseDirective,
-    NgIcon,
-    HlmIconDirective,
-  ],
+  imports: [HlmSheetClose, BrnSheetClose, NgIcon],
   providers: [provideIcons({ lucideX })],
   host: {
     "[class]": "_computedClass()",
@@ -65,7 +59,7 @@ export const sheetVariants = cva(
     </button>
   `,
 })
-export class HlmSheetContentComponent {
+export class HlmSheetContent {
   private _stateProvider = injectExposesStateProvider({ host: true });
   private _sideProvider = injectExposedSideProvider({ host: true });
   public state = this._stateProvider.state ?? signal("closed");

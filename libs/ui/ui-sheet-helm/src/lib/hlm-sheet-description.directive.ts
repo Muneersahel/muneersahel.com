@@ -1,6 +1,7 @@
+import { hlm } from "@spartan-ng/helm/utils";
 import { Directive, computed, input } from "@angular/core";
-import { hlm } from "@spartan-ng/brain/core";
-import { BrnSheetDescriptionDirective } from "@spartan-ng/brain/sheet";
+
+import { BrnSheetDescription } from "@spartan-ng/brain/sheet";
 import type { ClassValue } from "clsx";
 
 @Directive({
@@ -9,9 +10,9 @@ import type { ClassValue } from "clsx";
   host: {
     "[class]": "_computedClass()",
   },
-  hostDirectives: [BrnSheetDescriptionDirective],
+  hostDirectives: [BrnSheetDescription],
 })
-export class HlmSheetDescriptionDirective {
+export class HlmSheetDescription {
   public readonly userClass = input<ClassValue>("", { alias: "class" });
   protected _computedClass = computed(() =>
     hlm("text-sm text-muted-foreground", this.userClass()),

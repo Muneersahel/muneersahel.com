@@ -1,5 +1,6 @@
+import { hlm } from "@spartan-ng/helm/utils";
 import { Directive, computed, input } from "@angular/core";
-import { hlm } from "@spartan-ng/brain/core";
+
 import type { ClassValue } from "clsx";
 
 @Directive({
@@ -10,7 +11,7 @@ import type { ClassValue } from "clsx";
     "[class]": "_computedClass()",
   },
 })
-export class HlmSelectValueDirective {
+export class HlmSelectValueTemplate {
   public readonly userClass = input<ClassValue>("", { alias: "class" });
   protected readonly _computedClass = computed(() =>
     hlm(

@@ -1,15 +1,13 @@
-import { provideIcons } from "@ng-icons/core";
-import { NgIcon } from "@ng-icons/core";
 import { AsyncPipe } from "@angular/common";
 import { ChangeDetectionStrategy, Component, inject } from "@angular/core";
 import { RouterLink } from "@angular/router";
+import { NgIcon, provideIcons } from "@ng-icons/core";
 import { lucideArrowDownRight } from "@ng-icons/lucide";
-import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
 import { BlogService } from "./data";
 
 @Component({
   selector: "app-blogs",
-  imports: [AsyncPipe, NgIcon, HlmIconDirective, RouterLink],
+  imports: [AsyncPipe, NgIcon, RouterLink],
   providers: [provideIcons({ lucideArrowDownRight })],
   template: `
     <section class="min-h-[80dvh] flex flex-col justify-center py-12 xl:pt-0">

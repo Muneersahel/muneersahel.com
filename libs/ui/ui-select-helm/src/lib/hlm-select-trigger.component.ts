@@ -1,4 +1,3 @@
-import { NgIcon } from "@ng-icons/core";
 import {
   Component,
   ContentChild,
@@ -7,17 +6,18 @@ import {
   computed,
   input,
 } from "@angular/core";
-import { provideIcons } from "@ng-icons/core";
+import { NgIcon, provideIcons } from "@ng-icons/core";
 import { lucideChevronDown } from "@ng-icons/lucide";
-import { hlm } from "@spartan-ng/brain/core";
-import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
-import { BrnSelectTriggerDirective } from "@spartan-ng/brain/select";
+import { hlm } from "@spartan-ng/helm/utils";
+
+import { BrnSelectTrigger } from "@spartan-ng/brain/select";
+import { HlmIcon } from "@spartan-ng/helm/icon";
 import type { ClassValue } from "clsx";
 
 @Component({
   selector: "hlm-select-trigger",
   standalone: true,
-  imports: [BrnSelectTriggerDirective, NgIcon, HlmIconDirective],
+  imports: [BrnSelectTrigger, NgIcon],
   providers: [provideIcons({ lucideChevronDown })],
   template: `
     <button [class]="_computedClass()" #button brnSelectTrigger type="button">
@@ -35,12 +35,12 @@ import type { ClassValue } from "clsx";
     </button>
   `,
 })
-export class HlmSelectTriggerComponent {
+export class HlmSelectTrigger {
   @ViewChild("button", { static: true })
   public buttonEl!: ElementRef;
 
-  @ContentChild(HlmIconDirective, { static: false })
-  protected icon!: HlmIconDirective;
+  @ContentChild(HlmIcon, { static: false })
+  protected icon!: HlmIcon;
 
   public readonly userClass = input<ClassValue>("", { alias: "class" });
   protected readonly _computedClass = computed(() =>

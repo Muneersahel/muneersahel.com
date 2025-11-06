@@ -1,6 +1,7 @@
+import { hlm } from "@spartan-ng/helm/utils";
 import { Directive, computed, inject, input } from "@angular/core";
-import { hlm } from "@spartan-ng/brain/core";
-import { HlmIconComponent } from "@spartan-ng/ui-icon-helm";
+
+import { HlmIcon } from "@spartan-ng/helm/icon";
 import type { ClassValue } from "clsx";
 
 @Directive({
@@ -10,8 +11,8 @@ import type { ClassValue } from "clsx";
     "[class]": "_computedClass()",
   },
 })
-export class HlmMenuItemIconDirective {
-  private _menuIcon = inject(HlmIconComponent, { host: true, optional: true });
+export class HlmMenuItemIcon {
+  private _menuIcon = inject(HlmIcon, { host: true, optional: true });
 
   constructor() {
     if (!this._menuIcon) return;

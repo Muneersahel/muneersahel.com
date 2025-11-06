@@ -1,6 +1,5 @@
-import { provideIcons } from "@ng-icons/core";
-import { NgIcon } from "@ng-icons/core";
 import { ChangeDetectionStrategy, Component, input } from "@angular/core";
+import { NgIcon, provideIcons } from "@ng-icons/core";
 import {
   lucideGithub,
   lucideInstagram,
@@ -8,11 +7,10 @@ import {
   lucideTwitter,
   lucideYoutube,
 } from "@ng-icons/lucide";
-import { HlmIconDirective } from "@spartan-ng/ui-icon-helm";
 
 @Component({
   selector: "app-socials",
-  imports: [NgIcon, HlmIconDirective],
+  imports: [NgIcon],
   providers: [
     provideIcons({
       lucideGithub,
