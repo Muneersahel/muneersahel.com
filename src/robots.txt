@@ -7,4 +7,4 @@ Allow: /
 # Crawl-delay: 10
 
 # Sitemap directive
-Sitemap: https://muneersahel.juafaida.com/sitemap.xml
+Sitemap: https://muneersahel.com/sitemap.xml

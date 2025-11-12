@@ -45,7 +45,9 @@
       "@spartan-ng/helm/sidebar": ["libs/ui/sidebar/src/index.ts"],
       "@spartan-ng/helm/tooltip": ["libs/ui/tooltip/src/index.ts"],
       "@spartan-ng/helm/skeleton": ["libs/ui/skeleton/src/index.ts"],
-      "@spartan-ng/helm/button": ["libs/ui/button/src/index.ts"]
+      "@spartan-ng/helm/button": ["libs/ui/button/src/index.ts"],
+      "@spartan-ng/helm/textarea": ["libs/ui/textarea/src/index.ts"],
+      "@spartan-ng/helm/form-field": ["libs/ui/form-field/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

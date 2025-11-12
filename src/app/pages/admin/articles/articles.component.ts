@@ -1,26 +1,44 @@
-import { ChangeDetectionStrategy, Component, signal } from "@angular/core";
-import { RouterLink } from "@angular/router";
+import { Blog } from "@/core/blog-interface";
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  inject,
+  signal,
+} from "@angular/core";
+import { toSignal } from "@angular/core/rxjs-interop";
+import {
+  Firestore,
+  collection,
+  collectionData,
+  orderBy,
+  query,
+} from "@angular/fire/firestore";
+import { Router, RouterLink } from "@angular/router";
 import { NgIcon, provideIcons } from "@ng-icons/core";
-import { lucideExternalLink, lucidePlus, lucideSearch } from "@ng-icons/lucide";
+import {
+  lucideExternalLink,
+  lucideFileText,
+  lucidePlus,
+  lucideSearch,
+} from "@ng-icons/lucide";
 import { HlmButton } from "@spartan-ng/helm/button";
 import { HlmCard } from "@spartan-ng/helm/card";
 import { HlmInput } from "@spartan-ng/helm/input";
-
-interface AdminArticle {
-  num: string;
-  slug: string;
-  title: string;
-  coverImage: string;
-  date: string;
-  brief: string;
-  tags: string[];
-}
+import { map } from "rxjs";
 
 @Component({
   selector: "app-admin-articles",
   standalone: true,
   imports: [HlmCard, HlmButton, HlmInput, NgIcon, RouterLink],
-  providers: [provideIcons({ lucidePlus, lucideSearch, lucideExternalLink })],
+  providers: [
+    provideIcons({
+      lucidePlus,
+      lucideSearch,
+      lucideExternalLink,
+      lucideFileText,
+    }),
+  ],
   template: `
     <section class="p-6 text-black">
       <div class="flex items-center justify-between mb-6">
@@ -49,7 +67,7 @@ interface AdminArticle {
           <button
             hlmBtn
             size="default"
-            class="flex items-center gap-2 text-black"
+            class="flex items-center gap-2 text-black rounded-md h-10"
             (click)="addArticle()"
           >
             <ng-icon hlm name="lucidePlus"></ng-icon>
@@ -59,40 +77,70 @@ interface AdminArticle {
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        @for (article of filteredArticles; track article.slug) {
-          <a [routerLink]="['/admin/articles', article.slug]" class="block">
-            <div hlmCard class="bg-black/5 hover:bg-black/7 transition h-full">
-              <div class="p-4 h-full flex flex-col space-y-4">
-                <div class="h-40 bg-black/3 rounded-lg overflow-hidden mb-3">
-                  <img
-                    src="{{ article.coverImage }}"
-                    alt="{{ article.title }}"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
+        @if (articles().length === 0) {
+          <div class="col-span-full text-center py-16">
+            <p class="text-black/60 text-lg">No articles found.</p>
+            <p class="text-black/40 text-sm mt-2">
+              Click "Add Article" to create your first blog post.
+            </p>
+          </div>
+        } @else if (filteredArticles().length === 0) {
+          <div class="col-span-full text-center py-16">
+            <p class="text-black/60 text-lg">No articles match your search.</p>
+            <p class="text-black/40 text-sm mt-2">
+              Try a different search term.
+            </p>
+          </div>
+        } @else {
+          @for (article of filteredArticles(); track article.slug) {
+            <a
+              [routerLink]="['/admin/articles/edit', article.slug]"
+              class="block"
+            >
+              <div
+                hlmCard
+                class="bg-black/5 hover:bg-black/7 transition h-full"
+              >
+                <div class="p-4 h-full flex flex-col space-y-4">
+                  <div
+                    class="h-40 bg-black/3 rounded-lg overflow-hidden mb-3 flex items-center justify-center"
+                  >
+                    @if (article.coverImage) {
+                      <img
+                        [src]="article.coverImage"
+                        [alt]="article.title"
+                        class="w-full h-full object-cover"
+                      />
+                    } @else {
+                      <ng-icon
+                        hlm
+                        name="lucideFileText"
+                        class="text-black/20"
+                        size="48"
+                      />
+                    }
+                  </div>
 
-                <h3 class="text-lg font-semibold text-black mb-2">
-                  {{ article.title }}
-                </h3>
+                  <h3 class="text-lg font-semibold text-black mb-2">
+                    {{ article.title }}
+                  </h3>
 
-                <p
-                  class="text-black/70 text-sm overflow-hidden"
-                  style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;"
-                >
-                  {{ article.brief }}
-                </p>
+                  <p class="text-black/70 text-sm overflow-hidden">
+                    {{ article.brief }}
+                  </p>
 
-                <div class="mt-auto flex items-center justify-between">
-                  <div class="text-xs text-black/60">{{ article.date }}</div>
-                  <ng-icon
-                    hlm
-                    name="lucideExternalLink"
-                    class="text-black/60"
-                  />
+                  <div class="mt-auto flex items-center justify-between">
+                    <div class="text-xs text-black/60">{{ article.date }}</div>
+                    <ng-icon
+                      hlm
+                      name="lucideExternalLink"
+                      class="text-black/60"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
+            </a>
+          }
         }
       </div>
     </section>
@@ -100,69 +148,42 @@ interface AdminArticle {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class AdminArticlesComponent {
-  private _all = signal<AdminArticle[]>([
-    {
-      num: "01",
-      slug: "manage-authentication-state-with-angular-signal",
-      title: "Manage Authentication State with Angular Signal",
-      coverImage: "/images/blogs/angular-authentication.avif",
-      date: "2024-06-08",
-      brief:
-        "Learn how to manage authentication state with Angular Signal. In this blog post, we will create a simple Angular application that uses Angular Signal to manage authentication state.",
-      tags: ["angular", "authentication", "signal"],
-    },
-    {
-      num: "02",
-      slug: "manage-authentication-state-with-ngrx-in-angular",
-      title: "Manage Authentication State with NgRx",
-      coverImage: "/images/blogs/angular-authentication.avif",
-      date: "2024-06-08",
-      brief: "Enterprise-grade authentication using NgRx patterns and effects.",
-      tags: ["angular", "ngrx", "authentication"],
-    },
-    {
-      num: "03",
-      slug: "why-i-shifted-to-angular-ionic",
-      title: "Why I Shifted to Angular + Ionic",
-      coverImage: "/images/blogs/angular-ionic.avif",
-      date: "2024-05-10",
-      brief: "Lessons learned moving to Ionic for cross-platform apps.",
-      tags: ["angular", "ionic"],
-    },
-  ]);
+  private router = inject(Router);
+  private firestore = inject(Firestore);
 
-  filteredArticles = this._all();
+  // Fetch articles from Firestore in real-time
+  articles = toSignal(
+    collectionData(
+      query(collection(this.firestore, "blogs"), orderBy("date", "desc")),
+    ).pipe(map((blogs) => blogs as Blog[])),
+    { initialValue: [] as Blog[] },
+  );
 
-  onSearch(query: string) {
-    const q = String(query || "")
-      .toLowerCase()
-      .trim();
+  searchQuery = signal("");
+
+  // Reactive filtered articles based on search query
+  filteredArticles = computed(() => {
+    const q = this.searchQuery().toLowerCase().trim();
+    const allArticles = this.articles();
+
     if (!q) {
-      this.filteredArticles = this._all();
-      return;
+      return allArticles;
     }
 
-    this.filteredArticles = this._all().filter(
+    return allArticles.filter(
       (a) =>
         a.title.toLowerCase().includes(q) ||
         a.brief.toLowerCase().includes(q) ||
-        a.tags.some((t) => t.includes(q)),
+        a.tags?.some((t) => t.toLowerCase().includes(q)),
     );
+  });
+
+  onSearch(query: string) {
+    this.searchQuery.set(query);
   }
 
   addArticle() {
-    // For now, create a dummy article and prepend
-    const newArticle: AdminArticle = {
-      num: String(this._all().length + 1).padStart(2, "0"),
-      slug: `new-article-${Date.now()}`,
-      title: "New Article (Draft)",
-      coverImage: "/images/blogs/angular-authentication.avif",
-      date: new Date().toISOString().slice(0, 10),
-      brief: "Draft article created from admin.",
-      tags: ["draft"],
-    };
-
-    this._all.set([newArticle, ...this._all()]);
-    this.filteredArticles = this._all();
+    // Navigate to the article editor
+    this.router.navigate(["/admin/articles/new"]);
   }
 }

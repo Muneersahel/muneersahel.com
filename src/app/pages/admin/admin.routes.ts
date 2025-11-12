@@ -15,6 +15,14 @@ export const routes: Routes = [
     loadComponent: () => import("./articles/articles.component"),
   },
   {
+    path: "articles/new",
+    loadComponent: () => import("./articles/article-editor.component"),
+  },
+  {
+    path: "articles/edit/:slug",
+    loadComponent: () => import("./articles/article-editor.component"),
+  },
+  {
     path: "articles/:slug",
     loadComponent: () => import("./articles/article.component"),
   },

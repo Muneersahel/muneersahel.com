@@ -23,12 +23,12 @@ import { BlogService } from "./data";
                 </div>
                 <a
                   [routerLink]="['/blogs', blog.slug]"
-                  class="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
+                  class="w-[70px] h-[70px] rounded-full text-primary group-hover:text-white bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                 >
                   <ng-icon
                     hlm
                     name="lucideArrowDownRight"
-                    class="text-primary"
+                    class="text-2xl"
                   ></ng-icon>
                 </a>
               </div>
