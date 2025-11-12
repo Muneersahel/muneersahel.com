@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Generate sitemap before commit
+echo "🗺️  Generating sitemap..."
+npm run generate:sitemap
+
+# Add the updated sitemap to the commit
+git add src/sitemap.xml
+
+echo "✅ Sitemap generated and staged for commit"

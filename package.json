@@ -11,7 +11,8 @@
     "test": "nx test",
     "format": "nx format:check",
     "format:write": "nx format:write",
-    "serve:ssr:muneersahel.com": "node dist/muneersahel.com/server/server.mjs"
+    "serve:ssr:muneersahel.com": "node dist/muneersahel.com/server/server.mjs",
+    "prepare": "husky"
   },
   "private": true,
   "dependencies": {
@@ -43,6 +44,7 @@
     "date-fns": "^4.1.0",
     "embla-carousel-angular": "^19.0.0",
     "express": "^4.21.2",
+    "firebase": "^12.5.0",
     "html2canvas": "^1.4.1",
     "jspdf": "^3.0.1",
     "marked": "^15.0.8",
@@ -85,6 +87,7 @@
     "autoprefixer": "^10.4.21",
     "eslint": "^9.28.0",
     "eslint-config-prettier": "^10.0.0",
+    "husky": "^9.1.7",
     "jasmine-core": "~5.6.0",
     "jest": "30.0.5",
     "jest-environment-jsdom": "30.0.5",

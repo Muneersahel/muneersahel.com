@@ -5,7 +5,7 @@
  *
  * This script generates a sitemap.xml file for the website by:
  * 1. Reading static routes from the app
- * 2. Reading blog posts from public/content/content.json
+ * 2. Fetching blog posts from Firebase Firestore
  * 3. Generating XML sitemap with proper lastmod, changefreq, and priority
  *
  * The sitemap is automatically generated after each build via npm run build
@@ -16,7 +16,15 @@
  *   npm run build             (includes sitemap generation)
  */
 
-import { readFileSync, writeFileSync } from "fs";
+import { initializeApp } from "firebase/app";
+import {
+  collection,
+  getDocs,
+  getFirestore,
+  orderBy,
+  query,
+} from "firebase/firestore";
+import { writeFileSync } from "fs";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
@@ -26,7 +34,18 @@ const rootDir = join(__dirname, "..");
 
 // Configuration
 const SITE_URL = "https://muneersahel.com";
-const OUTPUT_PATH = join(rootDir, "dist/profile/browser/sitemap.xml");
+const OUTPUT_PATH = join(rootDir, "src/sitemap.xml");
+
+// Firebase configuration
+const firebaseConfig = {
+  projectId: "muneersahel",
+  appId: "1:1049500314015:web:b0f618cd743a58a9b3b5aa",
+  storageBucket: "muneersahel.appspot.com",
+  apiKey: "AIzaSyAsjcjQCJvJuJcZPt_5r0M5OLX5ZGP8te8",
+  authDomain: "muneersahel.firebaseapp.com",
+  messagingSenderId: "1049500314015",
+  measurementId: "G-G2BMEHD10R",
+};
 
 // Static routes (public routes only, exclude admin routes)
 const staticRoutes = [
@@ -38,21 +57,33 @@ const staticRoutes = [
   { path: "blogs", priority: "0.9", changefreq: "weekly" },
 ];
 
-// Read blog posts from content.json
-function getBlogPosts() {
+// Fetch blog posts from Firestore
+async function getBlogPosts() {
   try {
-    const contentPath = join(rootDir, "public/content/content.json");
-    const content = JSON.parse(readFileSync(contentPath, "utf-8"));
-    return content.blogs || [];
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Query blogs collection
+    const blogsCol = collection(db, "blogs");
+    const blogsQuery = query(blogsCol, orderBy("num", "asc"));
+    const querySnapshot = await getDocs(blogsQuery);
+
+    const blogs = [];
+    querySnapshot.forEach((doc) => {
+      blogs.push(doc.data());
+    });
+
+    console.log(`📚 Fetched ${blogs.length} blog posts from Firestore`);
+    return blogs;
   } catch (error) {
-    console.warn("Could not read content.json:", error.message);
+    console.warn("⚠️  Could not fetch blogs from Firestore:", error.message);
     return [];
   }
 }
 
 // Generate sitemap XML
-function generateSitemap() {
-  const blogs = getBlogPosts();
+function generateSitemap(blogs) {
   const currentDate = new Date().toISOString().split("T")[0];
 
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
@@ -84,12 +115,22 @@ function generateSitemap() {
 }
 
 // Main execution
-try {
-  const sitemap = generateSitemap();
-  writeFileSync(OUTPUT_PATH, sitemap, "utf-8");
-  console.log("✅ Sitemap generated successfully at:", OUTPUT_PATH);
-  console.log(`📊 Total URLs: ${staticRoutes.length + getBlogPosts().length}`);
-} catch (error) {
-  console.error("❌ Error generating sitemap:", error);
-  process.exit(1);
+async function main() {
+  try {
+    console.log("🚀 Starting sitemap generation...");
+
+    const blogs = await getBlogPosts();
+    const sitemap = generateSitemap(blogs);
+
+    writeFileSync(OUTPUT_PATH, sitemap, "utf-8");
+
+    console.log("✅ Sitemap generated successfully at:", OUTPUT_PATH);
+    console.log(`📊 Total URLs: ${staticRoutes.length + blogs.length}`);
+    process.exit(0);
+  } catch (error) {
+    console.error("❌ Error generating sitemap:", error);
+    process.exit(1);
+  }
 }
+
+main();

@@ -20,7 +20,8 @@
             "glob": "**/*",
             "input": "public"
           },
-          "src/robots.txt"
+          "src/robots.txt",
+          "src/sitemap.xml"
         ],
         "styles": [
           "node_modules/prismjs/themes/prism-tomorrow.css",
