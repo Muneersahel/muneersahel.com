@@ -1,15 +1,19 @@
-import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { RouterLink, RouterLinkActive, RouterOutlet } from "@angular/router";
+import { ChangeDetectionStrategy, Component, inject } from "@angular/core";
+import { Auth, signOut } from "@angular/fire/auth";
+import { Router, RouterLink, RouterLinkActive, RouterOutlet } from "@angular/router";
 import { NgIcon, provideIcons } from "@ng-icons/core";
 import {
   lucideFile,
   lucideFileText,
   lucideHouse,
   lucideLayers,
+  lucideLogOut,
   lucideMail,
   lucidePanelLeft,
 } from "@ng-icons/lucide";
+import { HlmButton } from "@spartan-ng/helm/button";
 import { HlmSidebarImports } from "@spartan-ng/helm/sidebar";
+import { toast } from "ngx-sonner";
 
 @Component({
   selector: "app-admin-layout",
@@ -19,6 +23,7 @@ import { HlmSidebarImports } from "@spartan-ng/helm/sidebar";
     HlmSidebarImports,
     NgIcon,
     RouterLinkActive,
+    HlmButton,
   ],
   providers: [
     provideIcons({
@@ -28,6 +33,7 @@ import { HlmSidebarImports } from "@spartan-ng/helm/sidebar";
       lucideLayers,
       lucideFile,
       lucideMail,
+      lucideLogOut,
     }),
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -65,8 +71,17 @@ import { HlmSidebarImports } from "@spartan-ng/helm/sidebar";
           </div>
         </div>
 
-        <div hlmSidebarFooter class="px-4 py-4">
-          <div class="text-sm text-sidebar-foreground">v1.0.0</div>
+        <div hlmSidebarFooter class="px-4 py-4 space-y-3">
+          <button
+            hlmBtn
+            variant="outline"
+            class="w-full flex items-center justify-center gap-2"
+            (click)="logout()"
+          >
+            <ng-icon hlm name="lucideLogOut" class="w-4 h-4" />
+            <span>Logout</span>
+          </button>
+          <div class="text-sm text-sidebar-foreground text-center">v1.0.0</div>
         </div>
       </hlm-sidebar>
 
@@ -77,6 +92,9 @@ import { HlmSidebarImports } from "@spartan-ng/helm/sidebar";
   `,
 })
 export class AdminLayoutComponent {
+  private auth = inject(Auth);
+  private router = inject(Router);
+
   protected readonly _items = [
     { title: "Dashboard", url: "/admin/dashboard", icon: "lucideHouse" },
     { title: "Articles", url: "/admin/articles", icon: "lucideFileText" },
@@ -84,4 +102,15 @@ export class AdminLayoutComponent {
     { title: "CV & Resume", url: "/admin/resume", icon: "lucideFile" },
     { title: "Contacts", url: "/admin/contacts", icon: "lucideMail" },
   ];
+
+  async logout() {
+    try {
+      await signOut(this.auth);
+      toast.success("Logged out successfully");
+      this.router.navigate(['/login']);
+    } catch (error) {
+      console.error('Logout error:', error);
+      toast.error("Failed to logout. Please try again.");
+    }
+  }
 }

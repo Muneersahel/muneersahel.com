@@ -13,8 +13,8 @@ import { FormsModule, NgForm } from "@angular/forms";
 import { Router } from "@angular/router";
 import { HlmButton } from "@spartan-ng/helm/button";
 import {
-  HlmCardContent,
   HlmCard,
+  HlmCardContent,
   HlmCardHeader,
   HlmCardTitle,
 } from "@spartan-ng/helm/card";
@@ -132,7 +132,7 @@ export class LoginComponent {
     signInWithEmailAndPassword(this.#auth, this.email, this.password)
       .then(() => {
         this.loading.set(false);
-        this.#router.navigate(["/"]);
+        this.#router.navigate(["/admin"]);
       })
       .catch((error) => {
         const errorCode = error.code;

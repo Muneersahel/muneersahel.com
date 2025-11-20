@@ -141,7 +141,7 @@
       @apply my-8 border-t border-white/20;
     }
     pre {
-      @apply p-6 rounded-lg my-6 overflow-x-auto bg-white/5 border border-white/10;
+      @apply p-6 rounded-lg my-6! overflow-x-auto bg-white/5 border border-white/10;
     }
     code {
       @apply text-sm;

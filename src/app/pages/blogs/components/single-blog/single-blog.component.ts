@@ -147,7 +147,7 @@ import { MarkdownComponent } from "ngx-markdown";
                       @for (recent of recentBlogs(); track recent.slug) {
                         <a
                           [routerLink]="['/blogs', recent.slug]"
-                          class="block group"
+                          class="block group border border-white/10 rounded-lg hover:border-accent/30 transition-all"
                         >
                           <div
                             class="flex gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors"
