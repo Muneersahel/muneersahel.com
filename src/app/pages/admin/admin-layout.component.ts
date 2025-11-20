@@ -1,6 +1,11 @@
 import { ChangeDetectionStrategy, Component, inject } from "@angular/core";
 import { Auth, signOut } from "@angular/fire/auth";
-import { Router, RouterLink, RouterLinkActive, RouterOutlet } from "@angular/router";
+import {
+  Router,
+  RouterLink,
+  RouterLinkActive,
+  RouterOutlet,
+} from "@angular/router";
 import { NgIcon, provideIcons } from "@ng-icons/core";
 import {
   lucideFile,
@@ -107,9 +112,9 @@ export class AdminLayoutComponent {
     try {
       await signOut(this.auth);
       toast.success("Logged out successfully");
-      this.router.navigate(['/login']);
+      this.router.navigate(["/login"]);
     } catch (error) {
-      console.error('Logout error:', error);
+      console.error("Logout error:", error);
       toast.error("Failed to logout. Please try again.");
     }
   }
