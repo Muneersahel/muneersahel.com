@@ -26,6 +26,16 @@ export const appRoutes: Routes = [
         loadComponent: () => import("@/pages/works/works.component"),
       },
       {
+        path: "works/devtab",
+        loadComponent: () =>
+          import("@/pages/works/devtab/devtab-details.component"),
+      },
+      {
+        path: "works/devtab/privacy",
+        loadComponent: () =>
+          import("@/pages/works/devtab/devtab-privacy.component"),
+      },
+      {
         path: "contact",
         loadComponent: () => import("./pages/contact/contact.component"),
       },

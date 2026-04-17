@@ -1,6 +1,7 @@
 import { SocialsComponent } from "@/shared/components";
 import { MetaTagsService } from "@/shared/services";
 import { ChangeDetectionStrategy, Component, inject } from "@angular/core";
+import { RouterLink } from "@angular/router";
 import { NgIcon, provideIcons } from "@ng-icons/core";
 import {
   lucideArrowRight,
@@ -18,7 +19,14 @@ import { HlmCardImports } from "@spartan-ng/helm/card";
 @Component({
   selector: "app-works",
   standalone: true,
-  imports: [HlmButton, NgIcon, HlmCardImports, HlmBadge, SocialsComponent],
+  imports: [
+    HlmButton,
+    NgIcon,
+    HlmCardImports,
+    HlmBadge,
+    SocialsComponent,
+    RouterLink,
+  ],
   providers: [
     provideIcons({
       lucideArrowRight,
@@ -133,7 +141,7 @@ import { HlmCardImports } from "@spartan-ng/helm/card";
                       }
                     </div>
                     <a
-                      [href]="project.detailsUrl || '#'"
+                      [routerLink]="project.detailsUrl"
                       hlmBtn
                       variant="primary"
                       class="text-accent group-hover:underline flex items-center gap-1"
@@ -273,67 +281,23 @@ export default class WorksComponent {
     });
   }
 
-  featuredProjects = [
+  featuredProjects: {
+    title: string;
+    description: string;
+    image: string;
+    tags: string[];
+    githubUrl?: string;
+    liveUrl?: string;
+    detailsUrl: string;
+  }[] = [
     {
-      title: "Personal Portfolio",
+      title: "DevTab",
       description:
-        "A modern portfolio website built with Angular and Spartan UI components, featuring a clean design and responsive layout.",
-      image:
-        "https://placehold.co/600x400/1c1c22/00ff99?text=Portfolio&font=roboto",
-      tags: ["Angular", "Tailwind"],
-      githubUrl: "https://github.com/muneersahel/portfolio",
-      liveUrl: "https://muneersahel.com",
-      detailsUrl: "/works/portfolio",
-    },
-    {
-      title: "E-Commerce Platform",
-      description:
-        "Full-stack e-commerce solution with product management, cart functionality, and secure payment integration.",
-      image:
-        "https://placehold.co/600x400/1c1c22/00ff99?text=E-Commerce&font=roboto",
-      tags: ["Angular", "Node.js", "MongoDB"],
-      githubUrl: "https://github.com/muneersahel/ecommerce",
-      detailsUrl: "/works/ecommerce",
-    },
-    {
-      title: "Health Tracker App",
-      description:
-        "Mobile application for tracking health metrics, setting goals, and monitoring progress over time.",
-      image:
-        "https://placehold.co/600x400/1c1c22/00ff99?text=Health+App&font=roboto",
-      tags: ["Ionic", "Angular", "Firebase"],
-      liveUrl: "https://health-tracker-app.com",
-      detailsUrl: "/works/health-tracker",
-    },
-    {
-      title: "Content Management System",
-      description:
-        "Custom CMS built for content creators with rich text editing, media management, and scheduling features.",
-      image: "https://placehold.co/600x400/1c1c22/00ff99?text=CMS&font=roboto",
-      tags: ["Angular", "Express", "PostgreSQL"],
-      githubUrl: "https://github.com/muneersahel/cms",
-      detailsUrl: "/works/cms",
-    },
-    {
-      title: "Weather Dashboard",
-      description:
-        "Interactive dashboard displaying weather data with charts, maps, and forecasts from multiple APIs.",
-      image:
-        "https://placehold.co/600x400/1c1c22/00ff99?text=Weather&font=roboto",
-      tags: ["TypeScript", "D3.js", "APIs"],
-      githubUrl: "https://github.com/muneersahel/weather-dashboard",
-      liveUrl: "https://weather-dash.app",
-      detailsUrl: "/works/weather-dashboard",
-    },
-    {
-      title: "Task Management Tool",
-      description:
-        "Collaborative project management tool with real-time updates, task assignment, and progress tracking.",
-      image:
-        "https://placehold.co/600x400/1c1c22/00ff99?text=Task+Manager&font=roboto",
-      tags: ["Angular", "Firebase", "RxJS"],
-      githubUrl: "https://github.com/muneersahel/task-manager",
-      detailsUrl: "/works/task-manager",
+        "A Chrome new-tab extension that replaces every new tab with a live WakaTime dashboard — coding hours, languages, projects, editors, and operating systems at a glance. Built with Angular 21, Tailwind, and a cache-first rendering strategy for instant paint.",
+      image: "/images/works/devtab.png",
+      tags: ["Angular", "Chrome MV3", "WakaTime"],
+      githubUrl: "https://github.com/Muneersahel/DevTab",
+      detailsUrl: "/works/devtab",
     },
   ];
 
