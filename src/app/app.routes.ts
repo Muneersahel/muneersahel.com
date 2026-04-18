@@ -36,6 +36,16 @@ export const appRoutes: Routes = [
           import("@/pages/works/devtab/devtab-privacy.component"),
       },
       {
+        path: "works/mat-tel-input",
+        loadComponent: () =>
+          import("@/pages/works/mat-tel-input/mat-tel-input-details.component"),
+      },
+      {
+        path: "works/mauzo",
+        loadComponent: () =>
+          import("@/pages/works/mauzo/mauzo-details.component"),
+      },
+      {
         path: "contact",
         loadComponent: () => import("./pages/contact/contact.component"),
       },

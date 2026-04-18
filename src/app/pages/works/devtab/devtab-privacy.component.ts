@@ -42,7 +42,7 @@ const LAST_UPDATED = "April 18, 2026";
           hlmBtn
           variant="ghost"
           size="sm"
-          class="mb-8 text-white/60 hover:text-accent inline-flex items-center gap-1"
+          class="mb-8 text-white/60 inline-flex items-center gap-1"
         >
           <ng-icon hlm name="lucideArrowLeft"></ng-icon>
           Back to DevTab
