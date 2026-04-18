@@ -299,6 +299,25 @@ export default class WorksComponent {
       githubUrl: "https://github.com/Muneersahel/DevTab",
       detailsUrl: "/works/devtab",
     },
+    {
+      title: "mat-tel-input",
+      description:
+        "An Angular Material telephone input with country picker, search, E.164 hydration, built-in validation, and theming via CSS variables — shipped as the mat-tel-input npm package with interactive docs and a live playground.",
+      image: "/images/works/mattelinput.png",
+      tags: ["Angular", "Material", "npm"],
+      githubUrl: "https://github.com/Muneersahel/mat-tel-input",
+      liveUrl: "https://mattelinput.muneersahel.com/",
+      detailsUrl: "/works/mat-tel-input",
+    },
+    {
+      title: "Mauzo",
+      description:
+        "A point-of-sale and shop-management platform for small retailers in East Africa — record sales, manage inventory, spot low stock, and review performance from phones and tablets, with native Android and iOS apps plus the mauzoapp.com marketing site.",
+      image: "/images/works/mauzoapp.png",
+      tags: ["POS", "Inventory", "Mobile"],
+      liveUrl: "https://mauzoapp.com/",
+      detailsUrl: "/works/mauzo",
+    },
   ];
 
   technologies = [
